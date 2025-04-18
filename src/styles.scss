@@ -1,1 +1,26 @@
-@use "styles/variables";
+@use "styles/variables" as *;
+
+@font-face {
+  font-family: "bricolage grotesque";
+  src: url("assets/fonts/bricolage_grotesque/BricolageGrotesque-VariableFont_opsz,wdth,wght.ttf");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "kalam";
+  src: url("assets/fonts/kalam/Kalam-Bold.ttf");
+  font-weight: 700;
+  font-style: normal;
+}
+
+*,
+html {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: $font-primary;
+  font-size: $font-size-base;
+  color: $color-white;
+}
