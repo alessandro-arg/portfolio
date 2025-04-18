@@ -19,8 +19,14 @@ header {
   }
 
   .logo {
-    width: 40px;
+    width: 38.54px;
     height: 40px;
+    background-image: url("./../../../assets/img/logo/logo.png");
+    transition: 300ms ease-in-out;
+
+    &:hover {
+      background-image: url("./../../../assets/img/logo/hover_logo.png");
+    }
   }
 
   a {
@@ -48,33 +54,118 @@ header {
   }
 }
 
-.about_me {
+@mixin dFlex {
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+@mixin wrappers {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+@mixin before($imgPath, $clipPath) {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url($imgPath);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  clip-path: $clipPath;
+  transition: clip-path 250ms ease-in-out;
+}
+
+.about_me {
+  @include dFlex();
 
   .circle_wrapper {
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 1;
-    width: 100%;
-    height: 100%;
-    pointer-events: none;
+    @include wrappers();
 
-    .circle {
-      width: 100%;
-      height: 100%;
-      object-fit: contain;
-
-      // Start fully clipped (invisible)
-      clip-path: inset(100% 0 0 0);
-      transition: clip-path 300ms ease-in-out;
+    &::before {
+      @include before(
+        "./../../../assets/img/hand-drawn_lines/about_me_line.svg",
+        inset(0 0 100% 0)
+      );
     }
   }
 
-  &:hover .circle {
-    clip-path: inset(0 0 0 0); // Reveal the whole image
+  &:hover .circle_wrapper::before {
+    clip-path: inset(0 0 0 0);
+  }
+}
+
+.skills {
+  @include dFlex();
+
+  .skills_line_wrapper {
+    @include wrappers();
+
+    &::before {
+      @include before(
+        "./../../../assets/img/hand-drawn_lines/skills_line.svg",
+        inset(0 100% 0 0)
+      );
+    }
+  }
+
+  &:hover .skills_line_wrapper::before {
+    clip-path: inset(0 0 0 0);
+  }
+}
+
+.projects {
+  @include dFlex();
+
+  .projects_line_wrapper {
+    @include wrappers();
+    z-index: 2;
+
+    &::before {
+      @include before(
+        "./../../../assets/img/hand-drawn_lines/projects_line.svg",
+        inset(0 100% 0 0)
+      );
+    }
+  }
+
+  a {
+    position: relative;
+    z-index: 1;
+  }
+
+  &:hover .projects_line_wrapper::before {
+    clip-path: inset(0 0 0 0);
+  }
+}
+
+.contacts {
+  @include dFlex();
+
+  .contacts_line_wrapper {
+    @include wrappers();
+
+    &::before {
+      @include before(
+        "./../../../assets/img/hand-drawn_lines/contacts_line.svg",
+        inset(0 100% 0 0)
+      );
+    }
+  }
+
+  &:hover .contacts_line_wrapper::before {
+    clip-path: inset(0 0 0 0);
   }
 }

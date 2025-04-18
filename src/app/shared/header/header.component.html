@@ -1,25 +1,42 @@
 <header>
   <div class="menu_wrapper">
-    <a href="#">
-      <img src="" alt="logo" class="logo" />
-    </a>
+    <div class="logo"></div>
     <div class="about_me">
+      <div class="circle_wrapper"></div>
       <a href="#">About Me</a>
-      <div class="circle_wrapper">
-        <img
-          src="./../../../assets/img/hand-drawn_lines/about_me_line.svg"
-          alt="circle"
-          class="circle"
-        />
-      </div>
     </div>
-    <a href="#">Skills</a>
-    <a href="#">Projects</a>
-    <a href="#">Contacts</a>
+    <div class="skills">
+      <div class="skills_line_wrapper"></div>
+      <a href="#">Skills</a>
+    </div>
+    <div class="projects">
+      <div class="projects_line_wrapper"></div>
+      <a href="#">Projects</a>
+    </div>
+    <div class="contacts">
+      <a href="#">Contacts</a>
+      <div class="contacts_line_wrapper"></div>
+    </div>
     <div class="language">
-      <button>EN</button>
-      <div class="toggle"></div>
-      <button>DE</button>
+      <button
+        [class.active]="activeLang === 'en'"
+        [disabled]="activeLang === 'en'"
+        (click)="switchLanguage('en')"
+      >
+        EN
+      </button>
+
+      <div class="toggle">
+        <div class="ball" [class.move]="activeLang === 'de'"></div>
+      </div>
+
+      <button
+        [class.active]="activeLang === 'de'"
+        [disabled]="activeLang === 'de'"
+        (click)="switchLanguage('de')"
+      >
+        DE
+      </button>
     </div>
   </div>
 </header>
