@@ -1,14 +1,25 @@
 @use "./../../../styles/variables" as *;
 
 header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
   background-color: transparent;
-  max-width: 1440px;
   height: 80px;
   padding: 19px 72px;
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
+
+  .header-inner {
+    max-width: 1280px;
+    margin: 0 auto;
+    width: 100%;
+    padding: 0 1rem;
+  }
 
   .menu_wrapper {
     width: 100%;
@@ -32,25 +43,11 @@ header {
   a {
     position: relative;
     z-index: 2;
-    color: $color-black;
+    color: $color-white;
     font-weight: 500;
     font-size: $font-size-base;
     text-decoration: none;
     padding: 10px;
-  }
-
-  .language {
-    display: flex;
-    flex-direction: row;
-    gap: 4px;
-
-    button {
-      width: 32px;
-      height: 32px;
-      border: none;
-      color: $color-white;
-      background-color: transparent;
-    }
   }
 }
 
@@ -167,5 +164,84 @@ header {
 
   &:hover .contacts_line_wrapper::before {
     clip-path: inset(0 0 0 0);
+  }
+}
+
+.language {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  button {
+    position: relative;
+    padding: 8px 16px;
+    border: none;
+    background-color: transparent;
+    color: $color-white;
+    border-radius: 5px;
+    font-size: $font-size-sm;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+    &.active {
+      color: $accent-color;
+      pointer-events: none;
+      background-color: transparent;
+    }
+
+    &:not(.active)::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background-image: url("./../../../assets/img/hand-drawn_lines/toggle.svg");
+      background-size: contain;
+      background-repeat: no-repeat;
+      background-position: center;
+      opacity: 0;
+      clip-path: polygon(0% 0%, 0% 0%, 0% 0%, 0% 0%);
+      transition: clip-path 0.4s ease, opacity 0.4s ease;
+      z-index: 0;
+    }
+
+    &:not(.active):hover::after {
+      opacity: 1;
+      clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 0% 100%);
+    }
+
+    & > * {
+      position: relative;
+      z-index: 1;
+    }
+  }
+
+  .toggle {
+    position: relative;
+    border: solid 1px $color-white;
+    width: 32px;
+    height: 8px;
+    background-color: $accent-color;
+    border-radius: 999px;
+    transition: background-color 0.3s ease;
+    display: flex;
+    align-items: center;
+    padding: 0 2px;
+
+    .ball {
+      position: absolute;
+      border: solid 1px $color-white;
+      width: 16px;
+      height: 16px;
+      background-color: $secondary-color;
+      border-radius: 50%;
+      top: 50%;
+      transform: translateY(-50%);
+      left: -2px;
+      transition: left 0.3s ease;
+
+      &.move {
+        left: 18px;
+      }
+    }
   }
 }
