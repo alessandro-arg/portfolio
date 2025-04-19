@@ -1,16 +1,5 @@
 @use "./../../styles/variables" as *;
 
-@keyframes hand_slide {
-  0% {
-    left: -40px;
-    opacity: 0;
-  }
-  100% {
-    left: 100%;
-    opacity: 1;
-  }
-}
-
 .hero_wrapper {
   height: 100vh;
   width: 100%;
@@ -58,59 +47,33 @@
     font-weight: 500;
     cursor: default;
     position: relative;
+    display: inline-block;
     overflow: hidden;
-    z-index: 1;
-    transition: all 250ms ease;
+    gap: 0;
+    transition: background-color 0.3s ease, width 0.3s ease, padding 0.3s ease;
 
     .btn_text {
-      position: relative;
-      z-index: 2;
-      transition: opacity 250ms ease;
-    }
-
-    .hand_img {
-      position: absolute;
-      top: 50%;
-      left: -40px;
-      transform: translateY(-50%);
-      height: 24px;
-      opacity: 0;
-      z-index: 2;
-      pointer-events: none;
+      display: inline-block;
       transition: opacity 0.3s ease;
+      white-space: nowrap;
     }
 
-    &::before {
-      content: "";
+    .btn_text--hover {
       position: absolute;
-      inset: 0;
-      background-color: $secondary-color;
-      z-index: 0;
       opacity: 0;
-      transition: opacity 250ms ease;
     }
 
     &:hover {
       background-color: $secondary-color;
-      color: $color-white;
-      padding: 12px 40px;
-    }
 
-    &:hover .btn_text {
-      opacity: 0;
-    }
+      .btn_text--default {
+        opacity: 0;
+      }
 
-    &:hover .hand_img {
-      animation: hand_slide 1.2s ease-in-out forwards;
-    }
-
-    &:hover .btn_text::before {
-      content: "I'M ALESSANDRO ARGENZIANO";
-      opacity: 1;
-    }
-
-    &:hover::before {
-      opacity: 1;
+      .btn_text--hover {
+        position: relative;
+        opacity: 1;
+      }
     }
   }
 
@@ -136,6 +99,7 @@
         margin: 0;
       }
     }
+
     img.photo {
       width: 203.57px;
       height: 244px;
