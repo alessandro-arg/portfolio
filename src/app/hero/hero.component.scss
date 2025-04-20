@@ -35,10 +35,16 @@
   .hello_wrapper {
     position: relative;
     display: inline-block;
+    overflow: hidden;
+    height: 100px;
+    padding-top: 40px;
+    padding-right: 10px;
   }
 
   .hello_btn {
-    padding: 12px 24px;
+    position: relative;
+    width: 145px;
+    height: 40px;
     border: solid 1px $color-white;
     border-radius: 100px;
     background-color: transparent;
@@ -46,32 +52,56 @@
     font-size: $font-size-base;
     font-weight: 500;
     cursor: default;
-    position: relative;
-    display: inline-block;
-    overflow: hidden;
-    gap: 0;
-    transition: background-color 0.3s ease, width 0.3s ease, padding 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    white-space: nowrap;
+    transition: background-color 0.3s ease, width 300ms ease;
 
-    .btn_text {
-      display: inline-block;
-      transition: opacity 0.3s ease;
-      white-space: nowrap;
+    .hand {
+      position: absolute;
+      top: -40px;
+      right: 0;
+      height: 40px;
+      opacity: 0;
+      transform: translateX(-50%) rotate(-180deg);
+      transition: transform 0.5s cubic-bezier(0.55, -0.35, 0.45, 1.3),
+        opacity 0.3s ease-in-out;
+      pointer-events: none;
     }
 
-    .btn_text--hover {
+    &:hover .hand {
+      opacity: 1;
+      transform: translateX(10px) rotate(0deg);
+    }
+
+    .btn_text {
       position: absolute;
-      opacity: 0;
+      left: 50%;
+      top: 50%;
+      transform: translate(-50%, -50%);
+      white-space: nowrap;
+      transition: opacity 0.3s ease;
+      pointer-events: none;
+
+      &.default {
+        opacity: 1;
+      }
+
+      &.hover {
+        opacity: 0;
+      }
     }
 
     &:hover {
       background-color: $secondary-color;
+      width: 300px;
 
-      .btn_text--default {
+      .btn_text.default {
         opacity: 0;
       }
 
-      .btn_text--hover {
-        position: relative;
+      .btn_text.hover {
         opacity: 1;
       }
     }
