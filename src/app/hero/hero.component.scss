@@ -30,6 +30,22 @@
     justify-content: center;
     align-items: flex-start;
     padding: 2rem;
+
+    .letter {
+      cursor: default;
+      display: inline-block;
+      transition: color 0.2s, transform 0.3s;
+      font-size: inherit;
+      white-space: nowrap;
+    }
+
+    .letter:hover {
+      color: $primary-color;
+    }
+
+    .letter:hover:active {
+      text-transform: lowercase;
+    }
   }
 
   .hello_wrapper {
@@ -121,12 +137,12 @@
       flex-direction: column;
       align-items: flex-start;
       justify-content: flex-end;
-      gap: 2rem;
 
       h1.title {
         font-size: 128px;
         font-weight: 700;
         margin: 0;
+        display: inline-block;
       }
     }
 
@@ -150,12 +166,20 @@
       font-weight: 700;
       line-height: 100%;
       margin: 0 0 1.5rem 0;
+      display: inline-block;
     }
 
     .get-in-touch {
-      padding: 0.75rem 2rem;
-      font-size: 1rem;
-      font-weight: 600;
+      align-items: center;
+      padding: 0 24px;
+      font-size: $font-size-base;
+      height: 40px;
+      border: solid 1px $color-white;
+      border-radius: 100px;
+      background-color: transparent;
+      color: $color-white;
+      font-size: $font-size-base;
+      font-weight: 500;
       cursor: pointer;
     }
   }

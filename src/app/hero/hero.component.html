@@ -14,7 +14,16 @@
               <span class="btn_text hover">I'M ALESSANDRO ARGENZIANO</span>
             </button>
           </div>
-          <h1 class="title">Frontend</h1>
+          <h1 class="title">
+            @for (letter of titleLetters; track letter; let index = $index) {
+            <span
+              class="letter"
+              (mouseenter)="onHover(letter)"
+              (mouseleave)="onLeave(letter)"
+              >{{ letter }}</span
+            >
+            }
+          </h1>
         </div>
         <img
           class="photo"
@@ -23,7 +32,16 @@
         />
       </div>
       <div class="subtitle_group">
-        <h1 class="subtitle">DEVELOPER</h1>
+        <h1 class="subtitle">
+          @for (letter of subtitleLetters; track letter; let index = $index) {
+          <span
+            class="letter"
+            (mouseenter)="onHover(letter)"
+            (mouseleave)="onLeave(letter)"
+            >{{ letter }}</span
+          >
+          }
+        </h1>
         <button class="get-in-touch">Get in Touch</button>
       </div>
     </div>
