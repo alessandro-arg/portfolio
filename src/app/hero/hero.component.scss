@@ -23,7 +23,7 @@
   .main {
     position: relative;
     width: 100%;
-    max-width: 1000px;
+    max-width: 1280px;
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -32,19 +32,17 @@
     padding: 2rem;
 
     .letter {
+      opacity: 1;
       cursor: default;
       display: inline-block;
-      transition: color 0.2s, transform 0.3s;
+      transition: color 0.2s ease-in-out, transform 0.3s ease-in-out;
       font-size: inherit;
       white-space: nowrap;
     }
 
     .letter:hover {
       color: $primary-color;
-    }
-
-    .letter:hover:active {
-      text-transform: lowercase;
+      text-transform: none;
     }
   }
 
@@ -125,32 +123,55 @@
 
   .title_photo {
     width: 100%;
-    justify-content: space-evenly;
+    justify-content: center;
+    gap: 80px;
     display: flex;
     flex-direction: row;
     align-items: flex-start;
     position: relative;
+  }
 
-    .title_line {
-      height: 100%;
-      display: flex;
-      flex-direction: column;
-      align-items: flex-start;
-      justify-content: flex-end;
+  .title_line {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+  }
 
-      h1.title {
-        font-size: 128px;
-        font-weight: 700;
-        margin: 0;
-        display: inline-block;
-      }
+  .title {
+    @media (min-width: 1050px) {
+      width: 545px;
     }
+    font-size: 128px;
+    font-weight: 700;
+    margin: 0;
+    display: inline-block;
+  }
 
-    img.photo {
-      width: 203.57px;
-      height: 244px;
-      transform: rotate(8deg);
-    }
+  .photo {
+    width: 203.57px;
+    height: 244px;
+    transform: rotate(8deg);
+    position: relative;
+  }
+
+  .name_overlay {
+    position: absolute;
+    bottom: 20px;
+    right: 225px;
+    transform: rotate(8deg);
+    text-align: center;
+    width: auto;
+    white-space: nowrap;
+  }
+
+  .name_text {
+    font-family: $font-photo;
+    font-size: $font-size-lg;
+    line-height: 120%;
+    font-weight: 700;
+    color: $color-black;
   }
 
   .subtitle_group {
@@ -170,6 +191,7 @@
     }
 
     .get-in-touch {
+      box-shadow: 2px 4px 0px 0px #f8f9fa;
       align-items: center;
       padding: 0 24px;
       font-size: $font-size-base;

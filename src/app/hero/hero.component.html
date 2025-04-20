@@ -15,12 +15,13 @@
             </button>
           </div>
           <h1 class="title">
-            @for (letter of titleLetters; track letter; let index = $index) {
+            @for (letterObj of titleLetters; track letterObj; let index =
+            $index) {
             <span
               class="letter"
-              (mouseenter)="onHover(letter)"
-              (mouseleave)="onLeave(letter)"
-              >{{ letter }}</span
+              (mouseenter)="onHover(letterObj, $event)"
+              (mouseleave)="onLeave(letterObj, $event)"
+              >{{ letterObj.letter }}</span
             >
             }
           </h1>
@@ -30,15 +31,19 @@
           src="./../../assets/img/hero/photo_frame.png"
           alt=""
         />
+        <div class="name_overlay">
+          <span class="name_text">Alessandro :&#41;</span>
+        </div>
       </div>
       <div class="subtitle_group">
         <h1 class="subtitle">
-          @for (letter of subtitleLetters; track letter; let index = $index) {
+          @for (letterObj of subtitleLetters; track letterObj; let index =
+          $index) {
           <span
             class="letter"
-            (mouseenter)="onHover(letter)"
-            (mouseleave)="onLeave(letter)"
-            >{{ letter }}</span
+            (mouseenter)="onHover(letterObj, $event)"
+            (mouseleave)="onLeave(letterObj, $event)"
+            >{{ letterObj.letter }}</span
           >
           }
         </h1>
