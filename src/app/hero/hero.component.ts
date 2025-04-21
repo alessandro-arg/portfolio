@@ -10,38 +10,33 @@ import { Component } from '@angular/core';
 export class HeroComponent {
   titleText = 'Frontend';
   subtitleText = 'DEVELOPER';
+  isPhotoHovered = false;
 
-  titleLetters: { letter: string; originalCase: string }[] = this.titleText
-    .split('')
-    .map((letter) => ({
-      letter,
-      originalCase: letter,
-    }));
+  titleLetters = this.titleText.split('').map((letter) => ({
+    original: letter,
+    display: letter,
+  }));
 
-  subtitleLetters: { letter: string; originalCase: string }[] =
-    this.subtitleText.split('').map((letter) => ({
-      letter,
-      originalCase: letter,
-    }));
+  subtitleLetters = this.subtitleText.split('').map((letter) => ({
+    original: letter,
+    display: letter,
+  }));
 
-  onHover(
-    letterObj: { letter: string; originalCase: string },
-    event: MouseEvent
-  ) {
-    const letter = event.target as HTMLElement;
-    if (letter) {
-      letter.innerText =
-        letterObj.originalCase === letterObj.originalCase.toUpperCase()
-          ? letterObj.letter.toLowerCase()
-          : letterObj.letter.toUpperCase();
-    }
+  flipCase(char: string): string {
+    return char === char.toUpperCase()
+      ? char.toLowerCase()
+      : char.toUpperCase();
   }
 
-  onLeave(
-    letterObj: { letter: string; originalCase: string },
-    event: MouseEvent
-  ) {
-    const letter = event.target as HTMLElement;
-    letter.innerText = letterObj.originalCase;
+  onHover(letterObj: { original: string; display: string }) {
+    letterObj.display = this.flipCase(letterObj.original);
+  }
+
+  onLeave(letterObj: { original: string; display: string }) {
+    letterObj.display = letterObj.original;
+  }
+
+  onPhotoHover(state: boolean): void {
+    this.isPhotoHovered = state;
   }
 }

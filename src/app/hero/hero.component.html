@@ -19,20 +19,26 @@
             $index) {
             <span
               class="letter"
-              (mouseenter)="onHover(letterObj, $event)"
-              (mouseleave)="onLeave(letterObj, $event)"
-              >{{ letterObj.letter }}</span
+              (mouseenter)="onHover(letterObj)"
+              (mouseleave)="onLeave(letterObj)"
+              >{{ letterObj.display }}</span
             >
             }
           </h1>
         </div>
-        <img
-          class="photo"
-          src="./../../assets/img/hero/photo_frame.png"
-          alt=""
-        />
-        <div class="name_overlay">
-          <span class="name_text">Alessandro :&#41;</span>
+        <div style="position: relative">
+          <img
+            class="photo"
+            src="./../../assets/img/hero/photo_frame.png"
+            alt="Picture"
+            (mouseenter)="onPhotoHover(true)"
+            (mouseleave)="onPhotoHover(false)"
+          />
+          <div class="name_overlay">
+            <span class="name_text">{{
+              isPhotoHovered ? "Alessandro :D" : "Alessandro :)"
+            }}</span>
+          </div>
         </div>
       </div>
       <div class="subtitle_group">
@@ -41,9 +47,9 @@
           $index) {
           <span
             class="letter"
-            (mouseenter)="onHover(letterObj, $event)"
-            (mouseleave)="onLeave(letterObj, $event)"
-            >{{ letterObj.letter }}</span
+            (mouseenter)="onHover(letterObj)"
+            (mouseleave)="onLeave(letterObj)"
+            >{{ letterObj.display }}</span
           >
           }
         </h1>
@@ -55,19 +61,19 @@
         <span class="icon_wrapper"
           ><img
             src="./../../assets/img/social_icons/linkedin.png"
-            alt="linkedin" /></span
+            alt="Linkedin" /></span
       ></a>
       <a href="">
         <span class="icon_wrapper"
           ><img
             src="./../../assets/img/social_icons/github.png"
-            alt="github" /></span
+            alt="Github" /></span
       ></a>
       <a href="">
         <span class="icon_wrapper"
           ><img
             src="./../../assets/img/social_icons/mail.png"
-            alt="email" /></span
+            alt="Email" /></span
       ></a>
     </div>
   </div>

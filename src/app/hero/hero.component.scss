@@ -32,7 +32,8 @@
     padding: 2rem;
 
     .letter {
-      opacity: 1;
+      line-height: 1;
+      margin: 0;
       cursor: default;
       display: inline-block;
       transition: color 0.2s ease-in-out, transform 0.3s ease-in-out;
@@ -154,16 +155,23 @@
     height: 244px;
     transform: rotate(8deg);
     position: relative;
+    filter: grayscale(100%);
+    transition: filter 0.3s ease;
+
+    &:hover {
+      filter: grayscale(0%);
+    }
   }
 
   .name_overlay {
     position: absolute;
-    bottom: 20px;
-    right: 225px;
+    bottom: 15px;
+    right: 40px;
     transform: rotate(8deg);
     text-align: center;
     width: auto;
     white-space: nowrap;
+    cursor: default;
   }
 
   .name_text {
@@ -172,15 +180,15 @@
     line-height: 120%;
     font-weight: 700;
     color: $color-black;
+    transition: all 0.3s ease;
   }
 
   .subtitle_group {
-    width: 100%;
+    width: 85%;
     margin-top: 2rem;
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    padding-right: 2rem;
 
     .subtitle {
       font-size: 128px;
@@ -202,14 +210,21 @@
       color: $color-white;
       font-size: $font-size-base;
       font-weight: 500;
+      transition: all 250ms ease, transform 150ms ease;
       cursor: pointer;
+
+      &:hover {
+        transform: translate(3px, 3px);
+        box-shadow: none;
+        background-color: $accent-color;
+      }
     }
   }
 
   .social {
     position: absolute;
     top: 654px;
-    left: 72px;
+    left: 1rem;
     bottom: 20px;
     display: flex;
     flex-direction: column;
