@@ -1,3 +1,58 @@
 <div class="skills_section_wrapper">
-  <div class="container"></div>
+  <div class="container">
+    <div class="title_text">
+      <div class="my_stack">
+        <span>MY STACK</span>
+        <div class="skill_set">
+          <h3>Skill set</h3>
+          <div class="circle_wrapper"></div>
+        </div>
+      </div>
+      <div class="paper_text">
+        <img
+          src="./../../assets/img/skill_set/skills_description_paper.png"
+          alt=""
+        />
+        <p>
+          A short introduction of your skills. Highlight your experience of
+          using different front-end technologies and emphasise your openness to
+          learning and adapting to new technologies.
+        </p>
+      </div>
+    </div>
+    <div class="content">
+      <div class="icons_container">
+        @for (icon of skillsIcons; track icon; let index = $index) {
+        <img src="{{ icon }}" alt="Icon {{ index }}" />
+        }
+      </div>
+      <div class="sticker_container" (click)="onClick()">
+        @if (stage === 'default') {
+        <img src="./../../assets/img/skill_set/sticker.png" class="sticker" />
+        } @else if (stage === 'transition') {
+        <img
+          src="./../../assets/img/skill_set/sticker_hover.png"
+          class="sticker fade-in-out"
+        />
+        } @else if (stage === 'revealed') {
+        <div class="sticker_reveal fade-in">
+          <img
+            class="sticker_image"
+            src="./../../assets/img/skill_set/sticker_reveal.png"
+          />
+          <div class="sticker_content">
+            <p>
+              Also, I'm interested <br />
+              in diving into:
+            </p>
+            <div class="sticker_icons">
+              <img src="./../../assets/img/skill_set/icons/react.png" alt="" />
+              <img src="./../../assets/img/skill_set/icons/vuejs.png" alt="" />
+            </div>
+          </div>
+        </div>
+        }
+      </div>
+    </div>
+  </div>
 </div>
