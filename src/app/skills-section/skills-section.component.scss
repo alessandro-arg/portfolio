@@ -19,11 +19,11 @@
     justify-content: start;
     align-items: center;
     padding: 160px 30px 80px 30px;
-    gap: 50px;
+    gap: 100px;
   }
 
   .title_text {
-    width: 100%;
+    width: 90%;
     display: flex;
     justify-content: start;
     align-items: center;
@@ -108,10 +108,11 @@
   }
 
   .content {
+    width: 90%;
     display: flex;
-    justify-content: center;
+    justify-content: end;
     align-items: flex-start;
-    gap: 60px;
+    gap: 100px;
     flex-wrap: wrap;
   }
 
@@ -124,18 +125,43 @@
     justify-items: center;
   }
 
+  .icon_item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    transition: transform 0.3s ease, filter 0.3s ease;
+    filter: grayscale(100%);
+    cursor: default;
+  }
+
+  // .icon_item img {
+  //   transition: inherit;
+  // }
+
+  .icon_item span {
+    margin-top: 8px;
+    font-size: $font-size-sm;
+    color: $color-white;
+  }
+
+  .icon_item.hovered {
+    filter: grayscale(0%);
+    transform: scale(1.05);
+  }
+
   .sticker_container {
     position: relative;
     width: 200px;
     height: 200px;
     cursor: pointer;
-    transform: rotate(8deg);
+    transform: rotate(6deg);
   }
 
   .sticker,
   .sticker_image {
     position: absolute;
-    transform: rotate(8deg);
+    transform: rotate(6deg);
     top: 0;
     left: 0;
     width: 100%;
@@ -189,7 +215,7 @@
     justify-content: center;
     position: absolute;
     top: 40px;
-    transform: rotate(8deg);
+    transform: rotate(6deg);
     text-align: center;
     color: $color-white;
 

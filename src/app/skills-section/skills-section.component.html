@@ -23,7 +23,16 @@
     <div class="content">
       <div class="icons_container">
         @for (icon of skillsIcons; track icon; let index = $index) {
-        <img src="{{ icon }}" alt="Icon {{ index }}" />
+
+        <div
+          class="icon_item"
+          [class.hovered]="hoveredIndex === index"
+          (mouseenter)="hoveredIndex = index"
+          (mouseleave)="hoveredIndex = null"
+        >
+          <img src="{{ icon.src }}" alt="Icon {{ index }}" />
+          <span>{{ icon.name }}</span>
+        </div>
         }
       </div>
       <div class="sticker_container" (click)="onClick()">

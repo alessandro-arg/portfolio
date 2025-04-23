@@ -9,18 +9,28 @@ import { Component } from '@angular/core';
 })
 export class SkillsSectionComponent {
   stage: 'default' | 'transition' | 'revealed' = 'default';
+  hoveredIndex: number | null = null;
 
   skillsIcons = [
-    './../../assets/img/skill_set/icons/html.png',
-    './../../assets/img/skill_set/icons/css.png',
-    './../../assets/img/skill_set/icons/js.png',
-    './../../assets/img/skill_set/icons/ts.png',
-    './../../assets/img/skill_set/icons/angular.png',
-    './../../assets/img/skill_set/icons/firebase.png',
-    './../../assets/img/skill_set/icons/git.png',
-    './../../assets/img/skill_set/icons/rest_api.png',
-    './../../assets/img/skill_set/icons/scrum.png',
-    './../../assets/img/skill_set/icons/material_design.png',
+    { src: './../../assets/img/skill_set/icons/html.png', name: 'HTML' },
+    { src: './../../assets/img/skill_set/icons/css.png', name: 'CSS' },
+    { src: './../../assets/img/skill_set/icons/js.png', name: 'JavaScript' },
+    { src: './../../assets/img/skill_set/icons/ts.png', name: 'TypeScript' },
+    { src: './../../assets/img/skill_set/icons/angular.png', name: 'Angular' },
+    {
+      src: './../../assets/img/skill_set/icons/firebase.png',
+      name: 'Firebase',
+    },
+    { src: './../../assets/img/skill_set/icons/git.png', name: 'Git' },
+    {
+      src: './../../assets/img/skill_set/icons/rest_api.png',
+      name: 'REST API',
+    },
+    { src: './../../assets/img/skill_set/icons/scrum.png', name: 'Scrum' },
+    {
+      src: './../../assets/img/skill_set/icons/material_design.png',
+      name: 'Material Design',
+    },
   ];
 
   onClick() {
