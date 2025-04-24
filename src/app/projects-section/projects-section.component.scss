@@ -119,48 +119,118 @@
     }
   }
 
+  .project_sticker {
+    position: absolute;
+    pointer-events: none;
+    z-index: 2;
+    left: 5px;
+    top: 30%;
+  }
+
   .project {
     position: relative;
     display: flex;
     flex-direction: column;
     align-items: start;
-    gap: 10px;
+    gap: 20px;
     width: 560px;
     cursor: pointer;
 
-    .floating_laptop {
-      animation: floatUpDown 4s ease-in-out infinite;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-      z-index: 1;
+    img {
+      border-radius: 30px;
     }
 
-    .project-btn {
-      position: absolute;
-      bottom: 10px;
-      right: 10px;
-      opacity: 0;
-      transform: translateY(10px);
-      transition: opacity 0.3s ease, transform 0.3s ease;
-      background-color: #000;
-      color: white;
-      padding: 8px 12px;
-      border: none;
-      border-radius: 6px;
-      cursor: pointer;
-      z-index: 2;
-    }
-  }
+    .laptop_container {
+      position: relative;
+      display: inline-block;
 
-  .project_sticker {
-    position: absolute;
-    z-index: 2;
-    left: 0px;
-    top: 30%;
+      .floating_wrapper {
+        animation: floatUpDown 4s ease-in-out infinite;
+        transition: transform 0.4s ease;
+        z-index: 1;
+        border-radius: 30px;
+        overflow: hidden;
+      }
+
+      .floating_laptop {
+        display: block;
+        width: 100%;
+        transition: transform 0.4s ease;
+        z-index: 1;
+        border-radius: 30px;
+      }
+
+      .bottom_shadow {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 60%;
+        background: linear-gradient(to top, rgba(0, 0, 0, 0.4), transparent);
+        border-bottom-right-radius: 30px;
+        border-bottom-left-radius: 30px;
+        opacity: 0;
+        transition: opacity 0.3s ease;
+        pointer-events: none;
+        z-index: 1;
+      }
+
+      .project_btn {
+        position: absolute;
+        bottom: 30px;
+        right: 30px;
+        height: 40px;
+        opacity: 0;
+        font-size: $font-size-base;
+        font-weight: 500;
+        align-items: center;
+        transform: translateY(10px);
+        transition: all 250ms ease, opacity 0.3s ease, transform 150ms ease;
+        color: $color-white;
+        padding: 0 24px;
+        box-shadow: 2px 4px 0px 0px $color-white;
+        border: solid 1px $color-white;
+        border-radius: 100px;
+        background-color: transparent;
+        cursor: pointer;
+        z-index: 3;
+
+        &:hover {
+          transform: translate(3px, 3px);
+          box-shadow: none;
+          background-color: $accent-color;
+        }
+      }
+
+      &:hover {
+        .floating_wrapper {
+          animation-play-state: paused;
+        }
+
+        .floating_laptop {
+          transform: scale(1.1);
+        }
+
+        .bottom_shadow {
+          opacity: 1;
+        }
+
+        .project_btn {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+    }
   }
 
   .description {
     display: flex;
     flex-direction: column;
     gap: 16px;
+  }
+
+  .other_projects {
+    display: flex;
+    justify-content: space-between;
   }
 }
