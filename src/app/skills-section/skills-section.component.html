@@ -23,7 +23,6 @@
     <div class="content">
       <div class="icons_container">
         @for (icon of skillsIcons; track icon; let index = $index) {
-
         <div
           class="icon_item"
           [class.hovered]="hoveredIndex === index"
@@ -35,32 +34,36 @@
         </div>
         }
       </div>
-      <div class="sticker_container" (click)="onClick()">
-        @if (stage === 'default') {
-        <img src="./../../assets/img/skill_set/sticker.png" class="sticker" />
-        } @else if (stage === 'transition') {
+      <div class="sticker_container" (click)="handleClick()">
         <img
-          src="./../../assets/img/skill_set/sticker_hover.png"
-          class="sticker fade-in-out"
+          class="sticker_image"
+          src="./../../assets/img/skill_set/sticker_reveal.png"
+          [class.active]="currentState === 'reveal'"
+          (click)="resetSticker($event)"
         />
-        } @else if (stage === 'revealed') {
-        <div class="sticker_reveal fade-in">
-          <img
-            class="sticker_image"
-            src="./../../assets/img/skill_set/sticker_reveal.png"
-          />
-          <div class="sticker_content">
-            <p>
-              Also, I'm interested <br />
-              in diving into:
-            </p>
-            <div class="sticker_icons">
-              <img src="./../../assets/img/skill_set/icons/react.png" alt="" />
-              <img src="./../../assets/img/skill_set/icons/vuejs.png" alt="" />
-            </div>
+        <div
+          class="sticker_content"
+          [class.visible]="currentState === 'reveal'"
+        >
+          <p>
+            Also, I'm interested <br />
+            in diving into:
+          </p>
+          <div class="sticker_icons">
+            <img src="./../../assets/img/skill_set/icons/react.png" alt="" />
+            <img src="./../../assets/img/skill_set/icons/vuejs.png" alt="" />
           </div>
         </div>
-        }
+        <img
+          src="./../../assets/img/skill_set/sticker_hover.png"
+          class="sticker second_layer"
+          [class.active]="currentState === 'hover'"
+        />
+        <img
+          src="./../../assets/img/skill_set/sticker.png"
+          class="sticker first_layer"
+          [class.inactive]="currentState !== 'initial'"
+        />
       </div>
     </div>
   </div>

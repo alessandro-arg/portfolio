@@ -8,7 +8,8 @@ import { Component } from '@angular/core';
   styleUrl: './skills-section.component.scss',
 })
 export class SkillsSectionComponent {
-  stage: 'default' | 'transition' | 'revealed' = 'default';
+  currentState: 'initial' | 'hover' | 'reveal' = 'initial';
+  animating = false;
   hoveredIndex: number | null = null;
 
   skillsIcons = [
@@ -33,11 +34,20 @@ export class SkillsSectionComponent {
     },
   ];
 
-  onClick() {
-    if (this.stage !== 'default') return;
-    this.stage = 'transition';
+  handleClick() {
+    if (this.animating || this.currentState !== 'initial') return;
+    this.animating = true;
+    this.currentState = 'hover';
     setTimeout(() => {
-      this.stage = 'revealed';
-    }, 300);
+      this.currentState = 'reveal';
+      this.animating = false;
+    }, 100);
+  }
+
+  resetSticker(event: Event) {
+    event.stopPropagation();
+    if (this.animating || this.currentState !== 'reveal') return;
+
+    this.currentState = 'initial';
   }
 }
