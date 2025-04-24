@@ -6,6 +6,7 @@ import { HeroComponent } from './hero/hero.component';
 import { AboutMeComponent } from './about-me/about-me.component';
 import { SkillsSectionComponent } from './skills-section/skills-section.component';
 import { ProjectsSectionComponent } from './projects-section/projects-section.component';
+import { TestimonialsSectionComponent } from './testimonials-section/testimonials-section.component';
 
 @Component({
   selector: 'app-root',
@@ -18,6 +19,7 @@ import { ProjectsSectionComponent } from './projects-section/projects-section.co
     AboutMeComponent,
     SkillsSectionComponent,
     ProjectsSectionComponent,
+    TestimonialsSectionComponent,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
