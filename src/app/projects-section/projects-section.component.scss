@@ -1,0 +1,166 @@
+@use "./../../styles/variables" as *;
+
+* {
+  color: $color-black;
+}
+
+.projects_wrapper {
+  height: 100%;
+  width: 100%;
+  background-color: transparent;
+  position: relative;
+
+  .container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 160px 30px 80px 30px;
+    height: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 88px;
+  }
+
+  .title_text_project {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  p {
+    font-weight: 400;
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+
+  span {
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: 500;
+  }
+
+  .title_text {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 560px;
+
+    h2 {
+      font-size: 64px;
+      font-weight: 700;
+      position: relative;
+    }
+
+    h3 {
+      font-size: 24px;
+      font-weight: 700;
+    }
+
+    .projects_title {
+      margin-bottom: 50px;
+    }
+
+    .line_wrapper {
+      position: relative;
+      height: 20px;
+      width: 100%;
+      overflow: hidden;
+      top: 0;
+      pointer-events: none;
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url("./../../assets/img/projects_section/projects_line.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: left;
+        clip-path: inset(0 100% 0 0);
+        animation: revealLine 4s ease-in-out infinite;
+      }
+    }
+  }
+
+  @keyframes revealLine {
+    0% {
+      clip-path: inset(0 100% 0 0);
+    }
+    10% {
+      clip-path: inset(0 0% 0 0);
+    }
+    30% {
+      clip-path: inset(0 0% 0 0);
+    }
+    80% {
+      clip-path: inset(0 0% 0 0);
+    }
+    90% {
+      clip-path: inset(0 100% 0 0);
+    }
+    100% {
+      clip-path: inset(0 100% 0 0);
+    }
+  }
+
+  @keyframes floatUpDown {
+    0% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
+    100% {
+      transform: translateY(0);
+    }
+  }
+
+  .project {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 10px;
+    width: 560px;
+    cursor: pointer;
+
+    .floating_laptop {
+      animation: floatUpDown 4s ease-in-out infinite;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      z-index: 1;
+    }
+
+    .project-btn {
+      position: absolute;
+      bottom: 10px;
+      right: 10px;
+      opacity: 0;
+      transform: translateY(10px);
+      transition: opacity 0.3s ease, transform 0.3s ease;
+      background-color: #000;
+      color: white;
+      padding: 8px 12px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      z-index: 2;
+    }
+  }
+
+  .project_sticker {
+    position: absolute;
+    z-index: 2;
+    left: 0px;
+    top: 30%;
+  }
+
+  .description {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+}
