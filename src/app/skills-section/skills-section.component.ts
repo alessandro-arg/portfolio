@@ -25,7 +25,7 @@ export class SkillsSectionComponent {
     { src: './../../assets/img/skill_set/icons/git.png', name: 'Git' },
     {
       src: './../../assets/img/skill_set/icons/rest_api.png',
-      name: 'REST API',
+      name: 'Rest-Api',
     },
     { src: './../../assets/img/skill_set/icons/scrum.png', name: 'Scrum' },
     {

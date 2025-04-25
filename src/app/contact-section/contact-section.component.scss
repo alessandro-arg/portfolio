@@ -1,0 +1,70 @@
+@use "./../../styles/variables" as *;
+
+* {
+  color: $color-black;
+}
+
+.contact_wrapper {
+  height: 100%;
+  width: 100%;
+  background-color: transparent;
+  position: relative;
+
+  .container {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 160px 30px 80px 30px;
+    height: 100%;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    cursor: default;
+  }
+
+  .left_section {
+    width: 560px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    position: relative;
+
+    p {
+      margin-bottom: 20px;
+      font-weight: 400;
+      font-size: 20px;
+    }
+
+    .title {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 50px;
+
+      h2 {
+        font-size: 64px;
+        font-weight: 700;
+        position: relative;
+      }
+
+      span {
+        margin-bottom: 10px;
+        font-size: 20px;
+        font-weight: 500;
+      }
+    }
+  }
+
+  .right_section {
+    position: relative;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 480px;
+
+    .circle_logo {
+      width: 100%;
+      display: flex;
+      justify-content: flex-end;
+    }
+  }
+}

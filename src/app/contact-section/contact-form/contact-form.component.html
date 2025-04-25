@@ -1,0 +1,48 @@
+<div class="from_container">
+  <form (ngSubmit)="onSubmit(contactFrom)" #contactFrom="ngForm">
+    <label for="name">What's your name?</label>
+    <input
+      [(ngModel)]="contactData.name"
+      type="text"
+      id="name"
+      name="name"
+      placeholder="Your name goes here"
+      required
+    />
+    <label for="email">What's your email?</label>
+    <input
+      [(ngModel)]="contactData.email"
+      type="text"
+      id="email"
+      name="email"
+      placeholder="youremail@email.com"
+      pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}"
+      required
+    />
+    <label for="message">How can I help you?</label>
+    <textarea
+      #message="ngModel"
+      minlength="4"
+      [(ngModel)]="contactData.message"
+      id="message"
+      name="message"
+      placeholder="Hello Alessandro, I am interested in..."
+      required
+    ></textarea>
+    @if (!message.valid && message.touched) {
+    <span>Please enter a message</span>
+    }
+    <input
+      [(ngModel)]="contactData.checkbox"
+      type="checkbox"
+      id="checkbox"
+      name="checkbox"
+      required
+    />
+    <label for="checkbox"
+      >I've read the <a href="">privacy policy</a> and agree to the processing
+      of my data as outlined.</label
+    >
+    <input type="submit" value="submit" />
+  </form>
+</div>
