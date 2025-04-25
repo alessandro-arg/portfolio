@@ -20,6 +20,7 @@
     flex-direction: column;
     justify-content: space-between;
     gap: 55px;
+    cursor: default;
   }
 
   .title {
@@ -186,6 +187,11 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
+    }
+
+    a {
+      opacity: 0;
+      pointer-events: none;
     }
   }
 

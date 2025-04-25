@@ -20,6 +20,7 @@
     flex-direction: column;
     justify-content: space-between;
     gap: 88px;
+    cursor: default;
   }
 
   .title_text_project {
@@ -130,7 +131,6 @@
     align-items: start;
     gap: 20px;
     width: 560px;
-    cursor: pointer;
 
     img {
       border-radius: 30px;
@@ -139,6 +139,7 @@
     .laptop_container {
       position: relative;
       display: inline-block;
+      cursor: pointer;
 
       .floating_wrapper {
         animation: floatUpDown 4s ease-in-out infinite;
@@ -233,6 +234,7 @@
     display: inline-block;
     overflow: hidden;
     border-radius: 30px;
+    cursor: pointer;
 
     .project_image {
       display: block;
