@@ -11,48 +11,86 @@
       <div class="card one">
         <img src="./../../assets/img/testimonials/card_1.png" alt="" />
         <div class="card_content">
-          <p>testimonial 1</p>
+          <p>
+            Mit Alessandro im Team zu arbeiten war inspirierend. Er hat super
+            schnell und engagiert gearbeitet, sich nie nur auf „seine“ Aufgaben
+            beschränkt und immer wieder clevere Ideen eingebracht, die unser
+            Projekt spürbar vorangebracht haben.
+          </p>
           <div class="info">
             <div class="name">
-              <h3>Name</h3>
+              <h3>Judith Lenz</h3>
               <h4>Frontend Developer</h4>
             </div>
-            <img
-              src="./../../assets/img/testimonials/profile_default.png"
-              alt=""
-            />
+            <a href=""
+              ><img
+                [src]="
+                  isHovered1
+                    ? './../../assets/img/testimonials/profile_hover.png'
+                    : './../../assets/img/testimonials/profile_default.png'
+                "
+                (mouseenter)="isHovered1 = true"
+                (mouseleave)="isHovered1 = false"
+            /></a>
           </div>
         </div>
       </div>
       <div class="card two">
         <img src="./../../assets/img/testimonials/card_2.png" alt="" />
         <div class="card_content">
-          <p>testimonial 2</p>
+          <p>
+            Ich habe gemeinsam mit Alessandro die Weiterbildung im Bereich
+            Front-End Development absolviert. In dieser Zeit habe ich ihn als
+            äußerst zuverlässigen, hilfsbereiten und talentierten Kollegen
+            kennengelernt. Besonders hervorheben möchte ich seine Fähigkeit,
+            Herausforderungen schnell zu erkennen und lösungsorientiert
+            anzugehen. Alessandro hat unser gemeinsames Projekt mit großem
+            Engagement und Fachwissen entscheidend vorangetrieben.
+          </p>
           <div class="info">
             <div class="name">
-              <h3>Name</h3>
+              <h3>Marco Marrocu</h3>
               <h4>Frontend Developer</h4>
             </div>
-            <img
-              src="./../../assets/img/testimonials/profile_default.png"
-              alt=""
-            />
+            <a href=""
+              ><img
+                [src]="
+                  isHovered2
+                    ? './../../assets/img/testimonials/profile_hover.png'
+                    : './../../assets/img/testimonials/profile_default.png'
+                "
+                (mouseenter)="isHovered2 = true"
+                (mouseleave)="isHovered2 = false"
+            /></a>
           </div>
         </div>
       </div>
       <div class="card three">
         <img src="./../../assets/img/testimonials/card_1.png" alt="" />
         <div class="card_content">
-          <p>testimonial 3</p>
+          <p>
+            Dank die technischen Skills von Alessandro und seiner strukturierten
+            Herangehensweise konnten wir viele Hürden meistern. Er war stets ein
+            wichtiger Antreiber im Team. Sein Einsatz, seine Kompetenz und seine
+            positive Art machen ihn zu einem echten Gewinn für jedes Team. Ich
+            kann Alessandro uneingeschränkt empfehlen und bin überzeugt, dass er
+            in jeder Position wertvolle Impulse setzen wird.
+          </p>
           <div class="info">
             <div class="name">
-              <h3>Name</h3>
+              <h3>Wiz Khalifa</h3>
               <h4>Frontend Developer</h4>
             </div>
-            <img
-              src="./../../assets/img/testimonials/profile_default.png"
-              alt=""
-            />
+            <a href=""
+              ><img
+                [src]="
+                  isHovered3
+                    ? './../../assets/img/testimonials/profile_hover.png'
+                    : './../../assets/img/testimonials/profile_default.png'
+                "
+                (mouseenter)="isHovered3 = true"
+                (mouseleave)="isHovered3 = false"
+            /></a>
           </div>
         </div>
       </div>

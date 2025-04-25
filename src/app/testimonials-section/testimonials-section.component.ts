@@ -5,8 +5,10 @@ import { Component } from '@angular/core';
   standalone: true,
   imports: [],
   templateUrl: './testimonials-section.component.html',
-  styleUrl: './testimonials-section.component.scss'
+  styleUrl: './testimonials-section.component.scss',
 })
 export class TestimonialsSectionComponent {
-
+  isHovered1 = false;
+  isHovered2 = false;
+  isHovered3 = false;
 }
