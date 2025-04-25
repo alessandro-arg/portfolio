@@ -36,7 +36,7 @@
     .title {
       display: flex;
       flex-direction: column;
-      margin-bottom: 40px;
+      margin-bottom: 48px;
 
       h2 {
         font-size: 64px;
@@ -49,6 +49,58 @@
         font-size: 20px;
         font-weight: 500;
       }
+    }
+  }
+
+  .description_wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+    .line_wrapper {
+      position: relative;
+      height: 44px;
+      width: 100%;
+      overflow: hidden;
+      top: 48px;
+      right: 0;
+      pointer-events: none;
+
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url("./../../assets/img/contacts/contact_line.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: right;
+        clip-path: inset(0 100% 0 0);
+        animation: revealLine 4s ease-in-out infinite;
+      }
+    }
+  }
+
+  @keyframes revealLine {
+    0% {
+      clip-path: inset(0 100% 0 0);
+    }
+    10% {
+      clip-path: inset(0 0% 0 0);
+    }
+    30% {
+      clip-path: inset(0 0% 0 0);
+    }
+    80% {
+      clip-path: inset(0 0% 0 0);
+    }
+    90% {
+      clip-path: inset(0 100% 0 0);
+    }
+    100% {
+      clip-path: inset(0 100% 0 0);
     }
   }
 
