@@ -1,6 +1,6 @@
 <div class="form_container">
   <form (ngSubmit)="onSubmit(contactFrom)" #contactFrom="ngForm">
-    <label for="name">What's your name?</label>
+    <label class="name_label" for="name">What's your name?</label>
     <input
       [(ngModel)]="contactData.name"
       type="text"
@@ -9,10 +9,10 @@
       placeholder="Your name goes here"
       required
     />
-    <label for="email">What's your email?</label>
+    <label class="email_label" for="email">What's your email?</label>
     <input
       [(ngModel)]="contactData.email"
-      type="text"
+      type="email"
       id="email"
       name="email"
       placeholder="youremail@email.com"
