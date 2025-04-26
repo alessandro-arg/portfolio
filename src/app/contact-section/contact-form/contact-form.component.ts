@@ -20,25 +20,63 @@ export class ContactFormComponent {
     checkbox: false,
   };
 
-  showInput = true;
+  showInputMessage = true;
+  showInputEmail = true;
+  showInputName = true;
   mailTest = true;
 
+  @ViewChild('emailInput') emailInputRef!: ElementRef<HTMLInputElement>;
   @ViewChild('messageInput') messageInputRef!: ElementRef<HTMLInputElement>;
+  @ViewChild('nameInput') nameInputRef!: ElementRef<HTMLInputElement>;
 
   isMessageInvalid(message: any): boolean {
     return !message.valid && message.touched;
   }
 
-  onInputBlur(message: any) {
+  isEmailInvalid(email: any): boolean {
+    return !email.valid && email.touched;
+  }
+
+  isNameInvalid(name: any): boolean {
+    return !name.valid && name.touched;
+  }
+
+  onInputBlurMessage(message: any) {
     if (this.isMessageInvalid(message)) {
-      this.showInput = false;
+      this.showInputMessage = false;
     }
   }
 
-  onShowInput() {
-    this.showInput = true;
+  onInputBlurEmail(email: any) {
+    if (this.isEmailInvalid(email)) {
+      this.showInputEmail = false;
+    }
+  }
+
+  onInputBlurName(name: any) {
+    if (this.isNameInvalid(name)) {
+      this.showInputName = false;
+    }
+  }
+
+  onShowInputMessage() {
+    this.showInputMessage = true;
     setTimeout(() => {
       this.messageInputRef?.nativeElement.focus();
+    });
+  }
+
+  onShowInputEmail() {
+    this.showInputEmail = true;
+    setTimeout(() => {
+      this.emailInputRef?.nativeElement.focus();
+    });
+  }
+
+  onShowInputName() {
+    this.showInputName = true;
+    setTimeout(() => {
+      this.nameInputRef?.nativeElement.focus();
     });
   }
 

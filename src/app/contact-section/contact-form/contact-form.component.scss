@@ -15,12 +15,24 @@ form {
     border-bottom: solid 0.5px $primary-color;
     border-top: solid 0.5px transparent;
     padding-top: 15px;
+    display: flex;
+    flex-direction: column;
     transition: color 150ms ease, border 150ms ease;
+    cursor: pointer;
 
-    &:hover {
+    &.invalid {
+      border-bottom: solid 0.5px $color-white !important;
+      border-top: solid 0.5px $color-white !important;
+
+      &:hover {
+        border-bottom: solid 0.5px $color-white;
+        border-top: solid 0.5px $color-white;
+      }
+    }
+
+    &:not(.invalid):hover {
       border-bottom: solid 0.5px $secondary-color;
       border-top: solid 0.5px $secondary-color;
-      cursor: pointer;
 
       .name_label {
         color: $accent-color;
@@ -51,6 +63,14 @@ form {
     padding-left: 25px;
     font-size: $font-size-lg;
     font-weight: 500;
+
+    &.invalid {
+      color: $accent-color;
+    }
+
+    &:hover {
+      color: $accent-color;
+    }
   }
 
   .email_wrapper {
@@ -60,12 +80,24 @@ form {
     border-top: solid 0.5px transparent;
     padding-top: 15px;
     margin-top: -1px;
+    display: flex;
+    flex-direction: column;
     transition: color 150ms ease, border 150ms ease;
+    cursor: pointer;
 
-    &:hover {
+    &.invalid {
+      border-bottom: solid 0.5px $color-white !important;
+      border-top: solid 0.5px $color-white !important;
+
+      &:hover {
+        border-bottom: solid 0.5px $color-white;
+        border-top: solid 0.5px $color-white;
+      }
+    }
+
+    &:not(.invalid):hover {
       border-bottom: solid 0.5px $secondary-color;
       border-top: solid 0.5px $secondary-color;
-      cursor: pointer;
 
       .email_label {
         color: $accent-color;
@@ -96,6 +128,10 @@ form {
     font-size: $font-size-lg;
     font-weight: 500;
     cursor: pointer;
+
+    &.invalid {
+      color: $accent-color;
+    }
 
     &:hover {
       color: $accent-color;

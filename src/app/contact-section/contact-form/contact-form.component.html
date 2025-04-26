@@ -1,37 +1,73 @@
 <div class="form_container">
   <form (ngSubmit)="onSubmit(contactFrom)" #contactFrom="ngForm">
-    <div class="name_wrapper">
-      <label class="name_label" for="name"> What's your name?</label>
+    <div
+      class="name_wrapper"
+      [class.invalid]="!showInputName && isNameInvalid(name)"
+    >
+      <label
+        class="name_label"
+        [class.invalid]="!showInputName && isNameInvalid(name)"
+        for="name"
+      >
+        What's your name?</label
+      >
       <input
         [(ngModel)]="contactData.name"
         onfocus="this.placeholder=''"
+        #nameInput
+        #name="ngModel"
+        minlength="4"
         type="text"
         id="name"
         name="name"
         placeholder="Your name goes here"
         required
+        (blur)="onInputBlurName(name)"
+        [hidden]="!showInputName && isNameInvalid(name)"
       />
+      @if (!showInputName && isNameInvalid(name)) {
+      <span class="input_error" (click)="onShowInputName()">
+        Oops! it seems your name is missing
+      </span>
+      }
     </div>
-    <div class="email_wrapper">
-      <label class="email_label" for="email">What's your email?</label>
+    <div
+      class="email_wrapper"
+      [class.invalid]="!showInputEmail && isEmailInvalid(email)"
+    >
+      <label
+        class="email_label"
+        [class.invalid]="!showInputEmail && isEmailInvalid(email)"
+        for="email"
+        >What's your email?</label
+      >
       <input
         [(ngModel)]="contactData.email"
         onfocus="this.placeholder=''"
+        #emailInput
+        #email="ngModel"
         type="email"
         id="email"
         name="email"
         placeholder="youremail@email.com"
         pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}"
         required
+        (blur)="onInputBlurEmail(email)"
+        [hidden]="!showInputEmail && isEmailInvalid(email)"
       />
+      @if (!showInputEmail && isEmailInvalid(email)) {
+      <span class="input_error" (click)="onShowInputEmail()">
+        Hoppla! your email is required
+      </span>
+      }
     </div>
     <div
       class="message_wrapper"
-      [class.invalid]="!showInput && isMessageInvalid(message)"
+      [class.invalid]="!showInputMessage && isMessageInvalid(message)"
     >
       <label
         class="message_label"
-        [class.invalid]="!showInput && isMessageInvalid(message)"
+        [class.invalid]="!showInputMessage && isMessageInvalid(message)"
         for="message"
         >How can I help you?</label
       >
@@ -46,11 +82,11 @@
         name="message"
         placeholder="Hello Alessandro, I am interested in..."
         required
-        (blur)="onInputBlur(message)"
-        [hidden]="!showInput && isMessageInvalid(message)"
+        (blur)="onInputBlurMessage(message)"
+        [hidden]="!showInputMessage && isMessageInvalid(message)"
       />
-      @if (!showInput && isMessageInvalid(message)) {
-      <span class="input_error" (click)="onShowInput()">
+      @if (!showInputMessage && isMessageInvalid(message)) {
+      <span class="input_error" (click)="onShowInputMessage()">
         What do you need to develop?
       </span>
       }
