@@ -338,3 +338,19 @@ input[type="submit"] {
     cursor: default;
   }
 }
+
+// Deactivate the Chrome Autofill.
+:global(input:-webkit-autofill),
+:global(input:-webkit-autofill:hover),
+:global(input:-webkit-autofill:focus),
+:global(input:-webkit-autofill:active) {
+  box-shadow: 0 0 0 1000px #ffffff inset !important;
+  -webkit-box-shadow: 0 0 0 1000px #ffffff inset !important;
+  -webkit-text-fill-color: #000000 !important;
+  caret-color: black;
+  transition: background-color 600000s 0s, color 600000s 0s;
+}
+
+:global(input) {
+  transition: background-color 9999s ease-out, color 9999s ease-out;
+}

@@ -20,63 +20,34 @@ export class ContactFormComponent {
     checkbox: false,
   };
 
-  showInputMessage = true;
-  showInputEmail = true;
-  showInputName = true;
+  showInput = {
+    name: true,
+    email: true,
+    message: true,
+  };
+
   mailTest = true;
 
   @ViewChild('emailInput') emailInputRef!: ElementRef<HTMLInputElement>;
   @ViewChild('messageInput') messageInputRef!: ElementRef<HTMLInputElement>;
   @ViewChild('nameInput') nameInputRef!: ElementRef<HTMLInputElement>;
 
-  isMessageInvalid(message: any): boolean {
-    return !message.valid && message.touched;
+  isFieldInvalid(control: any): boolean {
+    return !control.valid && control.touched;
   }
 
-  isEmailInvalid(email: any): boolean {
-    return !email.valid && email.touched;
-  }
-
-  isNameInvalid(name: any): boolean {
-    return !name.valid && name.touched;
-  }
-
-  onInputBlurMessage(message: any) {
-    if (this.isMessageInvalid(message)) {
-      this.showInputMessage = false;
+  onInputBlur(control: any, field: 'name' | 'email' | 'message') {
+    if (!control.valid && control.touched) {
+      this.showInput[field] = false;
     }
   }
 
-  onInputBlurEmail(email: any) {
-    if (this.isEmailInvalid(email)) {
-      this.showInputEmail = false;
-    }
-  }
-
-  onInputBlurName(name: any) {
-    if (this.isNameInvalid(name)) {
-      this.showInputName = false;
-    }
-  }
-
-  onShowInputMessage() {
-    this.showInputMessage = true;
+  onShowInput(field: 'name' | 'email' | 'message') {
+    this.showInput[field] = true;
     setTimeout(() => {
-      this.messageInputRef?.nativeElement.focus();
-    });
-  }
-
-  onShowInputEmail() {
-    this.showInputEmail = true;
-    setTimeout(() => {
-      this.emailInputRef?.nativeElement.focus();
-    });
-  }
-
-  onShowInputName() {
-    this.showInputName = true;
-    setTimeout(() => {
-      this.nameInputRef?.nativeElement.focus();
+      if (field === 'name') this.nameInputRef?.nativeElement.focus();
+      if (field === 'email') this.emailInputRef?.nativeElement.focus();
+      if (field === 'message') this.messageInputRef?.nativeElement.focus();
     });
   }
 

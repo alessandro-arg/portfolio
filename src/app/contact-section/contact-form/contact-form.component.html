@@ -1,12 +1,18 @@
 <div class="form_container">
-  <form (ngSubmit)="onSubmit(contactFrom)" #contactFrom="ngForm">
+  <form
+    (ngSubmit)="onSubmit(contactFrom)"
+    #contactFrom="ngForm"
+    autocomplete="off"
+    autocomplete="none"
+    autocomplete="new-password"
+  >
     <div
       class="name_wrapper"
-      [class.invalid]="!showInputName && isNameInvalid(name)"
+      [class.invalid]="!showInput.name && isFieldInvalid(name)"
     >
       <label
         class="name_label"
-        [class.invalid]="!showInputName && isNameInvalid(name)"
+        [class.invalid]="!showInput.name && isFieldInvalid(name)"
         for="name"
       >
         What's your name?</label
@@ -21,23 +27,24 @@
         id="name"
         name="name"
         placeholder="Your name goes here"
+        autocomplete="new-password"
         required
-        (blur)="onInputBlurName(name)"
-        [hidden]="!showInputName && isNameInvalid(name)"
+        (blur)="onInputBlur(name, 'name')"
+        [hidden]="!showInput.name && isFieldInvalid(name)"
       />
-      @if (!showInputName && isNameInvalid(name)) {
-      <span class="input_error" (click)="onShowInputName()">
+      @if (!showInput.name && isFieldInvalid(name)) {
+      <span class="input_error" (click)="onShowInput('name')">
         Oops! it seems your name is missing
       </span>
       }
     </div>
     <div
       class="email_wrapper"
-      [class.invalid]="!showInputEmail && isEmailInvalid(email)"
+      [class.invalid]="!showInput.email && isFieldInvalid(email)"
     >
       <label
         class="email_label"
-        [class.invalid]="!showInputEmail && isEmailInvalid(email)"
+        [class.invalid]="!showInput.email && isFieldInvalid(email)"
         for="email"
         >What's your email?</label
       >
@@ -51,23 +58,24 @@
         name="email"
         placeholder="youremail@email.com"
         pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}"
+        autocomplete="new-password"
         required
-        (blur)="onInputBlurEmail(email)"
-        [hidden]="!showInputEmail && isEmailInvalid(email)"
+        (blur)="onInputBlur(email, 'email')"
+        [hidden]="!showInput.email && isFieldInvalid(email)"
       />
-      @if (!showInputEmail && isEmailInvalid(email)) {
-      <span class="input_error" (click)="onShowInputEmail()">
+      @if (!showInput.email && isFieldInvalid(email)) {
+      <span class="input_error" (click)="onShowInput('email')">
         Hoppla! your email is required
       </span>
       }
     </div>
     <div
       class="message_wrapper"
-      [class.invalid]="!showInputMessage && isMessageInvalid(message)"
+      [class.invalid]="!showInput.message && isFieldInvalid(message)"
     >
       <label
         class="message_label"
-        [class.invalid]="!showInputMessage && isMessageInvalid(message)"
+        [class.invalid]="!showInput.message && isFieldInvalid(message)"
         for="message"
         >How can I help you?</label
       >
@@ -81,12 +89,13 @@
         id="message"
         name="message"
         placeholder="Hello Alessandro, I am interested in..."
+        autocomplete="new-password"
         required
-        (blur)="onInputBlurMessage(message)"
-        [hidden]="!showInputMessage && isMessageInvalid(message)"
+        (blur)="onInputBlur(message, 'message')"
+        [hidden]="!showInput.message && isFieldInvalid(message)"
       />
-      @if (!showInputMessage && isMessageInvalid(message)) {
-      <span class="input_error" (click)="onShowInputMessage()">
+      @if (!showInput.message && isFieldInvalid(message)) {
+      <span class="input_error" (click)="onShowInput('message')">
         What do you need to develop?
       </span>
       }
