@@ -1,37 +1,60 @@
 <div class="form_container">
   <form (ngSubmit)="onSubmit(contactFrom)" #contactFrom="ngForm">
-    <label class="name_label" for="name">What's your name?</label>
-    <input
-      [(ngModel)]="contactData.name"
-      type="text"
-      id="name"
-      name="name"
-      placeholder="Your name goes here"
-      required
-    />
-    <label class="email_label" for="email">What's your email?</label>
-    <input
-      [(ngModel)]="contactData.email"
-      type="email"
-      id="email"
-      name="email"
-      placeholder="youremail@email.com"
-      pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}"
-      required
-    />
-    <label for="message">How can I help you?</label>
-    <textarea
-      #message="ngModel"
-      minlength="4"
-      [(ngModel)]="contactData.message"
-      id="message"
-      name="message"
-      placeholder="Hello Alessandro, I am interested in..."
-      required
-    ></textarea>
-    @if (!message.valid && message.touched) {
-    <span>Please enter a message</span>
-    }
+    <div class="name_wrapper">
+      <label class="name_label" for="name"> What's your name?</label>
+      <input
+        [(ngModel)]="contactData.name"
+        onfocus="this.placeholder=''"
+        type="text"
+        id="name"
+        name="name"
+        placeholder="Your name goes here"
+        required
+      />
+    </div>
+    <div class="email_wrapper">
+      <label class="email_label" for="email">What's your email?</label>
+      <input
+        [(ngModel)]="contactData.email"
+        onfocus="this.placeholder=''"
+        type="email"
+        id="email"
+        name="email"
+        placeholder="youremail@email.com"
+        pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}"
+        required
+      />
+    </div>
+    <div
+      class="message_wrapper"
+      [class.invalid]="!showInput && isMessageInvalid(message)"
+    >
+      <label
+        class="message_label"
+        [class.invalid]="!showInput && isMessageInvalid(message)"
+        for="message"
+        >How can I help you?</label
+      >
+      <input
+        [(ngModel)]="contactData.message"
+        onfocus="this.placeholder=''"
+        #messageInput
+        #message="ngModel"
+        minlength="8"
+        type="text"
+        id="message"
+        name="message"
+        placeholder="Hello Alessandro, I am interested in..."
+        required
+        (blur)="onInputBlur(message)"
+        [hidden]="!showInput && isMessageInvalid(message)"
+      />
+      @if (!showInput && isMessageInvalid(message)) {
+      <span class="input_error" (click)="onShowInput()">
+        What do you need to develop?
+      </span>
+      }
+    </div>
     <div class="checkbox_wrapper">
       <div class="checkbox_box">
         <input

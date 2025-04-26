@@ -1,6 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, inject } from '@angular/core';
 import { FormsModule, NgForm } from '@angular/forms';
+import { ViewChild, ElementRef } from '@angular/core';
 
 @Component({
   selector: 'app-contact-form',
@@ -19,7 +20,27 @@ export class ContactFormComponent {
     checkbox: false,
   };
 
+  showInput = true;
   mailTest = true;
+
+  @ViewChild('messageInput') messageInputRef!: ElementRef<HTMLInputElement>;
+
+  isMessageInvalid(message: any): boolean {
+    return !message.valid && message.touched;
+  }
+
+  onInputBlur(message: any) {
+    if (this.isMessageInvalid(message)) {
+      this.showInput = false;
+    }
+  }
+
+  onShowInput() {
+    this.showInput = true;
+    setTimeout(() => {
+      this.messageInputRef?.nativeElement.focus();
+    });
+  }
 
   post = {
     endPoint: 'https://www.alessandro-argenziano.com/sendMail.php',

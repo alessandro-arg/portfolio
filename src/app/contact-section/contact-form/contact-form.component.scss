@@ -1,31 +1,43 @@
 @use "./../../../styles/variables" as *;
 
-select,
-textarea {
-  width: 100%; /* Full width */
-  padding: 12px; /* Some padding */
-  border: 1px solid #ccc; /* Gray border */
-  border-radius: 4px; /* Rounded borders */
-  box-sizing: border-box; /* Make sure that padding and width stays in place */
-  margin-top: 6px; /* Add a top margin */
-  margin-bottom: 16px; /* Bottom margin */
-  resize: vertical; /* Allow the user to vertically resize the textarea (not horizontally) */
-}
-
 form {
   display: flex;
   flex-direction: column;
-  gap: 10px;
   margin-top: -30px;
+
+  input {
+    outline: none;
+  }
+
+  .name_wrapper {
+    width: 100%;
+    height: 100%;
+    border-bottom: solid 0.5px $primary-color;
+    border-top: solid 0.5px transparent;
+    padding-top: 15px;
+    transition: color 150ms ease, border 150ms ease;
+
+    &:hover {
+      border-bottom: solid 0.5px $secondary-color;
+      border-top: solid 0.5px $secondary-color;
+      cursor: pointer;
+
+      .name_label {
+        color: $accent-color;
+        transition: color 0.2s ease;
+      }
+    }
+  }
 
   #name {
     width: 100%;
     padding: 15px;
     padding-left: 25px;
     background: transparent;
+    font-size: $font-size-base;
+    color: $color-white;
     border: none;
-    border-bottom: solid 1px $primary-color;
-    margin-bottom: 16px;
+    cursor: pointer;
 
     &::placeholder {
       font-size: $font-size-base;
@@ -34,13 +46,31 @@ form {
   }
 
   .name_label {
-    width: fit-content;
+    cursor: pointer;
+    width: 100%;
     padding-left: 25px;
     font-size: $font-size-lg;
     font-weight: 500;
+  }
+
+  .email_wrapper {
+    width: 100%;
+    height: 100%;
+    border-bottom: solid 0.5px $primary-color;
+    border-top: solid 0.5px transparent;
+    padding-top: 15px;
+    margin-top: -1px;
+    transition: color 150ms ease, border 150ms ease;
 
     &:hover {
-      color: $accent-color;
+      border-bottom: solid 0.5px $secondary-color;
+      border-top: solid 0.5px $secondary-color;
+      cursor: pointer;
+
+      .email_label {
+        color: $accent-color;
+        transition: color 0.2s ease;
+      }
     }
   }
 
@@ -49,9 +79,10 @@ form {
     padding: 15px;
     padding-left: 25px;
     background: transparent;
+    font-size: $font-size-base;
+    color: $color-white;
     border: none;
-    border-bottom: solid 1px $primary-color;
-    margin-bottom: 16px;
+    cursor: pointer;
 
     &::placeholder {
       font-size: $font-size-base;
@@ -64,16 +95,90 @@ form {
     padding-left: 25px;
     font-size: $font-size-lg;
     font-weight: 500;
+    cursor: pointer;
 
     &:hover {
       color: $accent-color;
     }
   }
 
+  .message_wrapper {
+    width: 100%;
+    height: 100%;
+    border-bottom: solid 0.5px $primary-color;
+    border-top: solid 0.5px transparent;
+    padding-top: 15px;
+    margin-top: -1px;
+    margin-bottom: 40px;
+    transition: color 150ms ease, border 150ms ease;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+
+    &.invalid {
+      border-bottom: solid 0.5px $color-white !important;
+      border-top: solid 0.5px $color-white !important;
+
+      &:hover {
+        border-bottom: solid 0.5px $color-white;
+        border-top: solid 0.5px $color-white;
+      }
+    }
+
+    &:not(.invalid):hover {
+      border-bottom: solid 0.5px $secondary-color;
+      border-top: solid 0.5px $secondary-color;
+
+      .message_label {
+        color: $accent-color;
+        transition: color 0.2s ease;
+      }
+    }
+  }
+
+  #message {
+    width: 100%;
+    padding: 15px;
+    padding-left: 25px;
+    background: transparent;
+    font-size: $font-size-base;
+    color: $color-white;
+    border: none;
+    cursor: pointer;
+
+    &::placeholder {
+      font-size: $font-size-base;
+      color: $color-white;
+    }
+  }
+
+  .message_label {
+    width: fit-content;
+    padding-left: 25px;
+    font-size: $font-size-lg;
+    font-weight: 500;
+    cursor: pointer;
+
+    &.invalid {
+      color: $accent-color;
+    }
+
+    &:hover {
+      color: $accent-color;
+    }
+  }
+
+  .input_error {
+    width: 100%;
+    padding: 14px 0 15px 26px;
+    color: rgba(255, 58, 0, 1);
+  }
+
   .checkbox_wrapper {
     display: flex;
     align-items: center;
     gap: 10px;
+    margin-bottom: 10px;
 
     .checkbox_box {
       position: relative;
