@@ -1,4 +1,4 @@
-<div class="from_container">
+<div class="form_container">
   <form (ngSubmit)="onSubmit(contactFrom)" #contactFrom="ngForm">
     <label for="name">What's your name?</label>
     <input
@@ -32,17 +32,33 @@
     @if (!message.valid && message.touched) {
     <span>Please enter a message</span>
     }
-    <input
-      [(ngModel)]="contactData.checkbox"
-      type="checkbox"
-      id="checkbox"
-      name="checkbox"
-      required
-    />
-    <label for="checkbox"
-      >I've read the <a href="">privacy policy</a> and agree to the processing
-      of my data as outlined.</label
+    <div class="checkbox_wrapper">
+      <div class="checkbox_box">
+        <input
+          #checkbox="ngModel"
+          [(ngModel)]="contactData.checkbox"
+          type="checkbox"
+          id="checkbox"
+          name="checkbox"
+          required
+        />
+        <span class="custom_checkbox"></span>
+      </div>
+      <label class="checkbox_label" for="checkbox">
+        I've read the <a href="">privacy policy</a> and agree to the processing
+        of my data as outlined.
+      </label>
+    </div>
+    <span
+      class="checkbox_error"
+      [class.visible]="!checkbox.valid && (checkbox.touched || checkbox.dirty)"
+      >Please accept the privacy policy.</span
     >
-    <input type="submit" value="submit" />
+    <input
+      type="submit"
+      value="submit"
+      [class.disabled]="!checkbox.valid"
+      [disabled]="!checkbox.valid"
+    />
   </form>
 </div>
