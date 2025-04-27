@@ -8,6 +8,7 @@ import { SkillsSectionComponent } from './skills-section/skills-section.componen
 import { ProjectsSectionComponent } from './projects-section/projects-section.component';
 import { TestimonialsSectionComponent } from './testimonials-section/testimonials-section.component';
 import { ContactSectionComponent } from './contact-section/contact-section.component';
+import { FooterComponent } from './shared/footer/footer.component';
 
 @Component({
   selector: 'app-root',
@@ -22,6 +23,7 @@ import { ContactSectionComponent } from './contact-section/contact-section.compo
     ProjectsSectionComponent,
     TestimonialsSectionComponent,
     ContactSectionComponent,
+    FooterComponent,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
