@@ -108,7 +108,7 @@
       border-radius: 30px;
       --overlap: 180px;
       margin-left: calc(-1 * var(--overlap));
-      transition: z-index 0.3s ease, box-shadow 0.3s ease;
+      transition: z-index 250ms ease-in-out, box-shadow 250ms ease-in-out;
     }
 
     .card:nth-child(1) {
@@ -208,4 +208,19 @@
   .testimonials .card:hover::after {
     opacity: 0.5;
   }
+}
+
+.card_2 {
+  padding: 12px 10px;
+  position: absolute;
+  top: 24px;
+  bottom: 24px;
+  left: 24px;
+  right: 24px;
+  z-index: 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 85%;
+  width: 90%;
 }
