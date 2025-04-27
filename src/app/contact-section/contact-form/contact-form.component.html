@@ -3,8 +3,6 @@
     (ngSubmit)="onSubmit(contactFrom)"
     #contactFrom="ngForm"
     autocomplete="off"
-    autocomplete="none"
-    autocomplete="new-password"
   >
     <div
       class="name_wrapper"
@@ -19,7 +17,6 @@
       >
       <input
         [(ngModel)]="contactData.name"
-        onfocus="this.placeholder=''"
         #nameInput
         #name="ngModel"
         minlength="4"
@@ -27,9 +24,11 @@
         id="name"
         name="name"
         placeholder="Your name goes here"
-        autocomplete="new-password"
+        autocomplete="off"
         required
         (blur)="onInputBlur(name, 'name')"
+        (focus)="clearPlaceholder('name')"
+        [placeholder]="placeholders.name"
         [hidden]="!showInput.name && isFieldInvalid(name)"
       />
       @if (!showInput.name && isFieldInvalid(name)) {
@@ -50,7 +49,6 @@
       >
       <input
         [(ngModel)]="contactData.email"
-        onfocus="this.placeholder=''"
         #emailInput
         #email="ngModel"
         type="email"
@@ -58,9 +56,11 @@
         name="email"
         placeholder="youremail@email.com"
         pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}"
-        autocomplete="new-password"
+        autocomplete="off"
         required
         (blur)="onInputBlur(email, 'email')"
+        (focus)="clearPlaceholder('email')"
+        [placeholder]="placeholders.email"
         [hidden]="!showInput.email && isFieldInvalid(email)"
       />
       @if (!showInput.email && isFieldInvalid(email)) {
@@ -81,7 +81,6 @@
       >
       <input
         [(ngModel)]="contactData.message"
-        onfocus="this.placeholder=''"
         #messageInput
         #message="ngModel"
         minlength="8"
@@ -89,9 +88,11 @@
         id="message"
         name="message"
         placeholder="Hello Alessandro, I am interested in..."
-        autocomplete="new-password"
+        autocomplete="off"
         required
         (blur)="onInputBlur(message, 'message')"
+        (focus)="clearPlaceholder('message')"
+        [placeholder]="placeholders.message"
         [hidden]="!showInput.message && isFieldInvalid(message)"
       />
       @if (!showInput.message && isFieldInvalid(message)) {
@@ -100,6 +101,13 @@
       </span>
       }
     </div>
+    <span
+      class="checkbox_error fields_error"
+      [class.visible]="
+        isFieldInvalid(message) || isFieldInvalid(email) || isFieldInvalid(name)
+      "
+      >Please fill all the fields.</span
+    >
     <div class="checkbox_wrapper">
       <div class="checkbox_box">
         <input
@@ -122,6 +130,10 @@
       [class.visible]="!checkbox.valid && (checkbox.touched || checkbox.dirty)"
       >Please accept the privacy policy.</span
     >
+    <span class="success_message" [class.visible]="successMessage">
+      Your message was sent! <br />
+      I will get back to you soon.
+    </span>
     <input
       type="submit"
       value="Send"

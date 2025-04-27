@@ -1,6 +1,7 @@
 @use "./../../../styles/variables" as *;
 
 form {
+  position: relative;
   display: flex;
   flex-direction: column;
   margin-top: -30px;
@@ -145,7 +146,7 @@ form {
     border-top: solid 0.5px transparent;
     padding-top: 15px;
     margin-top: -1px;
-    margin-bottom: 40px;
+    margin-bottom: 10px;
     transition: color 150ms ease, border 150ms ease;
     display: flex;
     flex-direction: column;
@@ -299,9 +300,15 @@ form {
   transition: opacity 0.2s ease;
   overflow: hidden;
   height: auto;
+  padding-left: 34px;
 
   &.visible {
     opacity: 1;
+  }
+
+  &.fields_error {
+    padding-left: 25px;
+    margin-bottom: 30px;
   }
 }
 
@@ -339,18 +346,19 @@ input[type="submit"] {
   }
 }
 
-// Deactivates the Chrome Autofill.
-:global(input:-webkit-autofill),
-:global(input:-webkit-autofill:hover),
-:global(input:-webkit-autofill:focus),
-:global(input:-webkit-autofill:active) {
-  box-shadow: 0 0 0 1000px #ffffff inset !important;
-  -webkit-box-shadow: 0 0 0 1000px #ffffff inset !important;
-  -webkit-text-fill-color: #000000 !important;
-  caret-color: black;
-  transition: background-color 600000s 0s, color 600000s 0s;
-}
+.success_message {
+  position: absolute;
+  bottom: 0;
+  left: 35px;
+  color: #24dd80;
+  font-size: 16px;
+  font-weight: 600;
+  text-align: left;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.5s ease;
 
-:global(input) {
-  transition: background-color 9999s ease-out, color 9999s ease-out;
+  &.visible {
+    opacity: 1;
+  }
 }

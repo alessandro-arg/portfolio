@@ -26,14 +26,26 @@ export class ContactFormComponent {
     message: true,
   };
 
+  placeholders = {
+    name: 'Your name goes here',
+    email: 'youremail@email.com',
+    message: 'Hello Alessandro, I am interested in...',
+  };
+
   mailTest = true;
+  formSubmitted = false;
+  successMessage = false;
 
   @ViewChild('emailInput') emailInputRef!: ElementRef<HTMLInputElement>;
   @ViewChild('messageInput') messageInputRef!: ElementRef<HTMLInputElement>;
   @ViewChild('nameInput') nameInputRef!: ElementRef<HTMLInputElement>;
 
+  clearPlaceholder(field: 'name' | 'email' | 'message') {
+    this.placeholders[field] = '';
+  }
+
   isFieldInvalid(control: any): boolean {
-    return !control.valid && control.touched;
+    return !control.valid && (control.touched || this.formSubmitted);
   }
 
   onInputBlur(control: any, field: 'name' | 'email' | 'message') {
@@ -51,6 +63,15 @@ export class ContactFormComponent {
     });
   }
 
+  formIsValid(): boolean {
+    return (
+      this.contactData.name.trim() !== '' &&
+      this.contactData.email.trim() !== '' &&
+      this.contactData.message.trim() !== '' &&
+      this.contactData.checkbox
+    );
+  }
+
   post = {
     endPoint: 'https://www.alessandro-argenziano.com/sendMail.php',
     body: (payload: any) => JSON.stringify(payload),
@@ -63,12 +84,28 @@ export class ContactFormComponent {
   };
 
   onSubmit(ngForm: NgForm) {
+    this.formSubmitted = true;
     if (ngForm.submitted && ngForm.form.valid && !this.mailTest) {
       this.http
         .post(this.post.endPoint, this.post.body(this.contactData))
         .subscribe({
           next: (response) => {
             ngForm.resetForm();
+            this.placeholders = {
+              name: 'Your name goes here',
+              email: 'youremail@email.com',
+              message: 'Hello Alessandro, I am interested in...',
+            };
+            this.showInput = {
+              name: true,
+              email: true,
+              message: true,
+            };
+            this.formSubmitted = false;
+            this.successMessage = true;
+            setTimeout(() => {
+              this.successMessage = false;
+            }, 2000);
           },
           error: (error) => {
             console.error(error);
@@ -78,6 +115,21 @@ export class ContactFormComponent {
     } else if (ngForm.submitted && ngForm.form.valid && this.mailTest) {
       console.log(this.contactData);
       ngForm.resetForm();
+      this.placeholders = {
+        name: 'Your name goes here',
+        email: 'youremail@email.com',
+        message: 'Hello Alessandro, I am interested in...',
+      };
+      this.showInput = {
+        name: true,
+        email: true,
+        message: true,
+      };
+      this.formSubmitted = false;
+      this.successMessage = true;
+      setTimeout(() => {
+        this.successMessage = false;
+      }, 2000);
       console.info('it worked?');
     }
   }
