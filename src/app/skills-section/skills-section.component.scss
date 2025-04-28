@@ -1,7 +1,7 @@
 @use "./../../styles/variables" as *;
 
 .skills_section_wrapper {
-  height: 900px;
+  height: 800px;
   width: 100%;
   background-image: url(./../../assets/img/background/skills.png);
   background-position: center;
@@ -18,13 +18,13 @@
     flex-direction: column;
     justify-content: start;
     align-items: center;
-    padding: 160px 30px 80px 30px;
-    gap: 100px;
+    padding: 144px 30px;
+    gap: 48px;
     cursor: default;
   }
 
   .title_text {
-    width: 90%;
+    width: 100%;
     display: flex;
     justify-content: start;
     align-items: center;
@@ -109,7 +109,7 @@
   }
 
   .content {
-    width: 90%;
+    width: 100%;
     display: flex;
     justify-content: end;
     align-items: flex-start;

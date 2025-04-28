@@ -1,7 +1,7 @@
 @use "./../../styles/variables" as *;
 
 .hero_wrapper {
-  height: 100vh;
+  height: 900px;
   width: 100%;
   background-image: url(./../../assets/img/background/hero.png);
   background-position: center;
@@ -225,11 +225,11 @@
   .social {
     position: absolute;
     top: 654px;
-    left: 1rem;
+    left: 0px;
     bottom: 20px;
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: 16px;
 
     a {
       .icon_wrapper {
