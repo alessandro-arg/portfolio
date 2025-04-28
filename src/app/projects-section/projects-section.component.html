@@ -23,7 +23,9 @@
             />
           </div>
           <div class="bottom_shadow"></div>
-          <button class="project_btn">Project details</button>
+          <button class="project_btn" (click)="openOverlay('join')">
+            Project details
+          </button>
         </div>
         <img
           class="project_sticker"
@@ -48,7 +50,9 @@
             alt=""
           />
           <div class="bottom_shadow"></div>
-          <button class="project_btn">Project details</button>
+          <button class="project_btn" (click)="openOverlay('mafia-vs-orcs')">
+            Project details
+          </button>
         </div>
         <div class="description">
           <h3>Mafia vs Orcs</h3>
@@ -66,7 +70,9 @@
             alt=""
           />
           <div class="bottom_shadow"></div>
-          <button class="project_btn">Project details</button>
+          <button class="project_btn" (click)="openOverlay('dabubble')">
+            Project details
+          </button>
         </div>
         <div class="description">
           <h3>DABubble</h3>
@@ -78,5 +84,10 @@
         </div>
       </div>
     </div>
+    <app-project-overlay
+      *ngIf="showOverlay"
+      [project]="selectedProject"
+      (close)="closeOverlay()"
+    ></app-project-overlay>
   </div>
 </div>
