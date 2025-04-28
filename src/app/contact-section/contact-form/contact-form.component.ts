@@ -78,8 +78,8 @@ export class ContactFormComponent {
     options: {
       headers: {
         'Content-Type': 'text/plain',
-        responseType: 'text',
       },
+      responseType: 'text' as const,
     },
   };
 
@@ -87,25 +87,15 @@ export class ContactFormComponent {
     this.formSubmitted = true;
     if (ngForm.submitted && ngForm.form.valid && !this.mailTest) {
       this.http
-        .post(this.post.endPoint, this.post.body(this.contactData))
+        .post(
+          this.post.endPoint,
+          this.post.body(this.contactData),
+          this.post.options
+        )
         .subscribe({
           next: (response) => {
             ngForm.resetForm();
-            this.placeholders = {
-              name: 'Your name goes here',
-              email: 'youremail@email.com',
-              message: 'Hello Alessandro, I am interested in...',
-            };
-            this.showInput = {
-              name: true,
-              email: true,
-              message: true,
-            };
-            this.formSubmitted = false;
-            this.successMessage = true;
-            setTimeout(() => {
-              this.successMessage = false;
-            }, 2000);
+            this.resetDefaultForm();
           },
           error: (error) => {
             console.error(error);
@@ -115,22 +105,26 @@ export class ContactFormComponent {
     } else if (ngForm.submitted && ngForm.form.valid && this.mailTest) {
       console.log(this.contactData);
       ngForm.resetForm();
-      this.placeholders = {
-        name: 'Your name goes here',
-        email: 'youremail@email.com',
-        message: 'Hello Alessandro, I am interested in...',
-      };
-      this.showInput = {
-        name: true,
-        email: true,
-        message: true,
-      };
-      this.formSubmitted = false;
-      this.successMessage = true;
-      setTimeout(() => {
-        this.successMessage = false;
-      }, 2000);
+      this.resetDefaultForm();
       console.info('it worked?');
     }
+  }
+
+  resetDefaultForm() {
+    this.placeholders = {
+      name: 'Your name goes here',
+      email: 'youremail@email.com',
+      message: 'Hello Alessandro, I am interested in...',
+    };
+    this.showInput = {
+      name: true,
+      email: true,
+      message: true,
+    };
+    this.formSubmitted = false;
+    this.successMessage = true;
+    setTimeout(() => {
+      this.successMessage = false;
+    }, 2000);
   }
 }
