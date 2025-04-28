@@ -1,9 +1,7 @@
 @use "./../../../styles/variables" as *;
+@use "./../header/header.component.scss" as *;
 
 footer {
-  //   position: absolute;
-  //   bottom: 30px;
-  //   left: 0;
   width: 100%;
   z-index: 10;
   background-color: transparent;
@@ -15,8 +13,8 @@ footer {
   .footer_wrapper {
     max-width: 1280px;
     margin: 0 auto;
+    padding: 50px 30px 0 30px;
     width: 100%;
-    margin: 19px 20px;
   }
 
   .container {
@@ -52,7 +50,33 @@ footer {
     font-weight: 500;
     font-size: $font-size-base;
     text-decoration: none;
-    padding: 10px;
+    padding: 10px 0;
     cursor: pointer;
+  }
+
+  .legal_notice_wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .line_wrapper {
+    @include dFlex();
+    width: fit-content;
+
+    .legal_notice_line {
+      @include wrappers();
+
+      &::before {
+        @include before(
+          "./../../../assets/img/hand-drawn_lines/contacts_line.svg",
+          inset(0 100% 0 0)
+        );
+      }
+    }
+
+    &:hover .legal_notice_line::before {
+      clip-path: inset(0 0 0 0);
+    }
   }
 }
