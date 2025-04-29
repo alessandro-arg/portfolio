@@ -24,11 +24,12 @@
             <h3>Implementation Details</h3>
             <p>{{ project.details }}</p>
           </div>
-          <p><strong>Duration:</strong> {{ project.duration }}</p>
+          <p><span>Duration:</span> {{ project.duration }}</p>
           <div class="skills">
-            <span *ngFor="let skill of project.skills"
-              ><img src="{{ skill }}" alt=""
-            /></span>
+            <div class="single_skill" *ngFor="let skill of project.skills">
+              <img src="{{ skill.icon }}" alt="" />
+              <p>{{ skill.name }}</p>
+            </div>
           </div>
         </div>
       </div>

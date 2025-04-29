@@ -3,7 +3,7 @@ export interface Project {
   description: string;
   details: string;
   duration: string;
-  skills: string[];
+  skills: { icon: string; name: string }[];
   image: string;
   button1Text: string;
   button2Text: string;
