@@ -1,7 +1,8 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ProjectOverlayComponent } from '../project-overlay/project-overlay.component';
 import { Project } from '../project-overlay/project.model';
+import { NavigationService } from '../navigation.service';
 
 @Component({
   selector: 'app-projects-section',
@@ -10,9 +11,13 @@ import { Project } from '../project-overlay/project.model';
   templateUrl: './projects-section.component.html',
   styleUrl: './projects-section.component.scss',
 })
-export class ProjectsSectionComponent {
+export class ProjectsSectionComponent implements OnInit {
+  constructor(private navService: NavigationService) {}
+
   showOverlay = false;
   selectedProject: Project | null = null;
+  projectKeys: string[] = [];
+  currentProjectIndex = 0;
 
   projects: { [key: string]: Project } = {
     join: {
@@ -86,13 +91,21 @@ export class ProjectsSectionComponent {
     },
   };
 
+  ngOnInit(): void {
+    this.projectKeys = Object.keys(this.projects);
+    this.navService.overlayClosed$.subscribe(() => {
+      if (this.showOverlay) {
+        this.closeOverlay();
+      }
+    });
+  }
+
   openOverlay(projectId: string) {
     this.selectedProject = this.projects[projectId];
+    this.currentProjectIndex = this.projectKeys.indexOf(projectId);
     if (this.selectedProject) {
       this.showOverlay = true;
       document.body.style.overflow = 'hidden';
-    } else {
-      console.error('Project not found:', projectId);
     }
   }
 
@@ -100,5 +113,12 @@ export class ProjectsSectionComponent {
     this.showOverlay = false;
     this.selectedProject = null;
     document.body.style.overflow = '';
+  }
+
+  showNextProject() {
+    this.currentProjectIndex =
+      (this.currentProjectIndex + 1) % this.projectKeys.length;
+    const nextProjectId = this.projectKeys[this.currentProjectIndex];
+    this.selectedProject = this.projects[nextProjectId];
   }
 }

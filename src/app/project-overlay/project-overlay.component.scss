@@ -39,7 +39,7 @@
 
 .back-button {
   position: absolute;
-  top: 150px;
+  top: 100px;
   left: 90px;
   font-size: 18px;
   font-weight: 700;
@@ -59,7 +59,7 @@
 
 .overlay-content {
   width: 100%;
-  height: 50%;
+  height: auto;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -87,11 +87,62 @@ p {
 }
 
 .title {
-  font-size: 64px;
-  font-weight: 700;
+  position: relative;
   display: flex;
   flex-direction: column;
   gap: 4px;
+  width: fit-content;
+
+  h2 {
+    font-size: 52px;
+    font-weight: 700;
+    position: relative;
+  }
+
+  .line_wrapper {
+    position: relative;
+    height: 20px;
+    width: 100%;
+    overflow: hidden;
+    top: 0;
+    pointer-events: none;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-image: url("./../../assets/img/about_me/blue_line.png");
+      background-repeat: no-repeat;
+      background-size: 100% 110%;
+      background-position: left;
+      clip-path: inset(0 100% 0 0);
+      animation: revealLine 4s ease-in-out infinite;
+    }
+  }
+}
+
+@keyframes revealLine {
+  0% {
+    clip-path: inset(0 100% 0 0);
+  }
+  10% {
+    clip-path: inset(0 0% 0 0);
+  }
+  30% {
+    clip-path: inset(0 0% 0 0);
+  }
+  80% {
+    clip-path: inset(0 0% 0 0);
+  }
+  90% {
+    clip-path: inset(0 100% 0 0);
+  }
+  100% {
+    clip-path: inset(0 100% 0 0);
+  }
 }
 
 .content {
@@ -124,6 +175,7 @@ p {
 }
 
 .right {
+  position: relative;
   width: 560px;
   display: flex;
   flex-direction: column;
@@ -183,8 +235,8 @@ p {
 
 .next-project-button {
   position: absolute;
-  bottom: 100px;
-  right: 90px;
+  bottom: -70px;
+  right: -50px;
   background: none;
   border: none;
   font-size: 18px;

@@ -14,7 +14,7 @@
         </p>
       </div>
       <div class="project first">
-        <div class="laptop_container">
+        <div class="laptop_container" (click)="openOverlay('join')">
           <div class="floating_wrapper">
             <img
               class="floating_laptop"
@@ -23,9 +23,7 @@
             />
           </div>
           <div class="bottom_shadow"></div>
-          <button class="project_btn" (click)="openOverlay('join')">
-            Project details
-          </button>
+          <button class="project_btn">Project details</button>
         </div>
         <img
           class="project_sticker"
@@ -43,16 +41,14 @@
     </div>
     <div class="other_projects">
       <div class="project second">
-        <div class="thumbnail_container">
+        <div class="thumbnail_container" (click)="openOverlay('mafia-vs-orcs')">
           <img
             class="project_image"
             src="./../../assets/img/projects_section/epl_mockup.jpg"
             alt=""
           />
           <div class="bottom_shadow"></div>
-          <button class="project_btn" (click)="openOverlay('mafia-vs-orcs')">
-            Project details
-          </button>
+          <button class="project_btn">Project details</button>
         </div>
         <div class="description">
           <h3>Mafia vs Orcs</h3>
@@ -63,16 +59,14 @@
         </div>
       </div>
       <div class="project third">
-        <div class="thumbnail_container">
+        <div class="thumbnail_container" (click)="openOverlay('dabubble')">
           <img
             class="project_image"
             src="./../../assets/img/projects_section/dabubble_mockup.jpg"
             alt=""
           />
           <div class="bottom_shadow"></div>
-          <button class="project_btn" (click)="openOverlay('dabubble')">
-            Project details
-          </button>
+          <button class="project_btn">Project details</button>
         </div>
         <div class="description">
           <h3>DABubble</h3>
@@ -88,6 +82,7 @@
       *ngIf="showOverlay"
       [project]="selectedProject"
       (close)="closeOverlay()"
+      (next)="showNextProject()"
     ></app-project-overlay>
   </div>
 </div>
