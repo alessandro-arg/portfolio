@@ -1,7 +1,14 @@
 <div class="overlay" *ngIf="project">
   <div class="container">
     <app-header></app-header>
-    <button class="back-button" (click)="closeOverlay()">← Back</button>
+    <button class="back-button" (click)="closeOverlay()">
+      <img
+        src="./../../assets/img/projects_section/back_arrow.png"
+        alt=""
+        class="back_icon"
+      />
+      Go Back
+    </button>
     <div class="overlay-content">
       <div class="left">
         <div class="title">
@@ -41,6 +48,13 @@
         </div>
       </div>
     </div>
-    <button class="next-project-button">Next Project</button>
+    <button class="next-project-button">
+      Next Project
+      <img
+        class="next_icon"
+        src="./../../assets/img/projects_section/next_arrow.png"
+        alt=""
+      />
+    </button>
   </div>
 </div>
