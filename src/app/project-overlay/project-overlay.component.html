@@ -34,11 +34,14 @@
         </div>
       </div>
       <div class="right">
-        <img
-          [src]="project.image"
-          alt="{{ project.title }}"
-          class="project-image"
-        />
+        <div class="sticker_wrapper">
+          <img
+            [src]="project.image"
+            alt="{{ project.title }}"
+            class="project-image"
+          />
+          <img [src]="project.sticker" alt="" class="sticker" />
+        </div>
         <div class="buttons">
           <a [href]="project.button1Link" target="_blank">{{
             project.button1Text

@@ -130,6 +130,25 @@ p {
   gap: 48px;
 }
 
+.sticker_wrapper {
+  position: relative;
+  margin-top: 48px;
+  display: flex;
+  justify-content: center;
+}
+
+.project-image {
+  border-radius: 20px;
+}
+
+.sticker {
+  position: absolute;
+  right: -45px;
+  height: 120px;
+  width: 120px;
+  top: 36%;
+}
+
 .buttons {
   width: 100%;
   display: flex;
@@ -138,9 +157,27 @@ p {
   gap: 32px;
 
   a {
+    box-shadow: 2px 4px 0px 0px $color-white;
+    align-items: center;
+    align-content: center;
     text-decoration: none;
-    color: $color-white;
+    padding: 0 24px;
+    font-size: $font-size-base;
+    height: 40px;
     border: solid 1px $color-white;
+    border-radius: 100px;
+    background-color: transparent;
+    color: $color-white;
+    font-size: $font-size-base;
+    font-weight: 500;
+    transition: all 250ms ease, transform 150ms ease;
+    cursor: pointer;
+
+    &:hover {
+      transform: translate(3px, 3px);
+      box-shadow: none;
+      background-color: $accent-color;
+    }
   }
 }
 
@@ -159,6 +196,10 @@ p {
   justify-content: center;
   align-items: center;
   gap: 8px;
+
+  &:hover {
+    color: $primary-color;
+  }
 }
 
 .next_icon {

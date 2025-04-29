@@ -4,6 +4,7 @@ export interface Project {
   details: string;
   duration: string;
   skills: { icon: string; name: string }[];
+  sticker: string;
   image: string;
   button1Text: string;
   button2Text: string;
