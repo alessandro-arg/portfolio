@@ -1,5 +1,91 @@
 <header id="mobile-header">
-  <div class="header-inner">
-    <div class="menu_wrapper"></div>
+  <div class="container">
+    <div
+      class="logo"
+      id="logo"
+      (mouseenter)="hoverLogo = true"
+      (mouseleave)="hoverLogo = false"
+    >
+      <img
+        [src]="
+          hoverLogo
+            ? './../../assets/img/logo/hover_logo.png'
+            : './../../assets/img/logo/logo.png'
+        "
+        alt=""
+      />
+    </div>
+    <div class="navbar_button" (click)="toggleNavbar()">
+      <img
+        [src]="
+          isNavbarOpen
+            ? './../../../assets/img/mobile_header/close_menu.png'
+            : './../../../assets/img/mobile_header/open_menu.png'
+        "
+        alt=""
+      />
+    </div>
   </div>
 </header>
+
+<nav #navbar class="mobile-navbar" [class.open]="isNavbarOpen">
+  <div class="wrapper">
+    <div class="about_me">
+      <div class="circle_wrapper"></div>
+      <a href="#" (click)="goToSection('about-me')">About Me</a>
+    </div>
+    <div class="skills">
+      <div class="skills_line_wrapper"></div>
+      <a href="#" (click)="goToSection('skills')">Skills</a>
+    </div>
+    <div class="projects">
+      <div class="projects_line_wrapper"></div>
+      <a href="#" (click)="goToSection('projects')">Projects</a>
+    </div>
+    <div class="contacts">
+      <a href="#" (click)="goToSection('contacts')">Contacts</a>
+      <div class="contacts_line_wrapper"></div>
+    </div>
+    <div class="language">
+      <button
+        [class.active]="activeLang === 'en'"
+        [disabled]="activeLang === 'en'"
+        (click)="switchLanguage('en')"
+      >
+        EN
+      </button>
+
+      <div class="toggle">
+        <div class="ball" [class.move]="activeLang === 'de'"></div>
+      </div>
+
+      <button
+        [class.active]="activeLang === 'de'"
+        [disabled]="activeLang === 'de'"
+        (click)="switchLanguage('de')"
+      >
+        DE
+      </button>
+    </div>
+  </div>
+  <div class="social">
+    <a href="">
+      <span class="icon_wrapper"
+        ><img
+          src="./../../assets/img/social_icons/linkedin.png"
+          alt="Linkedin" /></span
+    ></a>
+    <a href="">
+      <span class="icon_wrapper"
+        ><img
+          src="./../../assets/img/social_icons/github.png"
+          alt="Github" /></span
+    ></a>
+    <a href="">
+      <span class="icon_wrapper"
+        ><img
+          src="./../../assets/img/social_icons/mail.png"
+          alt="Email" /></span
+    ></a>
+  </div>
+</nav>
