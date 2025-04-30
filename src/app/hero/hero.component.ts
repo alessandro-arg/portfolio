@@ -11,6 +11,7 @@ export class HeroComponent {
   titleText = 'Frontend';
   subtitleText = 'DEVELOPER';
   isPhotoHovered = false;
+  isMobile = false;
 
   titleLetters = this.titleText.split('').map((letter) => ({
     original: letter,
@@ -38,5 +39,14 @@ export class HeroComponent {
 
   onPhotoHover(state: boolean): void {
     this.isPhotoHovered = state;
+  }
+
+  ngOnInit(): void {
+    this.checkScreenSize();
+    window.addEventListener('resize', this.checkScreenSize.bind(this));
+  }
+
+  checkScreenSize(): void {
+    this.isMobile = window.innerWidth <= 800;
   }
 }
