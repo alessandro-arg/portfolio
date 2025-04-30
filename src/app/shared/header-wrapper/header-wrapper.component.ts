@@ -34,6 +34,6 @@ export class HeaderWrapperComponent {
   }
 
   private checkScreenSize() {
-    this.isMobile = window.innerWidth <= 1000;
+    this.isMobile = window.innerWidth <= 850;
   }
 }

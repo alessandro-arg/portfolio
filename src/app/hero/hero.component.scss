@@ -266,3 +266,23 @@
     }
   }
 }
+
+@media (max-width: 940px) {
+  .title {
+    font-size: 90px !important;
+  }
+
+  .subtitle {
+    font-size: 90px !important;
+  }
+}
+
+@media (max-width: 800px) {
+  .main {
+    padding-top: 20px !important;
+  }
+
+  .title_photo {
+    justify-content: left !important;
+  }
+}
