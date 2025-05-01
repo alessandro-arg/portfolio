@@ -43,8 +43,41 @@
           <img src="{{ icon.src }}" alt="Icon {{ index }}" />
           <span>{{ icon.name }}</span>
         </div>
+        } @if (isMobile) {
+        <div class="sticker_container" (click)="handleClick()">
+          <img
+            class="sticker_image"
+            src="./../../assets/img/skill_set/sticker_reveal.png"
+            [class.active]="currentState === 'reveal'"
+            (click)="resetSticker($event)"
+          />
+          <div
+            class="sticker_content"
+            [class.visible]="currentState === 'reveal'"
+          >
+            <p>
+              Also, I'm interested <br />
+              in diving into:
+            </p>
+            <div class="sticker_icons">
+              <img src="./../../assets/img/skill_set/icons/react.png" alt="" />
+              <img src="./../../assets/img/skill_set/icons/vuejs.png" alt="" />
+            </div>
+          </div>
+          <img
+            src="./../../assets/img/skill_set/sticker_hover.png"
+            class="sticker second_layer"
+            [class.active]="currentState === 'hover'"
+          />
+          <img
+            src="./../../assets/img/skill_set/sticker.png"
+            class="sticker first_layer"
+            [class.inactive]="currentState !== 'initial'"
+          />
+        </div>
         }
       </div>
+      @if (!isMobile) {
       <div class="sticker_container" (click)="handleClick()">
         <img
           class="sticker_image"
@@ -76,6 +109,7 @@
           [class.inactive]="currentState !== 'initial'"
         />
       </div>
+      }
     </div>
   </div>
 </div>
