@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-skills-section',
@@ -7,10 +7,11 @@ import { Component } from '@angular/core';
   templateUrl: './skills-section.component.html',
   styleUrl: './skills-section.component.scss',
 })
-export class SkillsSectionComponent {
+export class SkillsSectionComponent implements OnInit {
   currentState: 'initial' | 'hover' | 'reveal' = 'initial';
   animating = false;
   hoveredIndex: number | null = null;
+  isMobile = false;
 
   skillsIcons = [
     { src: './../../assets/img/skill_set/icons/html.png', name: 'HTML' },
@@ -49,5 +50,16 @@ export class SkillsSectionComponent {
     if (this.animating || this.currentState !== 'reveal') return;
 
     this.currentState = 'initial';
+  }
+
+  ngOnInit(): void {
+    if (typeof window !== 'undefined') {
+      this.checkScreenSize();
+      window.addEventListener('resize', this.checkScreenSize.bind(this));
+    }
+  }
+
+  checkScreenSize(): void {
+    this.isMobile = window.innerWidth <= 700;
   }
 }

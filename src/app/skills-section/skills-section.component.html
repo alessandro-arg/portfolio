@@ -8,6 +8,7 @@
           <div class="circle_wrapper"></div>
         </div>
       </div>
+      @if (!isMobile) {
       <div class="paper_text">
         <img
           src="./../../assets/img/skill_set/skills_description_paper.png"
@@ -19,6 +20,16 @@
           learning and adapting to new technologies.
         </p>
       </div>
+      } @else if (isMobile) {
+      <div class="paper_text_mobile">
+        <img src="./../../assets/img/skill_set/mobile_description.png" alt="" />
+        <p>
+          A short introduction of your skills. Highlight your experience of
+          using different front-end technologies and emphasise your openness to
+          learning and adapting to new technologies.
+        </p>
+      </div>
+      }
     </div>
     <div class="content">
       <div class="icons_container">
