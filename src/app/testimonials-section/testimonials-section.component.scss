@@ -97,10 +97,12 @@
 
   .testimonials {
     height: 400px;
-    width: 1200px;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: flex-start;
+    gap: 24px;
+    padding: 0 20px;
 
     .card {
       position: relative;
@@ -178,7 +180,7 @@
     }
 
     p {
-      font-size: 16px;
+      font-size: 18px;
       font-weight: 400;
       margin-bottom: 0;
     }
@@ -207,5 +209,54 @@
 
   .testimonials .card:hover::after {
     opacity: 0.5;
+  }
+}
+
+@media (max-width: 1280px) {
+  .container {
+    padding: 40px 16px 0 16px !important;
+  }
+
+  .card {
+    scale: 0.8;
+    --overlap: 280px !important;
+  }
+}
+
+@media (max-width: 970px) {
+  .testimonials {
+    flex-direction: column !important;
+    align-items: center !important;
+    height: auto !important;
+  }
+
+  .card {
+    scale: 1;
+    position: relative;
+    height: 83%;
+    border-radius: 30px;
+    --overlap: 10px !important;
+    margin-top: calc(-1 * var(--overlap)) !important;
+    transition: z-index 250ms ease-in-out, box-shadow 250ms ease-in-out;
+    margin-bottom: 0 !important;
+
+    .card_img {
+      width: 100% !important;
+      height: 343px !important;
+    }
+  }
+
+  .card:nth-child(1) {
+    margin-left: 0;
+    margin-top: 20px !important;
+  }
+
+  .card:nth-child(2) {
+    margin-top: -30px !important;
+  }
+
+  .card:nth-child(3) {
+    margin-bottom: 0 !important;
+    margin-top: -30px !important;
   }
 }
