@@ -12,7 +12,7 @@
   .container {
     max-width: 1280px;
     margin: 0 auto;
-    padding: 0 1rem;
+    padding: 0 16px;
     height: 100%;
     position: relative;
     display: flex;
@@ -29,7 +29,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    padding: 2rem;
+    padding: 32px;
 
     .letter {
       line-height: 1;
@@ -310,7 +310,7 @@
 
     .photo_wrapper {
       order: 1;
-      margin-top: 2rem;
+      margin-top: 32px;
       align-self: flex-start;
 
       .photo {
