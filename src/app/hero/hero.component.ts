@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-hero',
@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
   templateUrl: './hero.component.html',
   styleUrl: './hero.component.scss',
 })
-export class HeroComponent {
+export class HeroComponent implements OnInit {
   titleText = 'Frontend';
   subtitleText = 'DEVELOPER';
   isPhotoHovered = false;
@@ -42,8 +42,10 @@ export class HeroComponent {
   }
 
   ngOnInit(): void {
-    this.checkScreenSize();
-    window.addEventListener('resize', this.checkScreenSize.bind(this));
+    if (typeof window !== 'undefined') {
+      this.checkScreenSize();
+      window.addEventListener('resize', this.checkScreenSize.bind(this));
+    }
   }
 
   checkScreenSize(): void {

@@ -286,18 +286,18 @@
     }
 
     .title_photo {
-      flex-direction: column; // Stack vertically
-      align-items: flex-start; // Align children to the left
-      gap: 40px; // Reduce gap for smaller screens
+      flex-direction: column;
+      align-items: center;
+      gap: 40px;
     }
 
     .subtitle_group {
-      width: fit-content; // Use full width
-      align-items: flex-start;
-      margin-top: 16px; // Keep Get in Touch button right-aligned
+      width: 100%;
+      align-items: center;
+      margin-top: 16px;
 
       .subtitle {
-        font-size: 64px; // Optional: Reduce font size for smaller screen
+        font-size: 64px;
       }
     }
 
@@ -309,7 +309,7 @@
     }
 
     .photo_wrapper {
-      order: 1; // Ensure it's placed after subtitle_group
+      order: 1;
       margin-top: 2rem;
       align-self: flex-start;
 
@@ -323,11 +323,11 @@
     }
 
     .title {
-      font-size: 64px; // Optional: Reduce main title font size
+      font-size: 64px;
     }
 
     .get_in_touch {
-      align-self: flex-end; // Ensure button stays on the right
+      align-self: flex-end;
     }
 
     .social {
