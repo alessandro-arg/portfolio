@@ -1,6 +1,7 @@
 <div class="overlay" *ngIf="project">
+  <div class="shadow_wrapper"></div>
   <div class="container">
-    <app-header></app-header>
+    <app-header class="overlay_header"></app-header>
     <button class="back-button" (click)="closeOverlay()">
       <img
         src="./../../assets/img/projects_section/back_arrow.png"

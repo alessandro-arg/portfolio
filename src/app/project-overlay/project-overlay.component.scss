@@ -24,6 +24,16 @@
   gap: 48px;
 }
 
+.shadow_wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 80px;
+  z-index: 10;
+  width: 100vw;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(56, 56, 56, 0));
+}
+
 .container {
   max-width: 1440px;
   width: 100%;

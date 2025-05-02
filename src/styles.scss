@@ -25,3 +25,11 @@ body {
   font-size: $font-size-base;
   color: $color-white;
 }
+
+.overlay_header {
+  .about_me a,
+  .skills a {
+    color: $color-black !important;
+    font-weight: 700 !important;
+  }
+}
