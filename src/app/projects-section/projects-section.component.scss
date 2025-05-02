@@ -390,3 +390,20 @@
     }
   }
 }
+
+@media (max-width: 600px) {
+  .title_text {
+    width: 100% !important;
+  }
+
+  .project {
+    width: 100% !important;
+  }
+
+  .project_sticker {
+    width: 100px;
+    height: 100px;
+    top: 20% !important;
+    left: -10px !important;
+  }
+}
