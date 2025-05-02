@@ -23,7 +23,9 @@
             />
           </div>
           <div class="bottom_shadow"></div>
+          @if (!isMobile) {
           <button class="project_btn">Project details</button>
+          }
         </div>
         <img
           class="project_sticker"
@@ -37,6 +39,11 @@
             tasks using drag and drop functions, assign users and categories.
           </p>
         </div>
+        @if (isMobile) {
+        <button class="project_btn" (click)="openOverlay('join')">
+          Project details
+        </button>
+        }
       </div>
     </div>
     <div class="other_projects">
@@ -73,7 +80,9 @@
             alt=""
           />
           <div class="bottom_shadow"></div>
+          @if (!isMobile) {
           <button class="project_btn">Project details</button>
+          }
         </div>
         <div class="description">
           <h3>DABubble</h3>
@@ -83,6 +92,11 @@
             and robust channel organization.
           </p>
         </div>
+        @if (isMobile) {
+        <button class="project_btn" (click)="openOverlay('dabubble')">
+          Project details
+        </button>
+        }
       </div>
     </div>
     <app-project-overlay
