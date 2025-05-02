@@ -48,7 +48,9 @@
             alt=""
           />
           <div class="bottom_shadow"></div>
+          @if (!isMobile) {
           <button class="project_btn">Project details</button>
+          }
         </div>
         <div class="description">
           <h3>Mafia vs Orcs</h3>
@@ -57,6 +59,11 @@
             Pepe to find coins and tabasco salsa to fight against the crazy hen.
           </p>
         </div>
+        @if (isMobile) {
+        <button class="project_btn" (click)="openOverlay('mafia-vs-orcs')">
+          Project details
+        </button>
+        }
       </div>
       <div class="project third">
         <div class="thumbnail_container" (click)="openOverlay('dabubble')">

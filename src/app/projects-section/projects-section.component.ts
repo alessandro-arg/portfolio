@@ -18,6 +18,7 @@ export class ProjectsSectionComponent implements OnInit {
   selectedProject: Project | null = null;
   projectKeys: string[] = [];
   currentProjectIndex = 0;
+  isMobile = false;
 
   projects: { [key: string]: Project } = {
     join: {
@@ -92,6 +93,10 @@ export class ProjectsSectionComponent implements OnInit {
   };
 
   ngOnInit(): void {
+    if (typeof window !== 'undefined') {
+      this.checkScreenSize();
+      window.addEventListener('resize', this.checkScreenSize.bind(this));
+    }
     this.projectKeys = Object.keys(this.projects);
     this.navService.overlayClosed$.subscribe(() => {
       if (this.showOverlay) {
@@ -120,5 +125,9 @@ export class ProjectsSectionComponent implements OnInit {
       (this.currentProjectIndex + 1) % this.projectKeys.length;
     const nextProjectId = this.projectKeys[this.currentProjectIndex];
     this.selectedProject = this.projects[nextProjectId];
+  }
+
+  checkScreenSize(): void {
+    this.isMobile = window.innerWidth <= 650;
   }
 }
