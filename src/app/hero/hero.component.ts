@@ -23,20 +23,6 @@ export class HeroComponent implements OnInit {
     display: letter,
   }));
 
-  flipCase(char: string): string {
-    return char === char.toUpperCase()
-      ? char.toLowerCase()
-      : char.toUpperCase();
-  }
-
-  onHover(letterObj: { original: string; display: string }) {
-    letterObj.display = this.flipCase(letterObj.original);
-  }
-
-  onLeave(letterObj: { original: string; display: string }) {
-    letterObj.display = letterObj.original;
-  }
-
   onPhotoHover(state: boolean): void {
     this.isPhotoHovered = state;
   }
