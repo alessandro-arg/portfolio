@@ -437,3 +437,15 @@ input[type="submit"] {
     gap: 100px;
   }
 }
+
+@media (max-width: 470px) {
+  .form_container {
+    width: 80% !important;
+  }
+}
+
+@media (max-width: 380px) {
+  .form_container {
+    width: 70% !important;
+  }
+}
