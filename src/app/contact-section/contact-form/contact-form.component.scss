@@ -438,14 +438,12 @@ input[type="submit"] {
   }
 }
 
-@media (max-width: 470px) {
-  .form_container {
-    width: 80% !important;
+@media (max-width: 480px) {
+  h2 {
+    font-size: 48px !important;
   }
-}
 
-@media (max-width: 380px) {
   .form_container {
-    width: 70% !important;
+    width: 100% !important;
   }
 }
