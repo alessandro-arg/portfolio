@@ -179,4 +179,33 @@
     justify-content: flex-end;
     align-items: center;
   }
+
+  .title {
+    margin-bottom: 30px !important;
+  }
+
+  .description {
+    margin-bottom: 10px !important;
+    p {
+      margin-bottom: 0 !important;
+    }
+  }
+}
+
+@media (max-width: 600px) {
+  .container {
+    padding: 144px 16px 0 16px !important;
+  }
+
+  .circle_logo {
+    width: 100%;
+  }
+
+  .left_section {
+    width: 100% !important;
+  }
+
+  .right_section {
+    width: 100% !important;
+  }
 }
