@@ -1,6 +1,11 @@
 <div class="contact_wrapper">
   <div class="footer_wrapper">
     <div class="container">
+      @if (isMobile) {
+      <div class="circle_logo">
+        <img src="./../../assets/img/contacts/circle_logo.png" />
+      </div>
+      }
       <div class="left_section">
         <div class="title">
           <span>CONTACT ME</span>
@@ -19,13 +24,17 @@
               the value and skills you can bring to the table.
             </p>
           </div>
+          @if (!isMobile) {
           <div class="line_wrapper"></div>
+          }
         </div>
       </div>
       <div class="right_section">
+        @if (!isMobile) {
         <div class="circle_logo">
           <img src="./../../assets/img/contacts/circle_logo.png" />
         </div>
+        }
         <app-contact-form></app-contact-form>
       </div>
     </div>

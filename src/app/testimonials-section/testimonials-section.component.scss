@@ -224,6 +224,10 @@
 }
 
 @media (max-width: 970px) {
+  .testimonials_wrapper {
+    margin-bottom: 100px;
+  }
+
   .testimonials {
     flex-direction: column !important;
     align-items: center !important;

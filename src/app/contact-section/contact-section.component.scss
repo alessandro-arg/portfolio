@@ -120,3 +120,63 @@
     }
   }
 }
+
+@media (max-width: 1150px) {
+  .left_section {
+    width: 450px !important;
+  }
+
+  .right_section {
+    width: 450px !important;
+  }
+
+  .line_wrapper {
+    top: 30px !important;
+  }
+}
+
+@media (max-width: 1000px) {
+  .container {
+    gap: 40px !important;
+  }
+
+  .left_section {
+    width: 100% !important;
+  }
+
+  .right_section {
+    width: 100% !important;
+  }
+
+  .line_wrapper {
+    top: 30px !important;
+  }
+}
+
+@media (max-width: 970px) {
+  .contact_wrapper {
+    height: auto;
+  }
+
+  .container {
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 100px !important;
+  }
+
+  .left_section {
+    margin-top: -50px !important;
+    width: 560px !important;
+  }
+
+  .right_section {
+    width: 560px !important;
+  }
+
+  .circle_logo {
+    width: 560px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+}

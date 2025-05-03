@@ -134,11 +134,14 @@
       Your message was sent! <br />
       I will get back to you soon.
     </span>
-    <input
-      type="submit"
-      value="Send"
-      [class.disabled]="!checkbox.valid"
-      [disabled]="!checkbox.valid"
-    />
+    <div class="mobile_version">
+      <div class="line_wrapper"></div>
+      <input
+        type="submit"
+        value="Send"
+        [class.disabled]="!checkbox.valid"
+        [disabled]="!checkbox.valid"
+      />
+    </div>
   </form>
 </div>
