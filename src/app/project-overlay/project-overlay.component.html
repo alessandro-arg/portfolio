@@ -1,7 +1,16 @@
-<div class="overlay" *ngIf="project">
+@if (project) {
+<div class="overlay">
   <div class="shadow_wrapper"></div>
   <div class="container">
     <app-header class="overlay_header"></app-header>
+    <div class="mobile_bar">
+      <div class="mobile_container">
+        <div class="logo" id="logo"></div>
+        <div class="close_button">
+          <button>&#10006;</button>
+        </div>
+      </div>
+    </div>
     <button class="back-button" (click)="closeOverlay()">
       <img
         src="./../../assets/img/projects_section/back_arrow.png"
@@ -27,9 +36,11 @@
           </div>
           <p><span>Duration:</span> {{ project.duration }}</p>
           <div class="skills">
-            <div class="single_skill" *ngFor="let skill of project.skills">
+            <div class="single_skill">
+              @for (skill of project.skills; track skill;) {
               <img src="{{ skill.icon }}" alt="" />
               <p>{{ skill.name }}</p>
+              }
             </div>
           </div>
         </div>
@@ -51,15 +62,26 @@
             project.button2Text
           }}</a>
         </div>
-        <button class="next-project-button" (click)="nextProject()">
-          Next Project
-          <img
-            class="next_icon"
-            src="./../../assets/img/projects_section/next_arrow.png"
-            alt=""
-          />
-        </button>
+        <div class="navigation_buttons">
+          <button class="back-button-mobile" (click)="closeOverlay()">
+            <img
+              src="./../../assets/img/projects_section/back_arrow.png"
+              alt=""
+              class="back_icon_mobile"
+            />
+            Go Back
+          </button>
+          <button class="next-project-button" (click)="nextProject()">
+            Next Project
+            <img
+              class="next_icon"
+              src="./../../assets/img/projects_section/next_arrow.png"
+              alt=""
+            />
+          </button>
+        </div>
       </div>
     </div>
   </div>
 </div>
+}

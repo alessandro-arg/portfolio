@@ -72,6 +72,7 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  gap: 40px;
 }
 
 h3 {
@@ -265,4 +266,154 @@ p {
 
 .next_icon {
   transform: rotate(180deg);
+}
+
+.mobile_bar {
+  display: none;
+}
+
+.back-button-mobile {
+  display: none;
+}
+
+@media (max-width: 1280px) {
+  .left {
+    width: 400px;
+  }
+
+  .right {
+    width: 400px;
+    justify-content: center;
+  }
+
+  .sticker {
+    right: -50px;
+    width: 100px;
+    height: 100px;
+  }
+
+  .project-image {
+    width: 400px;
+  }
+}
+
+@media (max-width: 1170px) {
+  .left {
+    width: 300px;
+  }
+}
+
+@media (max-width: 970px) {
+  .left {
+    width: 250px;
+  }
+
+  .container {
+    padding: 19px 60px;
+  }
+
+  .back-button {
+    left: 40px;
+  }
+
+  .next-project-button {
+    right: -40px;
+  }
+}
+
+@media (max-width: 850px) {
+  .overlay {
+    background-image: url("./../../assets/img/background/notebook_paper_mobile.png");
+    background-position: top;
+  }
+
+  .overlay-content {
+    flex-direction: column;
+  }
+
+  .left {
+    width: 100%;
+  }
+
+  .right {
+    width: 100%;
+  }
+
+  .sticker {
+    display: none;
+  }
+
+  .mobile_bar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10;
+    background-color: transparent;
+    height: 80px;
+    padding: 19px 72px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .mobile_container {
+    max-width: 1280px;
+    margin: 0 auto;
+    width: 100%;
+    padding: 0 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .logo {
+    width: 45px;
+    height: 40px;
+    background-image: url("./../../assets/img/logo/logo.png");
+    transition: 300ms ease-in-out;
+
+    &:hover {
+      background-image: url("./../../assets/img/logo/hover_logo.png");
+    }
+  }
+
+  .navigation_buttons {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 0 60px;
+  }
+
+  .back-button {
+    display: none;
+  }
+
+  .back-button-mobile {
+    font-size: 18px;
+    font-weight: 700;
+    background: none;
+    border: none;
+    font-family: $font-primary;
+    cursor: pointer;
+    color: $color-white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+
+    &:hover {
+      color: $accent-color;
+    }
+  }
+
+  .next-project-button {
+    position: relative;
+    bottom: auto;
+  }
+
+  .project-image {
+    width: 560px;
+  }
 }
