@@ -32,39 +32,17 @@
     padding: 32px;
 
     .letter {
-      position: relative;
-      display: inline-block;
+      line-height: 1;
+      margin: 0;
       cursor: default;
-      transition: transform 0.3s ease-in-out, color 0.2s ease-in-out;
+      display: inline-block;
       font-size: inherit;
       white-space: nowrap;
+    }
 
-      &::after {
-        content: attr(data-letter);
-        text-transform: uppercase;
-        position: absolute;
-        left: 0;
-        top: 0;
-        opacity: 0;
-        transition: opacity 0.3s ease-in-out;
-      }
-
-      &:hover::after {
-        opacity: 1;
-        transform: translateY(0);
-      }
-
-      &:hover {
-        color: $primary-color;
-      }
-
-      &:hover {
-        color: $primary-color;
-      }
-
-      &:hover::before {
-        opacity: 0;
-      }
+    .letter:hover {
+      color: $primary-color;
+      text-transform: none;
     }
   }
 

@@ -17,9 +17,12 @@
           <h1 class="title">
             @for (letterObj of titleLetters; track letterObj; let index =
             $index) {
-            <span class="letter" [attr.data-letter]="letterObj.original">{{
-              letterObj.original
-            }}</span>
+            <span
+              class="letter"
+              (mouseenter)="onHover(letterObj)"
+              (mouseleave)="onLeave(letterObj)"
+              >{{ letterObj.display }}</span
+            >
             }
           </h1>
         </div>
@@ -45,9 +48,12 @@
           <h1 class="subtitle">
             @for (letterObj of subtitleLetters; track letterObj; let index =
             $index) {
-            <span class="letter" [attr.data-letter]="letterObj.original">{{
-              letterObj.original
-            }}</span>
+            <span
+              class="letter"
+              (mouseenter)="onHover(letterObj)"
+              (mouseleave)="onLeave(letterObj)"
+              >{{ letterObj.display }}</span
+            >
             }
           </h1>
           <button class="get_in_touch">Get in Touch</button>
