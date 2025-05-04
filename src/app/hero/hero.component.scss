@@ -363,6 +363,29 @@
   .subtitle_wrapper {
     justify-content: start !important;
   }
+
+  .hello_btn {
+    &.show-hover {
+      background-color: $secondary-color !important;
+      width: 300px !important;
+
+      .btn_text.default {
+        opacity: 0 !important;
+      }
+
+      .btn_text.hover {
+        opacity: 1 !important;
+      }
+
+      .hand {
+        opacity: 1 !important;
+        transform: translateX(-50%) rotate(0deg) !important;
+        transition: transform 350ms ease !important;
+        top: -40px !important;
+        left: 20px !important;
+      }
+    }
+  }
 }
 
 @media (max-width: 520px) {

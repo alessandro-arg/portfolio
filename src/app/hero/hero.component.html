@@ -26,7 +26,7 @@
             }
           </h1>
         </div>
-        @if (!isMobile) {
+        @if (isMobile === false) {
         <div class="photo_wrapper" style="position: relative">
           <img
             class="photo"
@@ -60,7 +60,7 @@
         </div>
       </div>
       <div class="mobile_photo">
-        @if (isMobile) {
+        @if (isMobile === true) {
         <div class="photo_wrapper" style="position: relative">
           <img
             class="photo"

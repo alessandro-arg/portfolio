@@ -11,7 +11,7 @@ export class HeroComponent implements OnInit {
   titleText = 'Frontend';
   subtitleText = 'DEVELOPER';
   isPhotoHovered = false;
-  isMobile = false;
+  isMobile: boolean | undefined = undefined;
 
   titleLetters = this.titleText.split('').map((letter) => ({
     original: letter,
@@ -22,6 +22,12 @@ export class HeroComponent implements OnInit {
     original: letter,
     display: letter,
   }));
+
+  constructor() {
+    if (typeof window !== 'undefined') {
+      this.isMobile = window.innerWidth <= 800;
+    }
+  }
 
   flipCase(char: string): string {
     return char === char.toUpperCase()
@@ -41,10 +47,21 @@ export class HeroComponent implements OnInit {
     this.isPhotoHovered = state;
   }
 
+  buttonAnimationMobile(): void {
+    this.checkScreenSize();
+    if (this.isMobile) {
+      setTimeout(() => {
+        const button = document.querySelector('.hello_btn');
+        button?.classList.add('show-hover');
+      }, 1000);
+    }
+  }
+
   ngOnInit(): void {
     if (typeof window !== 'undefined') {
-      this.checkScreenSize();
+      this.isMobile = window.innerWidth <= 800;
       window.addEventListener('resize', this.checkScreenSize.bind(this));
+      this.buttonAnimationMobile();
     }
   }
 
