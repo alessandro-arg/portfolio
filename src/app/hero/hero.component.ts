@@ -68,4 +68,11 @@ export class HeroComponent implements OnInit {
   checkScreenSize(): void {
     this.isMobile = window.innerWidth <= 800;
   }
+
+  scrollToContacts(): void {
+    const element = document.getElementById('contacts');
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  }
 }
