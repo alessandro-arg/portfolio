@@ -1,0 +1,74 @@
+@use "./../../styles/variables" as *;
+
+:host {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  width: 100vw;
+  height: 100vh;
+  overflow-y: auto;
+  color: $color-black;
+
+  background-image: linear-gradient(
+    to bottom right,
+    rgb(218, 218, 218),
+    rgb(141, 141, 141)
+  );
+
+  display: flex;
+  justify-content: center;
+  padding: 32px;
+  box-sizing: border-box;
+}
+
+p {
+  font-size: 18px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+
+h1 {
+  margin-bottom: 50px;
+}
+
+.legal_notice_wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+
+.legal_notice_content {
+  max-width: 1280px;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.95);
+  padding: 32px;
+  border-radius: 12px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  height: 90%;
+  overflow-y: auto;
+}
+
+.close-button {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  background: none;
+  border: none;
+  font-size: 32px;
+  cursor: pointer;
+  color: $color-black;
+  z-index: 10000;
+  transition: all 0.1s ease-in-out;
+
+  &:hover {
+    color: $secondary-color;
+    transform: scale(1.05);
+  }
+}
