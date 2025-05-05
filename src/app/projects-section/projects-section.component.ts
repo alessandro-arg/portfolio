@@ -27,7 +27,7 @@ export class ProjectsSectionComponent implements OnInit {
         'Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.',
       details:
         'Short text that describes your role or the workflow for this specific project. Let a recruiter know more about your knowledge and ability to work independently or collaboratively in a structured way.',
-      duration: '5 weeks',
+      duration: '6 weeks',
       skills: [
         { icon: './../../assets/img/skill_set/icons/css.png', name: 'CSS' },
         { icon: './../../assets/img/skill_set/icons/html.png', name: 'HTML' },
@@ -53,7 +53,7 @@ export class ProjectsSectionComponent implements OnInit {
         'Jump, run and throw game based on object-oriented approach. Help Pepe to find coins and tabasco salsa to fight against the crazy hen.',
       details:
         'Short text that describes your role or the workflow for this specific project. Let a recruiter know more about your knowledge and ability to work independently or collaboratively in a structured way.',
-      duration: '3 Weeks',
+      duration: '8 Weeks',
       skills: [
         {
           icon: './../../assets/img/skill_set/icons/js.png',
@@ -63,7 +63,7 @@ export class ProjectsSectionComponent implements OnInit {
         { icon: './../../assets/img/skill_set/icons/css.png', name: 'CSS' },
       ],
       sticker: './../../assets/img/contacts/circle_logo.png',
-      image: 'assets/img/projects_section/epl_mockup.jpg',
+      image: 'assets/img/projects_section/mafia_mockup.jpg',
       button1Text: 'GitHub',
       button2Text: 'Live Test',
       button1Link: 'https://github.com/alessandro-arg/mafia_vs_orcs.git',
