@@ -121,10 +121,14 @@
         <span class="custom_checkbox"></span>
       </div>
       <label class="checkbox_label" for="checkbox">
-        I've read the <a href="">privacy policy</a> and agree to the processing
-        of my data as outlined.
+        I've read the <a (click)="toggleLegalNotice()">privacy policy</a> and
+        agree to the processing of my data as outlined.
       </label>
     </div>
+    <app-legal-notice
+      *ngIf="showLegalNotice"
+      (clickOutside)="hideLegalNotice()"
+    ></app-legal-notice>
     <span
       class="checkbox_error"
       [class.visible]="!checkbox.valid && (checkbox.touched || checkbox.dirty)"

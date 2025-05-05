@@ -2,11 +2,13 @@ import { HttpClient } from '@angular/common/http';
 import { Component, inject } from '@angular/core';
 import { FormsModule, NgForm } from '@angular/forms';
 import { ViewChild, ElementRef } from '@angular/core';
+import { LegalNoticeComponent } from '../../legal-notice/legal-notice.component';
+import { NgIf } from '@angular/common';
 
 @Component({
   selector: 'app-contact-form',
   standalone: true,
-  imports: [FormsModule],
+  imports: [FormsModule, LegalNoticeComponent, NgIf],
   templateUrl: './contact-form.component.html',
   styleUrl: './contact-form.component.scss',
 })
@@ -35,6 +37,7 @@ export class ContactFormComponent {
   mailTest = true;
   formSubmitted = false;
   successMessage = false;
+  showLegalNotice = false;
 
   @ViewChild('emailInput') emailInputRef!: ElementRef<HTMLInputElement>;
   @ViewChild('messageInput') messageInputRef!: ElementRef<HTMLInputElement>;
@@ -126,5 +129,15 @@ export class ContactFormComponent {
     setTimeout(() => {
       this.successMessage = false;
     }, 2000);
+  }
+
+  toggleLegalNotice() {
+    this.showLegalNotice = !this.showLegalNotice;
+    document.body.style.overflow = this.showLegalNotice ? 'hidden' : 'auto';
+  }
+
+  hideLegalNotice() {
+    this.showLegalNotice = false;
+    document.body.style.overflow = 'auto';
   }
 }
