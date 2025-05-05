@@ -1,21 +1,28 @@
 import { Component } from '@angular/core';
 import { NavigationService } from '../../navigation.service';
 import { CommonModule } from '@angular/common';
+import { TranslateService, TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, TranslateModule],
   templateUrl: './header.component.html',
   styleUrl: './header.component.scss',
 })
 export class HeaderComponent {
-  constructor(private navService: NavigationService) {}
-
   activeLang: 'en' | 'de' = 'en';
+
+  constructor(
+    private navService: NavigationService,
+    private translate: TranslateService
+  ) {
+    this.translate.setDefaultLang(this.activeLang);
+  }
 
   switchLanguage(lang: 'en' | 'de') {
     this.activeLang = lang;
+    this.translate.use(lang);
   }
 
   goToSection(sectionId: string) {
