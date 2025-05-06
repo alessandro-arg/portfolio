@@ -58,7 +58,7 @@
   },
   "CONTACT": {
     "TITLE": "KONTAKTIERE MICH",
-    "HEADING": "Bereit für eine Zusammenarbeit?",
+    "HEADING": "Bereit für eine Kooperation?",
     "DESCRIPTION_1": "Ermutige Menschen, dich zu kontaktieren, und beschreibe, an welcher Rolle du interessiert bist. Zeige dein Vertrauen in deine Fähigkeit, durch deine Fachkenntnisse und Begeisterung zur Weiterentwicklung einen bedeutenden Beitrag zu einem Team zu leisten.",
     "DESCRIPTION_2": "Zeige Interesse daran, an einem neuen Projekt mitzuwirken, und betone den Wert und die Fähigkeiten, die du mitbringst."
   },
@@ -105,5 +105,18 @@
       "button1Text": "GitHub",
       "button2Text": "Live-Demo"
     }
+  },
+  "legalNotice": {
+    "title": "Impressum",
+    "infoTitle": "Angaben gemäß § 5 TMG",
+    "contactTitle": "Kontakt",
+    "responsibleTitle": "Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV",
+    "disclaimerTitle": "Haftungsausschluss",
+    "liabilityContentTitle": "Haftung für Inhalte",
+    "liabilityContent": "Die Inhalte unserer Seiten wurden mit größter Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte können wir jedoch keine Gewähr übernehmen. Als Diensteanbieter sind wir gemäß den allgemeinen Gesetzen für eigene Inhalte auf diesen Seiten verantwortlich.",
+    "liabilityLinksTitle": "Haftung für Links",
+    "liabilityLinks": "Unser Angebot enthält Links zu externen Websites Dritter, auf deren Inhalte wir keinen Einfluss haben. Deshalb können wir für diese fremden Inhalte auch keine Gewähr übernehmen.",
+    "copyrightTitle": "Urheberrecht",
+    "copyright": "Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers."
   }
 }

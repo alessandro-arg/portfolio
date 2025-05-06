@@ -1,9 +1,9 @@
 <div class="legal_notice_wrapper">
   <div class="legal_notice_content">
     <button class="close-button" (click)="close()">✕</button>
-    <h1>Impressum / Legal Notice</h1>
+    <h1>{{ "legalNotice.title" | translate }}</h1>
 
-    <h2>Information according to § 5 TMG</h2>
+    <h2>{{ "legalNotice.infoTitle" | translate }}</h2>
     <p>
       Alessandro Argenziano<br />
       Kirchstraße 2<br />
@@ -11,41 +11,28 @@
       Germany
     </p>
 
-    <h2>Contact</h2>
+    <h2>{{ "legalNotice.contactTitle" | translate }}</h2>
     <p>
       Telephone: +49 (0)160 92965227<br />
       Email: contact&#64;alessandro-argenziano.com
     </p>
 
-    <h2>Responsible for content according to § 55 Abs. 2 RStV</h2>
+    <h2>{{ "legalNotice.responsibleTitle" | translate }}</h2>
     <p>
       Alessandro Argenziano<br />
       Kirchstraße 2<br />
       79801 Hohentengen
     </p>
 
-    <h2>Disclaimer</h2>
-    <h3>Liability for content</h3>
-    <p>
-      The contents of our pages have been created with the utmost care. However,
-      we cannot guarantee the contents' accuracy, completeness, or topicality.
-      According to statutory provisions, we are furthermore responsible for our
-      own content on these web pages.
-    </p>
+    <h2>{{ "legalNotice.disclaimerTitle" | translate }}</h2>
 
-    <h3>Liability for links</h3>
-    <p>
-      Our offer contains links to external websites of third parties. We have no
-      influence on the contents of those websites. Therefore, we cannot assume
-      any liability for these external contents.
-    </p>
+    <h3>{{ "legalNotice.liabilityContentTitle" | translate }}</h3>
+    <p>{{ "legalNotice.liabilityContent" | translate }}</p>
 
-    <h3>Copyright</h3>
-    <p>
-      The content and works provided on these web pages are governed by the
-      copyright laws of Germany. Duplication, processing, distribution, or any
-      form of commercialization beyond the scope of the copyright law shall
-      require the prior written consent of the author or creator.
-    </p>
+    <h3>{{ "legalNotice.liabilityLinksTitle" | translate }}</h3>
+    <p>{{ "legalNotice.liabilityLinks" | translate }}</p>
+
+    <h3>{{ "legalNotice.copyrightTitle" | translate }}</h3>
+    <p>{{ "legalNotice.copyright" | translate }}</p>
   </div>
 </div>
