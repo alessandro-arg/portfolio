@@ -35,5 +35,25 @@
     "JOIN_DESC": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.",
     "MAFIA_DESC": "Jump, run and throw game based on object-oriented approach. Help Pepe to find coins and tabasco salsa to fight against the crazy hen.",
     "DABUBBLE_DESC": "This App is a Slack Clone App. It revolutionizes team communication and collaboration with its intuitive interface, real-time messaging, and robust channel organization."
+  },
+  "OVERLAY": {
+    "BACK": "Go Back",
+    "NEXT": "Next Project",
+    "DESCRIPTION": "Description",
+    "DETAILS": "Implementation Details",
+    "DURATION": "Duration"
+  },
+  "TESTIMONIALS": {
+    "SECTION_TITLE": "IN THEIR WORDS:",
+    "HEADING": "Colleagues' Thoughts",
+    "TEXT_1": "Working with Alessandro in the team was inspiring. He worked quickly and with great commitment, never limited himself to just 'his' tasks, and repeatedly contributed clever ideas that noticeably advanced our project.",
+    "NAME_1": "Judith Lenz",
+    "ROLE_1": "Frontend Developer",
+    "TEXT_2": "I completed the frontend development training course together with Alessandro. During that time, I got to know him as a very reliable, helpful, and talented colleague.",
+    "NAME_2": "Marco Marrocu",
+    "ROLE_2": "Frontend Developer",
+    "TEXT_3": "Thanks to Alessandro's technical skills and his structured approach, we were able to overcome many hurdles. He was always an important driving force in the team.",
+    "NAME_3": "Eid Aden",
+    "ROLE_3": "Frontend Developer"
   }
 }

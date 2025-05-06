@@ -17,7 +17,7 @@
         alt=""
         class="back_icon"
       />
-      Go Back
+      {{ "OVERLAY.BACK" | translate }}
     </button>
     <div class="overlay-content">
       <div class="left">
@@ -27,14 +27,17 @@
         </div>
         <div class="content">
           <div class="description_wrapper">
-            <h3>Description</h3>
+            <h3>{{ "OVERLAY.DESCRIPTION" | translate }}</h3>
             <p>{{ project.description }}</p>
           </div>
           <div class="details_wrapper">
-            <h3>Implementation Details</h3>
+            <h3>{{ "OVERLAY.DETAILS" | translate }}</h3>
             <p>{{ project.details }}</p>
           </div>
-          <p><span>Duration:</span> {{ project.duration }}</p>
+          <p>
+            <span>{{ "OVERLAY.DURATION" | translate }}:</span>
+            {{ project.duration }}
+          </p>
           <div class="skills">
             @for (skill of project.skills; track skill;) {
             <div class="single_skill">
@@ -69,10 +72,10 @@
               alt=""
               class="back_icon_mobile"
             />
-            Go Back
+            {{ "OVERLAY.BACK" | translate }}
           </button>
           <button class="next-project-button" (click)="nextProject()">
-            Next Project
+            {{ "OVERLAY.NEXT" | translate }}
             <img
               class="next_icon"
               src="./../../assets/img/projects_section/next_arrow.png"
