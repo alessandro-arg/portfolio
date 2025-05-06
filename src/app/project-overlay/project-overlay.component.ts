@@ -12,6 +12,7 @@ import { TranslateModule } from '@ngx-translate/core';
 })
 export class ProjectOverlayComponent {
   @Input() project: Project | null = null;
+  @Input() projectId: string = '';
   @Output() close = new EventEmitter<void>();
   @Output() next = new EventEmitter<void>();
 

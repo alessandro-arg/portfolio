@@ -82,5 +82,28 @@
   },
   "FOOTER": {
     "LEGAL_NOTICE": "Legal Notice"
+  },
+  "PROJECTS_OVERLAY": {
+    "join": {
+      "description": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.",
+      "details": "Short text that describes your role or the workflow for this specific project. Let a recruiter know more about your knowledge and ability to work independently or collaboratively in a structured way.",
+      "duration": "6 weeks",
+      "button1Text": "GitHub",
+      "button2Text": "Live Test"
+    },
+    "mafia-vs-orcs": {
+      "description": "Jump, run and throw game based on object-oriented approach. Help Pepe to find coins and tabasco salsa to fight against the crazy hen.",
+      "details": "Short text that describes your role or the workflow for this specific project. Let a recruiter know more about your knowledge and ability to work independently or collaboratively in a structured way.",
+      "duration": "8 weeks",
+      "button1Text": "GitHub",
+      "button2Text": "Live Test"
+    },
+    "dabubble": {
+      "description": "This App is a Slack Clone App. It revolutionizes team communication and collaboration with its intuitive interface, real-time messaging, and robust channel organization.",
+      "details": "Short text that describes your role or the workflow for this specific project. Let a recruiter know more about your knowledge and ability to work independently or collaboratively in a structured way.",
+      "duration": "8 weeks",
+      "button1Text": "GitHub",
+      "button2Text": "Live Test"
+    }
   }
 }

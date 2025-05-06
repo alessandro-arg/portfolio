@@ -82,5 +82,28 @@
   },
   "FOOTER": {
     "LEGAL_NOTICE": "Impressum"
+  },
+  "PROJECTS_OVERLAY": {
+    "join": {
+      "description": "Aufgabenmanager inspiriert vom Kanban-System. Erstelle und organisiere Aufgaben per Drag-and-Drop, weise Benutzer und Kategorien zu.",
+      "details": "Kurzer Text, der deine Rolle oder den Workflow in diesem spezifischen Projekt beschreibt. Gib Recruitern Einblicke in dein Wissen und deine Fähigkeit, eigenständig oder im Team strukturiert zu arbeiten.",
+      "duration": "6 Wochen",
+      "button1Text": "GitHub",
+      "button2Text": "Live-Demo"
+    },
+    "mafia-vs-orcs": {
+      "description": "Jump-and-Run-Spiel mit objektorientiertem Ansatz. Hilf Pepe dabei, Münzen und Tabascosauce zu finden, um gegen das verrückte Huhn zu kämpfen.",
+      "details": "Kurzer Text, der deine Rolle oder den Workflow in diesem spezifischen Projekt beschreibt. Gib Recruitern Einblicke in dein Wissen und deine Fähigkeit, eigenständig oder im Team strukturiert zu arbeiten.",
+      "duration": "8 Wochen",
+      "button1Text": "GitHub",
+      "button2Text": "Live-Demo"
+    },
+    "dabubble": {
+      "description": "Diese App ist ein Slack-Klon. Sie revolutioniert die Teamkommunikation und Zusammenarbeit mit einer intuitiven Oberfläche, Echtzeitnachrichten und einer durchdachten Kanalstruktur.",
+      "details": "Kurzer Text, der deine Rolle oder den Workflow in diesem spezifischen Projekt beschreibt. Gib Recruitern Einblicke in dein Wissen und deine Fähigkeit, eigenständig oder im Team strukturiert zu arbeiten.",
+      "duration": "8 Wochen",
+      "button1Text": "GitHub",
+      "button2Text": "Live-Demo"
+    }
   }
 }

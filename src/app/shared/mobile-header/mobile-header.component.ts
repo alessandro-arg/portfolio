@@ -1,29 +1,45 @@
 import { Component, ElementRef, HostListener, ViewChild } from '@angular/core';
 import { NavigationService } from '../../navigation.service';
 import { CommonModule } from '@angular/common';
+import { TranslateService, TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-mobile-header',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, TranslateModule],
   templateUrl: './mobile-header.component.html',
   styleUrl: './mobile-header.component.scss',
 })
 export class MobileHeaderComponent {
-  constructor(private navService: NavigationService) {}
+  constructor(
+    private navService: NavigationService,
+    public translate: TranslateService
+  ) {
+    const savedLang = localStorage.getItem('selectedLang') as
+      | 'en'
+      | 'de'
+      | null;
+    const langToUse = savedLang || 'en';
+    this.translate.setDefaultLang(langToUse);
+    this.translate.use(langToUse);
+  }
+
+  get activeLang(): 'en' | 'de' {
+    return this.translate.currentLang as 'en' | 'de';
+  }
+
+  switchLanguage(lang: 'en' | 'de') {
+    localStorage.setItem('selectedLang', lang);
+    this.translate.use(lang);
+  }
 
   isNavbarOpen = false;
   hoverLogo = false;
-  activeLang: 'en' | 'de' = 'en';
 
   @ViewChild('navbar') navbarRef!: ElementRef;
 
   toggleNavbar() {
     this.isNavbarOpen = !this.isNavbarOpen;
-  }
-
-  switchLanguage(lang: 'en' | 'de') {
-    this.activeLang = lang;
   }
 
   goToSection(section: string) {

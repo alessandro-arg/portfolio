@@ -11,20 +11,24 @@ import { TranslateService, TranslateModule } from '@ngx-translate/core';
   styleUrl: './header.component.scss',
 })
 export class HeaderComponent {
-  activeLang: 'en' | 'de' = 'en';
-
   constructor(
     private navService: NavigationService,
-    private translate: TranslateService
+    public translate: TranslateService
   ) {
-    const savedLang = localStorage.getItem('selectedLang') as 'en' | 'de';
-    this.activeLang = savedLang || 'en';
-    this.translate.setDefaultLang(this.activeLang);
-    this.translate.use(this.activeLang);
+    const savedLang = localStorage.getItem('selectedLang') as
+      | 'en'
+      | 'de'
+      | null;
+    const langToUse = savedLang || 'en';
+    this.translate.setDefaultLang(langToUse);
+    this.translate.use(langToUse);
+  }
+
+  get activeLang(): 'en' | 'de' {
+    return this.translate.currentLang as 'en' | 'de';
   }
 
   switchLanguage(lang: 'en' | 'de') {
-    this.activeLang = lang;
     localStorage.setItem('selectedLang', lang);
     this.translate.use(lang);
   }

@@ -24,11 +24,6 @@ export class ProjectsSectionComponent implements OnInit {
   projects: { [key: string]: Project } = {
     join: {
       title: 'Join',
-      description:
-        'Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.',
-      details:
-        'Short text that describes your role or the workflow for this specific project. Let a recruiter know more about your knowledge and ability to work independently or collaboratively in a structured way.',
-      duration: '6 weeks',
       skills: [
         { icon: './../../assets/img/skill_set/icons/css.png', name: 'CSS' },
         { icon: './../../assets/img/skill_set/icons/html.png', name: 'HTML' },
@@ -43,18 +38,11 @@ export class ProjectsSectionComponent implements OnInit {
       ],
       sticker: './../../assets/img/projects_section/featured_sticker.png',
       image: 'assets/img/projects_section/join_mockup.jpg',
-      button1Text: 'GitHub',
-      button2Text: 'Live Test',
       button1Link: 'https://github.com/alessandro-arg/join.git',
       button2Link: 'https://www.alessandro-argenziano.com/join',
     },
     'mafia-vs-orcs': {
       title: 'Mafia vs Orcs',
-      description:
-        'Jump, run and throw game based on object-oriented approach. Help Pepe to find coins and tabasco salsa to fight against the crazy hen.',
-      details:
-        'Short text that describes your role or the workflow for this specific project. Let a recruiter know more about your knowledge and ability to work independently or collaboratively in a structured way.',
-      duration: '8 Weeks',
       skills: [
         {
           icon: './../../assets/img/skill_set/icons/js.png',
@@ -65,18 +53,11 @@ export class ProjectsSectionComponent implements OnInit {
       ],
       sticker: './../../assets/img/contacts/circle_logo.png',
       image: 'assets/img/projects_section/mafia_mockup.jpg',
-      button1Text: 'GitHub',
-      button2Text: 'Live Test',
       button1Link: 'https://github.com/alessandro-arg/mafia_vs_orcs.git',
       button2Link: 'https://www.alessandro-argenziano.com/mafia_vs_orcs',
     },
     dabubble: {
       title: 'DABubble',
-      description:
-        'This App is a Slack Clone App. It revolutionizes team communication and collaboration with its intuitive interface, real-time messaging, and robust channel organization.',
-      details:
-        'Short text that describes your role or the workflow for this specific project. Let a recruiter know more about your knowledge and ability to work independently or collaboratively in a structured way.',
-      duration: '6 weeks',
       skills: [
         {
           icon: './../../assets/img/skill_set/icons/js.png',
@@ -87,8 +68,6 @@ export class ProjectsSectionComponent implements OnInit {
       ],
       sticker: './../../assets/img/contacts/circle_logo.png',
       image: 'assets/img/projects_section/dabubble_mockup.jpg',
-      button1Text: 'GitHub',
-      button2Text: 'Live Test',
       button1Link: 'https://dabubble.com',
       button2Link: 'https://github.com/dabubble-app',
     },

@@ -102,6 +102,7 @@
     <app-project-overlay
       *ngIf="showOverlay"
       [project]="selectedProject"
+      [projectId]="projectKeys[currentProjectIndex]"
       (close)="closeOverlay()"
       (next)="showNextProject()"
     ></app-project-overlay>
