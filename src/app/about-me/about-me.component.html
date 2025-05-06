@@ -5,7 +5,7 @@
         <img src="./../../assets/img/about_me/yellow_paper.png" alt="" />
         <div class="iconText">
           <img src="./../../assets/img/about_me/location.png" alt="" />
-          <p>Based in Hohentengen</p>
+          <p>{{ "ABOUT.LOCATION" | translate }}</p>
         </div>
       </div>
 
@@ -13,7 +13,7 @@
         <img src="./../../assets/img/about_me/blue_paper.png" alt="" />
         <div class="iconText">
           <img src="./../../assets/img/about_me/relocation.png" alt="" />
-          <p>Open to relocate</p>
+          <p>{{ "ABOUT.RELOCATE" | translate }}</p>
         </div>
       </div>
 
@@ -21,27 +21,22 @@
         <img src="./../../assets/img/about_me/orange_paper.png" alt="" />
         <div class="iconText">
           <img src="./../../assets/img/about_me/remote.png" alt="" />
-          <p>Open to work remote</p>
+          <p>{{ "ABOUT.REMOTE" | translate }}</p>
         </div>
       </div>
     </div>
+
     <div class="right_section">
       <div class="mobile_wrapper">
-        <span>WHO'S ALESSANDRO?</span>
+        <span>{{ "ABOUT.WHO" | translate }}</span>
         <div class="about_me_title">
-          <h2>About Me</h2>
+          <h2>{{ "ABOUT.TITLE" | translate }}</h2>
           <div class="line_wrapper"></div>
         </div>
-        <p>
-          Hey there, I'm Karl. Write some information about yourself that is IT
-          related. Why are you passionate about coding? What is your source of
-          inspiration for improving your programming skills? Do you learn from
-          each challenge as you search for the most efficient or elegant
-          solution?
-        </p>
-        <p>Let's collaborate and build something remarkable together!</p>
+        <p>{{ "ABOUT.DESCRIPTION_1" | translate }}</p>
+        <p>{{ "ABOUT.DESCRIPTION_2" | translate }}</p>
         <button class="lets_talk_button" (click)="scrollToContacts()">
-          Let's talk
+          {{ "ABOUT.BUTTON" | translate }}
         </button>
       </div>
     </div>

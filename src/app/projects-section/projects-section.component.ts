@@ -72,9 +72,10 @@ export class ProjectsSectionComponent implements OnInit {
     dabubble: {
       title: 'DABubble',
       description:
-        'Slack clone app with real-time messaging and channel organization...',
-      details: 'ddd',
-      duration: '4 months',
+        'This App is a Slack Clone App. It revolutionizes team communication and collaboration with its intuitive interface, real-time messaging, and robust channel organization.',
+      details:
+        'Short text that describes your role or the workflow for this specific project. Let a recruiter know more about your knowledge and ability to work independently or collaboratively in a structured way.',
+      duration: '6 weeks',
       skills: [
         {
           icon: './../../assets/img/skill_set/icons/js.png',

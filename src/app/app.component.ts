@@ -8,6 +8,7 @@ import { ProjectsSectionComponent } from './projects-section/projects-section.co
 import { TestimonialsSectionComponent } from './testimonials-section/testimonials-section.component';
 import { ContactSectionComponent } from './contact-section/contact-section.component';
 import { HeaderWrapperComponent } from './shared/header-wrapper/header-wrapper.component';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-root',
@@ -22,6 +23,7 @@ import { HeaderWrapperComponent } from './shared/header-wrapper/header-wrapper.c
     TestimonialsSectionComponent,
     ContactSectionComponent,
     HeaderWrapperComponent,
+    TranslateModule,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',

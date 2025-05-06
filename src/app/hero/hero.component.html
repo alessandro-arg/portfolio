@@ -10,8 +10,10 @@
                 alt="Hand"
                 class="hand"
               />
-              <span class="btn_text default">Hello world</span>
-              <span class="btn_text hover">I'M ALESSANDRO ARGENZIANO</span>
+              <span class="btn_text default">{{
+                "HERO.HELLO" | translate
+              }}</span>
+              <span class="btn_text hover">{{ "HERO.INTRO" | translate }}</span>
             </button>
           </div>
           <h1 class="title">
@@ -57,7 +59,7 @@
             }
           </h1>
           <button class="get_in_touch" (click)="scrollToContacts()">
-            Get in Touch
+            {{ "HERO.CONTACT" | translate }}
           </button>
         </div>
       </div>
@@ -72,7 +74,7 @@
             (mouseleave)="onPhotoHover(false)"
           />
           <div class="name_overlay">
-            <span class="name_text"> Alessandro :D</span>
+            <span class="name_text">Alessandro :D</span>
           </div>
         </div>
         }

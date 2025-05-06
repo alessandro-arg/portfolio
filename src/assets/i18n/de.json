@@ -2,5 +2,20 @@
   "ABOUT_ME": "Über mich",
   "SKILLS": "Skills",
   "PROJECTS": "Projekte",
-  "CONTACT": "Kontakt"
+  "CONTACT": "Kontakt",
+  "HERO": {
+    "HELLO": "Hallo Welt",
+    "INTRO": "ICH BIN ALESSANDRO ARGENZIANO",
+    "CONTACT": "Kontakt aufnehmen"
+  },
+  "ABOUT": {
+    "LOCATION": "Wohne in Hohentengen",
+    "RELOCATE": "Offen für einen Umzug",
+    "REMOTE": "Offen für Remote-Arbeit",
+    "WHO": "WER IST ALESSANDRO?",
+    "TITLE": "Über mich",
+    "DESCRIPTION_1": "Hallo, ich bin Karl. Schreibe hier einige Informationen über dich und deinen IT-Hintergrund. Warum begeistert dich das Programmieren? Was inspiriert dich, deine Fähigkeiten weiterzuentwickeln? Lernst du aus jeder Herausforderung, um die effizienteste oder eleganteste Lösung zu finden?",
+    "DESCRIPTION_2": "Lass uns gemeinsam etwas Großartiges schaffen!",
+    "BUTTON": "Lass uns sprechen"
+  }
 }

@@ -2,5 +2,21 @@
   "ABOUT_ME": "About Me",
   "SKILLS": "Skills",
   "PROJECTS": "Projects",
-  "CONTACT": "Contact"
+  "CONTACT": "Contact",
+  "WHO": "WHO'S ALESSANDRO?",
+  "HERO": {
+    "HELLO": "Hello world",
+    "INTRO": "I'M ALESSANDRO ARGENZIANO",
+    "CONTACT": "Get in Touch"
+  },
+  "ABOUT": {
+    "LOCATION": "Based in Hohentengen",
+    "RELOCATE": "Open to relocate",
+    "REMOTE": "Open to work remote",
+    "WHO": "WHO'S ALESSANDRO?",
+    "TITLE": "About Me",
+    "DESCRIPTION_1": "Hey there, I'm Karl. Write some information about yourself that is IT related. Why are you passionate about coding? What is your source of inspiration for improving your programming skills? Do you learn from each challenge as you search for the most efficient or elegant solution?",
+    "DESCRIPTION_2": "Let's collaborate and build something remarkable together!",
+    "BUTTON": "Let's talk"
+  }
 }
