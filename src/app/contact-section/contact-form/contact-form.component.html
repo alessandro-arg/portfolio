@@ -13,7 +13,7 @@
         [class.invalid]="!showInput.name && isFieldInvalid(name)"
         for="name"
       >
-        What's your name?</label
+        {{ "CONTACT_FORM.LABEL_NAME" | translate }}</label
       >
       <input
         [(ngModel)]="contactData.name"
@@ -28,12 +28,12 @@
         required
         (blur)="onInputBlur(name, 'name')"
         (focus)="clearPlaceholder('name')"
-        [placeholder]="placeholders.name"
+        [placeholder]="'CONTACT_FORM.PLACEHOLDER_NAME' | translate"
         [hidden]="!showInput.name && isFieldInvalid(name)"
       />
       @if (!showInput.name && isFieldInvalid(name)) {
       <span class="input_error" (click)="onShowInput('name')">
-        Oops! it seems your name is missing
+        {{ "CONTACT_FORM.ERROR_NAME" | translate }}
       </span>
       }
     </div>
@@ -45,7 +45,7 @@
         class="email_label"
         [class.invalid]="!showInput.email && isFieldInvalid(email)"
         for="email"
-        >What's your email?</label
+        >{{ "CONTACT_FORM.LABEL_EMAIL" | translate }}</label
       >
       <input
         [(ngModel)]="contactData.email"
@@ -54,7 +54,7 @@
         type="email"
         id="email"
         name="email"
-        placeholder="youremail@email.com"
+        [placeholder]="'CONTACT_FORM.PLACEHOLDER_EMAIL' | translate"
         pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}"
         autocomplete="off"
         required
@@ -65,7 +65,7 @@
       />
       @if (!showInput.email && isFieldInvalid(email)) {
       <span class="input_error" (click)="onShowInput('email')">
-        Hoppla! your email is required
+        {{ "CONTACT_FORM.ERROR_EMAIL" | translate }}
       </span>
       }
     </div>
@@ -77,7 +77,7 @@
         class="message_label"
         [class.invalid]="!showInput.message && isFieldInvalid(message)"
         for="message"
-        >How can I help you?</label
+        >{{ "CONTACT_FORM.LABEL_MESSAGE" | translate }}</label
       >
       <input
         [(ngModel)]="contactData.message"
@@ -87,7 +87,7 @@
         type="text"
         id="message"
         name="message"
-        placeholder="Hello Alessandro, I am interested in..."
+        [placeholder]="'CONTACT_FORM.PLACEHOLDER_MESSAGE' | translate"
         autocomplete="off"
         required
         (blur)="onInputBlur(message, 'message')"
@@ -97,7 +97,7 @@
       />
       @if (!showInput.message && isFieldInvalid(message)) {
       <span class="input_error" (click)="onShowInput('message')">
-        What do you need to develop?
+        {{ "CONTACT_FORM.ERROR_MESSAGE" | translate }}
       </span>
       }
     </div>
@@ -106,7 +106,7 @@
       [class.visible]="
         isFieldInvalid(message) || isFieldInvalid(email) || isFieldInvalid(name)
       "
-      >Please fill all the fields.</span
+      >{{ "CONTACT_FORM.ERROR_ALL_FIELDS" | translate }}</span
     >
     <div class="checkbox_wrapper">
       <div class="checkbox_box">
@@ -121,8 +121,11 @@
         <span class="custom_checkbox"></span>
       </div>
       <label class="checkbox_label" for="checkbox">
-        I've read the <a (click)="toggleLegalNotice()">privacy policy</a> and
-        agree to the processing of my data as outlined.
+        {{ "CONTACT_FORM.PRIVACY_TEXT_PART1" | translate }}
+        <a (click)="toggleLegalNotice()" href="javascript:void(0)">
+          {{ "CONTACT_FORM.PRIVACY_LINK" | translate }}
+        </a>
+        {{ "CONTACT_FORM.PRIVACY_TEXT_PART2" | translate }}
       </label>
     </div>
     <app-legal-notice
@@ -132,17 +135,19 @@
     <span
       class="checkbox_error"
       [class.visible]="!checkbox.valid && (checkbox.touched || checkbox.dirty)"
-      >Please accept the privacy policy.</span
+      >{{ "CONTACT_FORM.ERROR_PRIVACY" | translate }}</span
     >
-    <span class="success_message" [class.visible]="successMessage">
-      Your message was sent! <br />
-      I will get back to you soon.
+    <span
+      class="success_message"
+      [class.visible]="successMessage"
+      [innerHTML]="'CONTACT_FORM.SUCCESS' | translate"
+    >
     </span>
     <div class="mobile_version">
       <div class="line_wrapper"></div>
       <input
         type="submit"
-        value="Send"
+        [value]="'CONTACT_FORM.BUTTON_SUBMIT' | translate"
         [class.disabled]="!checkbox.valid"
         [disabled]="!checkbox.valid"
       />

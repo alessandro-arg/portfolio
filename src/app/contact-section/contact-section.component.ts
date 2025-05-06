@@ -1,11 +1,18 @@
 import { Component, OnInit } from '@angular/core';
 import { ContactFormComponent } from './contact-form/contact-form.component';
 import { FooterComponent } from '../shared/footer/footer.component';
+import { CommonModule } from '@angular/common';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-contact-section',
   standalone: true,
-  imports: [ContactFormComponent, FooterComponent],
+  imports: [
+    ContactFormComponent,
+    FooterComponent,
+    CommonModule,
+    TranslateModule,
+  ],
   templateUrl: './contact-section.component.html',
   styleUrl: './contact-section.component.scss',
 })

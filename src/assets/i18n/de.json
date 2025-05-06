@@ -55,5 +55,29 @@
     "TEXT_3": "Dank die technischen Skills von Alessandro und seiner strukturierten Herangehensweise konnten wir viele Hürden meistern. Er war stets ein wichtiger Antreiber im Team.",
     "NAME_3": "Eid Aden",
     "ROLE_3": "Frontend Developer"
+  },
+  "CONTACT": {
+    "TITLE": "KONTAKTIERE MICH",
+    "HEADING": "Bereit für eine Zusammenarbeit?",
+    "DESCRIPTION_1": "Ermutige Menschen, dich zu kontaktieren, und beschreibe, an welcher Rolle du interessiert bist. Zeige dein Vertrauen in deine Fähigkeit, durch deine Fachkenntnisse und Begeisterung zur Weiterentwicklung einen bedeutenden Beitrag zu einem Team zu leisten.",
+    "DESCRIPTION_2": "Zeige Interesse daran, an einem neuen Projekt mitzuwirken, und betone den Wert und die Fähigkeiten, die du mitbringst."
+  },
+  "CONTACT_FORM": {
+    "LABEL_NAME": "Wie heißt du?",
+    "PLACEHOLDER_NAME": "Dein Name kommt hierhin",
+    "ERROR_NAME": "Ups! Dein Name fehlt",
+    "LABEL_EMAIL": "Wie lautet deine E-Mail-Adresse?",
+    "PLACEHOLDER_EMAIL": "deinemail@email.de",
+    "ERROR_EMAIL": "Hoppla! Deine E-Mail ist erforderlich",
+    "LABEL_MESSAGE": "Wie kann ich dir helfen?",
+    "PLACEHOLDER_MESSAGE": "Hallo Alessandro, ich interessiere mich für...",
+    "ERROR_MESSAGE": "Was möchtest du entwickeln?",
+    "ERROR_ALL_FIELDS": "Bitte fülle alle Felder aus.",
+    "PRIVACY_TEXT_PART1": "Ich habe die ",
+    "PRIVACY_LINK": "Datenschutzerklärung",
+    "PRIVACY_TEXT_PART2": " gelesen und stimme der Verarbeitung meiner Daten zu.",
+    "ERROR_PRIVACY": "Bitte akzeptiere die Datenschutzerklärung.",
+    "SUCCESS": "Deine Nachricht wurde gesendet! <br />Ich melde mich bald bei dir.",
+    "BUTTON_SUBMIT": "Senden"
   }
 }
