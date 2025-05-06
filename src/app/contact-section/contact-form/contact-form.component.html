@@ -23,12 +23,12 @@
         type="text"
         id="name"
         name="name"
-        placeholder="Your name goes here"
+        [placeholder]="'CONTACT_FORM.PLACEHOLDER_NAME' | translate"
         autocomplete="off"
         required
         (blur)="onInputBlur(name, 'name')"
         (focus)="clearPlaceholder('name')"
-        [placeholder]="'CONTACT_FORM.PLACEHOLDER_NAME' | translate"
+        [placeholder]="placeholders.name"
         [hidden]="!showInput.name && isFieldInvalid(name)"
       />
       @if (!showInput.name && isFieldInvalid(name)) {

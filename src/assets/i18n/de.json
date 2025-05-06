@@ -79,5 +79,8 @@
     "ERROR_PRIVACY": "Bitte akzeptiere die Datenschutzerklärung.",
     "SUCCESS": "Deine Nachricht wurde gesendet! <br />Ich melde mich bald bei dir.",
     "BUTTON_SUBMIT": "Senden"
+  },
+  "FOOTER": {
+    "LEGAL_NOTICE": "Impressum"
   }
 }

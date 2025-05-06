@@ -17,11 +17,15 @@ export class HeaderComponent {
     private navService: NavigationService,
     private translate: TranslateService
   ) {
+    const savedLang = localStorage.getItem('selectedLang') as 'en' | 'de';
+    this.activeLang = savedLang || 'en';
     this.translate.setDefaultLang(this.activeLang);
+    this.translate.use(this.activeLang);
   }
 
   switchLanguage(lang: 'en' | 'de') {
     this.activeLang = lang;
+    localStorage.setItem('selectedLang', lang);
     this.translate.use(lang);
   }
 

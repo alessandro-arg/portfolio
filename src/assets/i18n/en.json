@@ -79,5 +79,8 @@
     "ERROR_PRIVACY": "Please accept the privacy policy.",
     "SUCCESS": "Your message was sent! <br />I will get back to you soon.",
     "BUTTON_SUBMIT": "Send"
+  },
+  "FOOTER": {
+    "LEGAL_NOTICE": "Legal Notice"
   }
 }
