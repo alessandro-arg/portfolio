@@ -2,9 +2,9 @@
   <div class="container">
     <div class="title_text">
       <div class="my_stack">
-        <span>MY STACK</span>
+        <span>{{ "SKILLS.MY_STACK" | translate }}</span>
         <div class="skill_set">
-          <h3>Skill set</h3>
+          <h3>{{ "SKILLS.SKILL_SET" | translate }}</h3>
           <div class="circle_wrapper"></div>
         </div>
       </div>
@@ -15,18 +15,14 @@
           alt=""
         />
         <p>
-          A short introduction of your skills. Highlight your experience of
-          using different front-end technologies and emphasise your openness to
-          learning and adapting to new technologies.
+          {{ "SKILLS.DESCRIPTION" | translate }}
         </p>
       </div>
       } @else if (isMobile) {
       <div class="paper_text_mobile">
         <img src="./../../assets/img/skill_set/mobile_description.png" alt="" />
         <p>
-          A short introduction of your skills. Highlight your experience of
-          using different front-end technologies and emphasise your openness to
-          learning and adapting to new technologies.
+          {{ "SKILLS.DESCRIPTION" | translate }}
         </p>
       </div>
       }
@@ -56,8 +52,8 @@
             [class.visible]="currentState === 'reveal'"
           >
             <p>
-              Also, I'm interested <br />
-              in diving into:
+              {{ "SKILLS.STICKER_INTRO" | translate }}<br />
+              {{ "SKILLS.STICKER_LINE_2" | translate }}
             </p>
             <div class="sticker_icons">
               <img src="./../../assets/img/skill_set/icons/react.png" alt="" />

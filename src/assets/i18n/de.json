@@ -1,11 +1,13 @@
 {
-  "ABOUT_ME": "Über mich",
-  "SKILLS": "Skills",
-  "PROJECTS": "Projekte",
-  "CONTACT": "Kontakt",
+  "HEADER": {
+    "ABOUT_ME": "Über mich",
+    "SKILLS": "Skills",
+    "PROJECTS": "Projekte",
+    "CONTACT": "Kontakt"
+  },
   "HERO": {
     "HELLO": "Hallo Welt",
-    "INTRO": "ICH BIN ALESSANDRO ARGENZIANO",
+    "INTRO": "BIN ALESSANDRO ARGENZIANO",
     "CONTACT": "Kontakt aufnehmen"
   },
   "ABOUT": {
@@ -17,5 +19,21 @@
     "DESCRIPTION_1": "Hallo, ich bin Karl. Schreibe hier einige Informationen über dich und deinen IT-Hintergrund. Warum begeistert dich das Programmieren? Was inspiriert dich, deine Fähigkeiten weiterzuentwickeln? Lernst du aus jeder Herausforderung, um die effizienteste oder eleganteste Lösung zu finden?",
     "DESCRIPTION_2": "Lass uns gemeinsam etwas Großartiges schaffen!",
     "BUTTON": "Lass uns sprechen"
+  },
+  "SKILLS": {
+    "MY_STACK": "MEIN TECH-STACK",
+    "SKILL_SET": "Fähigkeiten",
+    "DESCRIPTION": "Eine kurze Einführung in deine Fähigkeiten. Hebe deine Erfahrung mit verschiedenen Frontend-Technologien hervor und betone deine Offenheit für das Lernen und Anpassen neuer Technologien.",
+    "STICKER_INTRO": "Ich interessiere mich auch",
+    "STICKER_LINE_2": "für weitere Technologien:"
+  },
+  "PROJECTS": {
+    "MY_CRAFT": "MEIN HANDWERK",
+    "TITLE": "Projekte",
+    "DESCRIPTION": "Lade Besucher ein, deine Projekte anzusehen und damit zu interagieren. Hebe deine Herangehensweise bei der Erstellung von responsiven, benutzerfreundlichen Projekten mit effizientem Code hervor.",
+    "BUTTON": "Projektdetails",
+    "JOIN_DESC": "Task-Manager inspiriert vom Kanban-System. Erstelle und organisiere Aufgaben per Drag & Drop, weise Benutzer und Kategorien zu.",
+    "MAFIA_DESC": "Spring-, Renn- und Wurfspiel basierend auf objektorientierter Programmierung. Hilf Pepe, Münzen und Tabasco-Soße zu finden, um gegen das verrückte Huhn zu kämpfen.",
+    "DABUBBLE_DESC": "Diese App ist ein Slack-Klon. Sie revolutioniert die Teamkommunikation mit einer intuitiven Oberfläche, Echtzeitnachrichten und klarer Kanalstruktur."
   }
 }

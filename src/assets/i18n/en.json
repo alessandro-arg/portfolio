@@ -1,9 +1,10 @@
 {
-  "ABOUT_ME": "About Me",
-  "SKILLS": "Skills",
-  "PROJECTS": "Projects",
-  "CONTACT": "Contact",
-  "WHO": "WHO'S ALESSANDRO?",
+  "HEADER": {
+    "ABOUT_ME": "About Me",
+    "SKILLS": "Skills",
+    "PROJECTS": "Projects",
+    "CONTACT": "Contact"
+  },
   "HERO": {
     "HELLO": "Hello world",
     "INTRO": "I'M ALESSANDRO ARGENZIANO",
@@ -18,5 +19,21 @@
     "DESCRIPTION_1": "Hey there, I'm Karl. Write some information about yourself that is IT related. Why are you passionate about coding? What is your source of inspiration for improving your programming skills? Do you learn from each challenge as you search for the most efficient or elegant solution?",
     "DESCRIPTION_2": "Let's collaborate and build something remarkable together!",
     "BUTTON": "Let's talk"
+  },
+  "SKILLS": {
+    "MY_STACK": "MY STACK",
+    "SKILL_SET": "Skill set",
+    "DESCRIPTION": "A short introduction of your skills. Highlight your experience of using different front-end technologies and emphasise your openness to learning and adapting to new technologies.",
+    "STICKER_INTRO": "Also, I'm interested",
+    "STICKER_LINE_2": "in diving into:"
+  },
+  "PROJECTS": {
+    "MY_CRAFT": "MY CRAFT",
+    "TITLE": "Projects",
+    "DESCRIPTION": "Encourage people to take a look and interact with your projects. Highlight your approach to creating responsive, user-friendly projects with efficient code.",
+    "BUTTON": "Project details",
+    "JOIN_DESC": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.",
+    "MAFIA_DESC": "Jump, run and throw game based on object-oriented approach. Help Pepe to find coins and tabasco salsa to fight against the crazy hen.",
+    "DABUBBLE_DESC": "This App is a Slack Clone App. It revolutionizes team communication and collaboration with its intuitive interface, real-time messaging, and robust channel organization."
   }
 }

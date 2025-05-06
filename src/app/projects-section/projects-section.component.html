@@ -2,15 +2,13 @@
   <div class="container">
     <div class="title_text_project">
       <div class="title_text">
-        <span>MY CRAFT</span>
+        <span>{{ "PROJECTS.MY_CRAFT" | translate }}</span>
         <div class="projects_title">
-          <h2>Projects</h2>
+          <h2>{{ "PROJECTS.TITLE" | translate }}</h2>
           <div class="line_wrapper"></div>
         </div>
         <p>
-          Encourage people to take a look and interact with your projects.
-          Highlight your approach to creating responsive, user-friendly projects
-          with efficient code.
+          {{ "PROJECTS.DESCRIPTION" | translate }}
         </p>
       </div>
       <div class="project first">
@@ -24,7 +22,9 @@
           </div>
           <div class="bottom_shadow"></div>
           @if (!isMobile) {
-          <button class="project_btn">Project details</button>
+          <button class="project_btn">
+            {{ "PROJECTS.BUTTON" | translate }}
+          </button>
           }
         </div>
         <img
@@ -35,13 +35,12 @@
         <div class="description">
           <h3>Join</h3>
           <p>
-            Task manager inspired by the Kanban System. Create and organize
-            tasks using drag and drop functions, assign users and categories.
+            {{ "PROJECTS.JOIN_DESC" | translate }}
           </p>
         </div>
         @if (isMobile) {
         <button class="project_btn" (click)="openOverlay('join')">
-          Project details
+          {{ "PROJECTS.BUTTON" | translate }}
         </button>
         }
       </div>
@@ -56,19 +55,20 @@
           />
           <div class="bottom_shadow"></div>
           @if (!isMobile) {
-          <button class="project_btn">Project details</button>
+          <button class="project_btn">
+            {{ "PROJECTS.BUTTON" | translate }}
+          </button>
           }
         </div>
         <div class="description">
           <h3>Mafia vs Orcs</h3>
           <p>
-            Jump, run and throw game based on object-oriented approach. Help
-            Pepe to find coins and tabasco salsa to fight against the crazy hen.
+            {{ "PROJECTS.MAFIA_DESC" | translate }}
           </p>
         </div>
         @if (isMobile) {
         <button class="project_btn" (click)="openOverlay('mafia-vs-orcs')">
-          Project details
+          {{ "PROJECTS.BUTTON" | translate }}
         </button>
         }
       </div>
@@ -81,20 +81,20 @@
           />
           <div class="bottom_shadow"></div>
           @if (!isMobile) {
-          <button class="project_btn">Project details</button>
+          <button class="project_btn">
+            {{ "PROJECTS.BUTTON" | translate }}
+          </button>
           }
         </div>
         <div class="description">
           <h3>DABubble</h3>
           <p>
-            This App is a Slack Clone App. It revolutionizes team communication
-            and collaboration with its intuitive interface, real-time messaging,
-            and robust channel organization.
+            {{ "PROJECTS.DABUBBLE_DESC" | translate }}
           </p>
         </div>
         @if (isMobile) {
         <button class="project_btn" (click)="openOverlay('dabubble')">
-          Project details
+          {{ "PROJECTS.BUTTON" | translate }}
         </button>
         }
       </div>

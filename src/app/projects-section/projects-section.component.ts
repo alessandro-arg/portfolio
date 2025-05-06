@@ -3,11 +3,12 @@ import { CommonModule } from '@angular/common';
 import { ProjectOverlayComponent } from '../project-overlay/project-overlay.component';
 import { Project } from '../project-overlay/project.model';
 import { NavigationService } from '../navigation.service';
+import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-projects-section',
   standalone: true,
-  imports: [CommonModule, ProjectOverlayComponent],
+  imports: [CommonModule, ProjectOverlayComponent, TranslateModule],
   templateUrl: './projects-section.component.html',
   styleUrl: './projects-section.component.scss',
 })
