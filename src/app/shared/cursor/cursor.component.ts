@@ -1,11 +1,7 @@
-import {
-  Component,
-  ElementRef,
-  AfterViewInit,
-  ViewChild,
-  inject,
-} from '@angular/core';
+import { Component, ElementRef, AfterViewInit, ViewChild } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { PLATFORM_ID, Inject } from '@angular/core';
+import { isPlatformBrowser } from '@angular/common';
 
 @Component({
   selector: 'app-cursor',
@@ -15,6 +11,8 @@ import { CommonModule } from '@angular/common';
   styleUrls: ['./cursor.component.scss'],
 })
 export class CursorComponent implements AfterViewInit {
+  constructor(@Inject(PLATFORM_ID) private platformId: Object) {}
+
   @ViewChild('cursor') cursorRef!: ElementRef<HTMLDivElement>;
 
   private mouseX = 0;
@@ -23,8 +21,10 @@ export class CursorComponent implements AfterViewInit {
   private currentY = 0;
 
   ngAfterViewInit(): void {
-    document.addEventListener('mousemove', this.handleMouseMove.bind(this));
-    this.animate();
+    if (isPlatformBrowser(this.platformId)) {
+      document.addEventListener('mousemove', this.handleMouseMove.bind(this));
+      this.animate();
+    }
   }
 
   handleMouseMove(e: MouseEvent) {
