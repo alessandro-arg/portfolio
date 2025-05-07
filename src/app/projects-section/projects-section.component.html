@@ -72,7 +72,16 @@
         </button>
         }
       </div>
-      <div class="project third">
+      <div class="project placeholder">
+        <div class="thumbnail_container">
+          <div class="placeholder_content">
+            <p class="typewriter-text">
+              More projects incoming, <br />stay tuned!
+            </p>
+          </div>
+        </div>
+      </div>
+      <!-- <div class="project third">
         <div class="thumbnail_container" (click)="openOverlay('dabubble')">
           <img
             class="project_image"
@@ -97,7 +106,7 @@
           {{ "PROJECTS.BUTTON" | translate }}
         </button>
         }
-      </div>
+      </div> -->
     </div>
     <app-project-overlay
       *ngIf="showOverlay"
