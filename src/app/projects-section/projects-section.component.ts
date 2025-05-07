@@ -56,21 +56,21 @@ export class ProjectsSectionComponent implements OnInit {
       button1Link: 'https://github.com/alessandro-arg/mafia_vs_orcs.git',
       button2Link: 'https://www.alessandro-argenziano.com/mafia_vs_orcs',
     },
-    dabubble: {
-      title: 'DABubble',
-      skills: [
-        {
-          icon: './../../assets/img/skill_set/icons/js.png',
-          name: 'JavaScript',
-        },
-        { icon: './../../assets/img/skill_set/icons/html.png', name: 'HTML' },
-        { icon: './../../assets/img/skill_set/icons/css.png', name: 'CSS' },
-      ],
-      sticker: './../../assets/img/contacts/circle_logo.png',
-      image: 'assets/img/projects_section/dabubble_mockup.jpg',
-      button1Link: 'https://dabubble.com',
-      button2Link: 'https://github.com/dabubble-app',
-    },
+    // dabubble: {
+    //   title: 'DABubble',
+    //   skills: [
+    //     {
+    //       icon: './../../assets/img/skill_set/icons/js.png',
+    //       name: 'JavaScript',
+    //     },
+    //     { icon: './../../assets/img/skill_set/icons/html.png', name: 'HTML' },
+    //     { icon: './../../assets/img/skill_set/icons/css.png', name: 'CSS' },
+    //   ],
+    //   sticker: './../../assets/img/contacts/circle_logo.png',
+    //   image: 'assets/img/projects_section/dabubble_mockup.jpg',
+    //   button1Link: 'https://dabubble.com',
+    //   button2Link: 'https://github.com/dabubble-app',
+    // },
   };
 
   ngOnInit(): void {

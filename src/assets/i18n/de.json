@@ -84,39 +84,39 @@
     "LEGAL_NOTICE": "Impressum"
   },
   "PROJECTS_OVERLAY": {
-    "join": {
-      "description": "Aufgabenmanager inspiriert vom Kanban-System. Erstelle und organisiere Aufgaben per Drag-and-Drop, weise Benutzer und Kategorien zu.",
-      "details": "Kurzer Text, der deine Rolle oder den Workflow in diesem spezifischen Projekt beschreibt. Gib Recruitern Einblicke in dein Wissen und deine Fähigkeit, eigenständig oder im Team strukturiert zu arbeiten.",
-      "duration": "6 Wochen",
-      "button1Text": "GitHub",
-      "button2Text": "Live-Demo"
+    "JOIN": {
+      "DESCRIPTION": "Aufgabenmanager inspiriert vom Kanban-System. Erstelle und organisiere Aufgaben per Drag-and-Drop, weise Benutzer und Kategorien zu.",
+      "DETAILS": "Kurzer Text, der deine Rolle oder den Workflow in diesem spezifischen Projekt beschreibt. Gib Recruitern Einblicke in dein Wissen und deine Fähigkeit, eigenständig oder im Team strukturiert zu arbeiten.",
+      "DURATION": "6 Wochen",
+      "BUTTON1TEXT": "GitHub",
+      "BUTTON2TEXT": "Live-Demo"
     },
-    "mafia-vs-orcs": {
-      "description": "Jump-and-Run-Spiel mit objektorientiertem Ansatz. Hilf Pepe dabei, Münzen und Tabascosauce zu finden, um gegen das verrückte Huhn zu kämpfen.",
-      "details": "Kurzer Text, der deine Rolle oder den Workflow in diesem spezifischen Projekt beschreibt. Gib Recruitern Einblicke in dein Wissen und deine Fähigkeit, eigenständig oder im Team strukturiert zu arbeiten.",
-      "duration": "8 Wochen",
-      "button1Text": "GitHub",
-      "button2Text": "Live-Demo"
+    "MAFIA-VS-ORCS": {
+      "DESCRIPTION": "Jump-and-Run-Spiel mit objektorientiertem Ansatz. Hilf Pepe dabei, Münzen und Tabascosauce zu finden, um gegen das verrückte Huhn zu kämpfen.",
+      "DETAILS": "Kurzer Text, der deine Rolle oder den Workflow in diesem spezifischen Projekt beschreibt. Gib Recruitern Einblicke in dein Wissen und deine Fähigkeit, eigenständig oder im Team strukturiert zu arbeiten.",
+      "DURATION": "8 Wochen",
+      "BUTTON1TEXT": "GitHub",
+      "BUTTON2TEXT": "Live-Demo"
     },
-    "dabubble": {
-      "description": "Diese App ist ein Slack-Klon. Sie revolutioniert die Teamkommunikation und Zusammenarbeit mit einer intuitiven Oberfläche, Echtzeitnachrichten und einer durchdachten Kanalstruktur.",
-      "details": "Kurzer Text, der deine Rolle oder den Workflow in diesem spezifischen Projekt beschreibt. Gib Recruitern Einblicke in dein Wissen und deine Fähigkeit, eigenständig oder im Team strukturiert zu arbeiten.",
-      "duration": "8 Wochen",
-      "button1Text": "GitHub",
-      "button2Text": "Live-Demo"
+    "DABUBBLE": {
+      "DESCRIPTION": "Diese App ist ein Slack-Klon. Sie revolutioniert die Teamkommunikation und Zusammenarbeit mit einer intuitiven Oberfläche, Echtzeitnachrichten und einer durchdachten Kanalstruktur.",
+      "DETAILS": "Kurzer Text, der deine Rolle oder den Workflow in diesem spezifischen Projekt beschreibt. Gib Recruitern Einblicke in dein Wissen und deine Fähigkeit, eigenständig oder im Team strukturiert zu arbeiten.",
+      "DURATION": "8 Wochen",
+      "BUTTON1TEXT": "GitHub",
+      "BUTTON2TEXT": "Live-Demo"
     }
   },
-  "legalNotice": {
-    "title": "Impressum",
-    "infoTitle": "Angaben gemäß § 5 TMG",
-    "contactTitle": "Kontakt",
-    "responsibleTitle": "Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV",
-    "disclaimerTitle": "Haftungsausschluss",
-    "liabilityContentTitle": "Haftung für Inhalte",
-    "liabilityContent": "Die Inhalte unserer Seiten wurden mit größter Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte können wir jedoch keine Gewähr übernehmen. Als Diensteanbieter sind wir gemäß den allgemeinen Gesetzen für eigene Inhalte auf diesen Seiten verantwortlich.",
-    "liabilityLinksTitle": "Haftung für Links",
-    "liabilityLinks": "Unser Angebot enthält Links zu externen Websites Dritter, auf deren Inhalte wir keinen Einfluss haben. Deshalb können wir für diese fremden Inhalte auch keine Gewähr übernehmen.",
-    "copyrightTitle": "Urheberrecht",
-    "copyright": "Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers."
+  "LEGALNOTICE": {
+    "TITLE": "Impressum",
+    "INFOTITLE": "Angaben gemäß § 5 TMG",
+    "CONTACTTITLE": "Kontakt",
+    "RESPONSIBLETITLE": "Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV",
+    "DISCLAIMERTITLE": "Haftungsausschluss",
+    "LIABILITYCONTENTTITLE": "Haftung für Inhalte",
+    "LIABILITYCONTENT": "Die Inhalte unserer Seiten wurden mit größter Sorgfalt erstellt. Für die Richtigkeit, Vollständigkeit und Aktualität der Inhalte können wir jedoch keine Gewähr übernehmen. Als Diensteanbieter sind wir gemäß den allgemeinen Gesetzen für eigene Inhalte auf diesen Seiten verantwortlich.",
+    "LIABILITYLINKSTITLE": "Haftung für Links",
+    "LIABILITYLINKS": "Unser Angebot enthält Links zu externen Websites Dritter, auf deren Inhalte wir keinen Einfluss haben. Deshalb können wir für diese fremden Inhalte auch keine Gewähr übernehmen.",
+    "COPYRIGHTTITLE": "Urheberrecht",
+    "COPYRIGHT": "Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers."
   }
 }

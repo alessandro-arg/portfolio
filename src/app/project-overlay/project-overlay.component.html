@@ -29,18 +29,27 @@
           <div class="description_wrapper">
             <h3>{{ "OVERLAY.DESCRIPTION" | translate }}</h3>
             <p>
-              {{ "PROJECTS_OVERLAY." + projectId + ".description" | translate }}
+              {{
+                "PROJECTS_OVERLAY." + projectId.toUpperCase() + ".DESCRIPTION"
+                  | translate
+              }}
             </p>
           </div>
           <div class="details_wrapper">
             <h3>{{ "OVERLAY.DETAILS" | translate }}</h3>
             <p>
-              {{ "PROJECTS_OVERLAY." + projectId + ".details" | translate }}
+              {{
+                "PROJECTS_OVERLAY." + projectId.toUpperCase() + ".DETAILS"
+                  | translate
+              }}
             </p>
           </div>
           <p>
             <span>{{ "OVERLAY.DURATION" | translate }}:</span>
-            {{ "PROJECTS_OVERLAY." + projectId + ".duration" | translate }}
+            {{
+              "PROJECTS_OVERLAY." + projectId.toUpperCase() + ".DURATION"
+                | translate
+            }}
           </p>
           <div class="skills">
             @for (skill of project.skills; track skill;) {
@@ -63,10 +72,12 @@
         </div>
         <div class="buttons">
           <a [href]="project.button1Link" target="_blank">{{
-            "PROJECTS_OVERLAY." + projectId + ".button1Text" | translate
+            "PROJECTS_OVERLAY." + projectId.toUpperCase() + ".BUTTON1TEXT"
+              | translate
           }}</a>
           <a [href]="project.button2Link" target="_blank">{{
-            "PROJECTS_OVERLAY." + projectId + ".button2Text" | translate
+            "PROJECTS_OVERLAY." + projectId.toUpperCase() + ".BUTTON2TEXT"
+              | translate
           }}</a>
         </div>
         <div class="navigation_buttons">

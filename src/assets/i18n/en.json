@@ -84,39 +84,39 @@
     "LEGAL_NOTICE": "Legal Notice"
   },
   "PROJECTS_OVERLAY": {
-    "join": {
-      "description": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.",
-      "details": "Short text that describes your role or the workflow for this specific project. Let a recruiter know more about your knowledge and ability to work independently or collaboratively in a structured way.",
-      "duration": "6 weeks",
-      "button1Text": "GitHub",
-      "button2Text": "Live Test"
+    "JOIN": {
+      "DESCRIPTION": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.",
+      "DETAILS": "Short text that describes your role or the workflow for this specific project. Let a recruiter know more about your knowledge and ability to work independently or collaboratively in a structured way.",
+      "DURATION": "6 weeks",
+      "BUTTON1TEXT": "GitHub",
+      "BUTTON2TEXT": "Live Test"
     },
-    "mafia-vs-orcs": {
-      "description": "Jump, run and throw game based on object-oriented approach. Help Pepe to find coins and tabasco salsa to fight against the crazy hen.",
-      "details": "Short text that describes your role or the workflow for this specific project. Let a recruiter know more about your knowledge and ability to work independently or collaboratively in a structured way.",
-      "duration": "8 weeks",
-      "button1Text": "GitHub",
-      "button2Text": "Live Test"
+    "MAFIA-VS-ORCS": {
+      "DESCRIPTION": "Jump, run and throw game based on object-oriented approach. Help Pepe to find coins and tabasco salsa to fight against the crazy hen.",
+      "DETAILS": "Short text that describes your role or the workflow for this specific project. Let a recruiter know more about your knowledge and ability to work independently or collaboratively in a structured way.",
+      "DURATION": "8 weeks",
+      "BUTTON1TEXT": "GitHub",
+      "BUTTON2TEXT": "Live Test"
     },
-    "dabubble": {
-      "description": "This App is a Slack Clone App. It revolutionizes team communication and collaboration with its intuitive interface, real-time messaging, and robust channel organization.",
-      "details": "Short text that describes your role or the workflow for this specific project. Let a recruiter know more about your knowledge and ability to work independently or collaboratively in a structured way.",
-      "duration": "8 weeks",
-      "button1Text": "GitHub",
-      "button2Text": "Live Test"
+    "DABUBBLE": {
+      "DESCRIPTION": "This App is a Slack Clone App. It revolutionizes team communication and collaboration with its intuitive interface, real-time messaging, and robust channel organization.",
+      "DETAILS": "Short text that describes your role or the workflow for this specific project. Let a recruiter know more about your knowledge and ability to work independently or collaboratively in a structured way.",
+      "DURATION": "8 weeks",
+      "BUTTON1TEXT": "GitHub",
+      "BUTTON2TEXT": "Live Test"
     }
   },
-  "legalNotice": {
-    "title": "Impressum / Legal Notice",
-    "infoTitle": "Information according to § 5 TMG",
-    "contactTitle": "Contact",
-    "responsibleTitle": "Responsible for content according to § 55 Abs. 2 RStV",
-    "disclaimerTitle": "Disclaimer",
-    "liabilityContentTitle": "Liability for content",
-    "liabilityContent": "The contents of our pages have been created with the utmost care. However, we cannot guarantee the contents' accuracy, completeness, or topicality. According to statutory provisions, we are furthermore responsible for our own content on these web pages.",
-    "liabilityLinksTitle": "Liability for links",
-    "liabilityLinks": "Our offer contains links to external websites of third parties. We have no influence on the contents of those websites. Therefore, we cannot assume any liability for these external contents.",
-    "copyrightTitle": "Copyright",
-    "copyright": "The content and works provided on these web pages are governed by the copyright laws of Germany. Duplication, processing, distribution, or any form of commercialization beyond the scope of the copyright law shall require the prior written consent of the author or creator."
+  "LEGALNOTICE": {
+    "TITLE": "Impressum / Legal Notice",
+    "INFOTITLE": "Information according to § 5 TMG",
+    "CONTACTTITLE": "Contact",
+    "RESPONSIBLETITLE": "Responsible for content according to § 55 Abs. 2 RStV",
+    "DISCLAIMERTITLE": "Disclaimer",
+    "LIABILITYCONTENTTITLE": "Liability for content",
+    "LIABILITYCONTENT": "The contents of our pages have been created with the utmost care. However, we cannot guarantee the contents' accuracy, completeness, or topicality. According to statutory provisions, we are furthermore responsible for our own content on these web pages.",
+    "LIABILITYLINKSTITLE": "Liability for links",
+    "LIABILITYLINKS": "Our offer contains links to external websites of third parties. We have no influence on the contents of those websites. Therefore, we cannot assume any liability for these external contents.",
+    "COPYRIGHTTITLE": "Copyright",
+    "COPYRIGHT": "The content and works provided on these web pages are governed by the copyright laws of Germany. Duplication, processing, distribution, or any form of commercialization beyond the scope of the copyright law shall require the prior written consent of the author or creator."
   }
 }
