@@ -224,9 +224,7 @@
     justify-content: center;
     align-items: center;
     text-align: center;
-    background: rgba(0, 0, 0, 0.03);
     border-radius: 30px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
     transition: box-shadow 0.3s ease;
 
     .thumbnail_container {
@@ -235,7 +233,7 @@
       border-radius: 30px;
       display: flex;
       justify-content: center;
-      align-items: center;
+      align-items: start;
       background-color: transparent;
       transition: transform 0.3s ease;
       cursor: default;
@@ -253,17 +251,13 @@
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
       }
-    }
 
-    &:hover .placeholder_content p {
-      background: linear-gradient(#f7c51850, $accent-color);
-      background-clip: text;
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
-
-    &:hover {
-      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+      &:hover p {
+        background: linear-gradient(#f7c51850, $accent-color);
+        background-clip: text;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
     }
   }
 
