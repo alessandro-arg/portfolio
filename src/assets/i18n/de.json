@@ -34,7 +34,9 @@
     "BUTTON": "Projektdetails",
     "JOIN_DESC": "Task-Manager inspiriert vom Kanban-System. Erstelle und organisiere Aufgaben per Drag & Drop, weise Benutzer und Kategorien zu.",
     "MAFIA_DESC": "Spring-, Renn- und Wurfspiel basierend auf objektorientierter Programmierung. Hilf Pepe, Münzen und Tabasco-Soße zu finden, um gegen das verrückte Huhn zu kämpfen.",
-    "DABUBBLE_DESC": "Diese App ist ein Slack-Klon. Sie revolutioniert die Teamkommunikation mit einer intuitiven Oberfläche, Echtzeitnachrichten und klarer Kanalstruktur."
+    "DABUBBLE_DESC": "Diese App ist ein Slack-Klon. Sie revolutioniert die Teamkommunikation mit einer intuitiven Oberfläche, Echtzeitnachrichten und klarer Kanalstruktur.",
+    "PLACEHOLDER_TEXT1": "Mehr projekte folgen,",
+    "PLACEHOLDER_TEXT2": "bleib dran!"
   },
   "OVERLAY": {
     "BACK": "Zurück",

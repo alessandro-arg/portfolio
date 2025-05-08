@@ -34,7 +34,9 @@
     "BUTTON": "Project details",
     "JOIN_DESC": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.",
     "MAFIA_DESC": "Jump, run and throw game based on object-oriented approach. Help Pepe to find coins and tabasco salsa to fight against the crazy hen.",
-    "DABUBBLE_DESC": "This App is a Slack Clone App. It revolutionizes team communication and collaboration with its intuitive interface, real-time messaging, and robust channel organization."
+    "DABUBBLE_DESC": "This App is a Slack Clone App. It revolutionizes team communication and collaboration with its intuitive interface, real-time messaging, and robust channel organization.",
+    "PLACEHOLDER_TEXT1": "More projects incoming,",
+    "PLACEHOLDER_TEXT2": "stay tuned!"
   },
   "OVERLAY": {
     "BACK": "Go Back",
