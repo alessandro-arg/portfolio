@@ -16,24 +16,24 @@
     "REMOTE": "Offen für Remote-Arbeit",
     "WHO": "WER IST ALESSANDRO?",
     "TITLE": "Über mich",
-    "DESCRIPTION_1": "Hey, ich bin Alessandro. Ein Webentwickler mit einem Faible für saubere Layouts und elegantes Design. Ich liebe es, Ideen in pixelgenaue und funktionale Webanwendungen zu verwandeln. Perfekt gestaltete Interfaces inspirieren mich, und ich lerne mit jeder neuen Herausforderung.",
+    "DESCRIPTION_1": "Hey, ich bin Alessandro. Ein Webdeveloper mit einem Faible für saubere Layouts und elegantes Design. Ich liebe es, Ideen in pixelgenaue und funktionale Webanwendungen zu verwandeln. Perfekt gestaltete Interfaces inspirieren mich.",
     "DESCRIPTION_2": "Lass uns gemeinsam etwas Großartiges schaffen!",
     "BUTTON": "Lass uns sprechen"
   },
   "SKILLS": {
     "MY_STACK": "MEIN TECH-STACK",
     "SKILL_SET": "Fähigkeiten",
-    "DESCRIPTION": "Eine kurze Einführung in deine Fähigkeiten. Hebe deine Erfahrung mit verschiedenen Frontend-Technologien hervor und betone deine Offenheit für das Lernen und Anpassen neuer Technologien.",
+    "DESCRIPTION": "Ich arbeite gerne mit Technologien wie JavaScript und Angular. Mein Ziel ist es Fullstack Developer zu werden. Für neue Technologien oder Frameworks bin ich immer offen.",
     "STICKER_INTRO": "Ich lerne noch dazu",
     "STICKER_LINE_2": "weitere Skills:"
   },
   "PROJECTS": {
     "MY_CRAFT": "MEIN HANDWERK",
     "TITLE": "Projekte",
-    "DESCRIPTION": "Lade Besucher ein, deine Projekte anzusehen und damit zu interagieren. Hebe deine Herangehensweise bei der Erstellung von responsiven, benutzerfreundlichen Projekten mit effizientem Code hervor.",
+    "DESCRIPTION": "Schau dir gerne meine Projekte an! Ich lege großen Wert auf responsive, benutzerfreundliche Anwendungen und sauberen, effizienten Code. Jedes Projekt ist für mich eine Chance, mich weiterzuentwickeln.",
     "BUTTON": "Projektdetails",
     "JOIN_DESC": "Task-Manager inspiriert vom Kanban-System. Erstelle und organisiere Aufgaben per Drag & Drop, weise Benutzer und Kategorien zu.",
-    "MAFIA_DESC": "Spring-, Renn- und Wurfspiel basierend auf objektorientierter Programmierung. Hilf Pepe, Münzen und Tabasco-Soße zu finden, um gegen das verrückte Huhn zu kämpfen.",
+    "MAFIA_DESC": "Spring-, Renn- und Schießspiel basierend auf objektorientierter Programmierung. Hilf Frank, Münzen und Munition zu finden, um die Orks zu töten, und schieß den großen Ork in den Kopf.",
     "DABUBBLE_DESC": "Diese App ist ein Slack-Klon. Sie revolutioniert die Teamkommunikation mit einer intuitiven Oberfläche, Echtzeitnachrichten und klarer Kanalstruktur.",
     "PLACEHOLDER_TEXT1": "Mehr projekte folgen,",
     "PLACEHOLDER_TEXT2": "bleib dran!"
@@ -94,8 +94,8 @@
       "BUTTON2TEXT": "Live-Demo"
     },
     "MAFIA-VS-ORCS": {
-      "DESCRIPTION": "Jump-and-Run-Spiel mit objektorientiertem Ansatz. Hilf Pepe dabei, Münzen und Tabascosauce zu finden, um gegen das verrückte Huhn zu kämpfen.",
-      "DETAILS": "Kurzer Text, der deine Rolle oder den Workflow in diesem spezifischen Projekt beschreibt. Gib Recruitern Einblicke in dein Wissen und deine Fähigkeit, eigenständig oder im Team strukturiert zu arbeiten.",
+      "DESCRIPTION": "Spring-, Renn- und Schießspiel basierend auf objektorientierter Programmierung. Hilf Frank, Münzen und Munition zu finden, um die Orks zu töten, und schieß den großen Ork in den Kopf.",
+      "DETAILS": "Ich habe einen objektorientierten Ansatz verwendet, um die Spiellogik und Mechaniken strukturiert aufzubauen. Dieses Solo-Projekt zeigt meine Fähigkeit, strukturiert und eigenverantwortlich zu arbeiten. Zukünftig möchte ich weitere Level und steigende Schwierigkeitsgrade integrieren.",
       "DURATION": "8 Wochen",
       "BUTTON1TEXT": "GitHub",
       "BUTTON2TEXT": "Live-Demo"

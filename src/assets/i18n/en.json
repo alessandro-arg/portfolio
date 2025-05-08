@@ -23,17 +23,17 @@
   "SKILLS": {
     "MY_STACK": "MY STACK",
     "SKILL_SET": "Skill set",
-    "DESCRIPTION": "A short introduction of your skills. Highlight your experience of using different front-end technologies and emphasise your openness to learning and adapting to new technologies.",
+    "DESCRIPTION": "I'm experienced with technologies like JavaScript and Angular. I'm working towards becoming a fullstack developer and want to expand my skills. I'm always open to learning new tools and frameworks",
     "STICKER_INTRO": "Also, I'm interested",
     "STICKER_LINE_2": "in diving into:"
   },
   "PROJECTS": {
     "MY_CRAFT": "MY CRAFT",
     "TITLE": "Projects",
-    "DESCRIPTION": "Encourage people to take a look and interact with your projects. Highlight your approach to creating responsive, user-friendly projects with efficient code.",
+    "DESCRIPTION": "Feel free to explore my projects! I focus on building responsive and user-friendly applications with clean, efficient code. Every project is an opportunity to improve and apply best practices.",
     "BUTTON": "Project details",
     "JOIN_DESC": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.",
-    "MAFIA_DESC": "Jump, run and throw game based on object-oriented approach. Help Pepe to find coins and tabasco salsa to fight against the crazy hen.",
+    "MAFIA_DESC": "Jump, run and shoot game based on object-oriented approach. Help Frank to find coins and ammunition to fight against the orcs, and shot the big Orc in the head.",
     "DABUBBLE_DESC": "This App is a Slack Clone App. It revolutionizes team communication and collaboration with its intuitive interface, real-time messaging, and robust channel organization.",
     "PLACEHOLDER_TEXT1": "More projects incoming,",
     "PLACEHOLDER_TEXT2": "stay tuned!"
@@ -88,14 +88,14 @@
   "PROJECTS_OVERLAY": {
     "JOIN": {
       "DESCRIPTION": "Task manager inspired by the Kanban System. Create and organize tasks using drag and drop functions, assign users and categories.",
-      "DETAILS": "Short text that describes your role or the workflow for this specific project. Let a recruiter know more about your knowledge and ability to work independently or collaboratively in a structured way.",
+      "DETAILS": "In this project, I was responsible for developing the login and registration pages and setting up the Firebase database structure. I supported the team in integrating the database across all pages and implemented the core logic for creating, editing, and deleting cards in the database.",
       "DURATION": "6 weeks",
       "BUTTON1TEXT": "GitHub",
       "BUTTON2TEXT": "Live Test"
     },
     "MAFIA-VS-ORCS": {
-      "DESCRIPTION": "Jump, run and throw game based on object-oriented approach. Help Pepe to find coins and tabasco salsa to fight against the crazy hen.",
-      "DETAILS": "Short text that describes your role or the workflow for this specific project. Let a recruiter know more about your knowledge and ability to work independently or collaboratively in a structured way.",
+      "DESCRIPTION": "Jump, run and shoot game based on object-oriented approach. Help Frank to find coins and ammunition to fight against the orcs, and shot the big Orc in the head.",
+      "DETAILS": "I applied an object-oriented approach to structure the game logic and mechanics. This solo project demonstrates my ability to plan structured code, and handle both gameplay design and technical implementation. I plan to expand the game with more levels and increasing difficulty.",
       "DURATION": "8 weeks",
       "BUTTON1TEXT": "GitHub",
       "BUTTON2TEXT": "Live Test"
