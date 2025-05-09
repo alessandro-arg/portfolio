@@ -4,7 +4,7 @@ import { FormsModule, NgForm } from '@angular/forms';
 import { ViewChild, ElementRef } from '@angular/core';
 import { LegalNoticeComponent } from '../../legal-notice/legal-notice.component';
 import { CommonModule, NgIf } from '@angular/common';
-import { TranslateModule } from '@ngx-translate/core';
+import { TranslateModule, TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-contact-form',
@@ -21,6 +21,7 @@ import { TranslateModule } from '@ngx-translate/core';
 })
 export class ContactFormComponent {
   http = inject(HttpClient);
+  translate = inject(TranslateService);
 
   contactData = {
     name: '',
@@ -121,18 +122,29 @@ export class ContactFormComponent {
   }
 
   resetDefaultForm() {
-    this.placeholders = {
-      name: 'Your name goes here',
-      email: 'youremail@email.com',
-      message: 'Hello Alessandro, I am interested in...',
-    };
+    this.translate
+      .get([
+        'CONTACT_FORM.PLACEHOLDER_NAME',
+        'CONTACT_FORM.PLACEHOLDER_EMAIL',
+        'CONTACT_FORM.PLACEHOLDER_MESSAGE',
+      ])
+      .subscribe((translations) => {
+        this.placeholders = {
+          name: translations['CONTACT_FORM.PLACEHOLDER_NAME'],
+          email: translations['CONTACT_FORM.PLACEHOLDER_EMAIL'],
+          message: translations['CONTACT_FORM.PLACEHOLDER_MESSAGE'],
+        };
+      });
+
     this.showInput = {
       name: true,
       email: true,
       message: true,
     };
+
     this.formSubmitted = false;
     this.successMessage = true;
+
     setTimeout(() => {
       this.successMessage = false;
     }, 2000);

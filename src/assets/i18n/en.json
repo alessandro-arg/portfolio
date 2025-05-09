@@ -23,7 +23,7 @@
   "SKILLS": {
     "MY_STACK": "MY STACK",
     "SKILL_SET": "Skill set",
-    "DESCRIPTION": "I'm experienced with technologies like JavaScript and Angular. I'm working towards becoming a fullstack developer and want to expand my skills. I'm always open to learning new tools and frameworks",
+    "DESCRIPTION": "I'm experienced with technologies like JavaScript and Angular. I'm working towards becoming a fullstack developer and want to expand my skills. I'm always open to learning new tools and frameworks.",
     "STICKER_INTRO": "Also, I'm interested",
     "STICKER_LINE_2": "in diving into:"
   },
@@ -61,8 +61,8 @@
   "CONTACT": {
     "TITLE": "CONTACT ME",
     "HEADING": "Ready to work together?",
-    "DESCRIPTION_1": "Encourage people to contact you and describe what role you are interested in. Express confidence in your ability to make a meaningful contribution to a team through your expertise and enthusiasm for improving your skills.",
-    "DESCRIPTION_2": "Show interest in contributing to a new project, while highlighting the value and skills you can bring to the table."
+    "DESCRIPTION_1": "I'm looking for a role where I can contribute to a motivated team, be part of exciting projects, and continue sharpening my skills as a developer. With my enthusiasm, problem-solving mindset, and attention to detail, I'm confident I can bring real value to your team.",
+    "DESCRIPTION_2": "I'd love to hear from you and explore how we can build something great together!"
   },
   "CONTACT_FORM": {
     "LABEL_NAME": "What's your name?",

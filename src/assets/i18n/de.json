@@ -60,19 +60,19 @@
   },
   "CONTACT": {
     "TITLE": "KONTAKTIERE MICH",
-    "HEADING": "Bereit für eine Kooperation?",
-    "DESCRIPTION_1": "Ermutige Menschen, dich zu kontaktieren, und beschreibe, an welcher Rolle du interessiert bist. Zeige dein Vertrauen in deine Fähigkeit, durch deine Fachkenntnisse und Begeisterung zur Weiterentwicklung einen bedeutenden Beitrag zu einem Team zu leisten.",
-    "DESCRIPTION_2": "Zeige Interesse daran, an einem neuen Projekt mitzuwirken, und betone den Wert und die Fähigkeiten, die du mitbringst."
+    "HEADING": "Bereit zusammen zu arbeiten?",
+    "DESCRIPTION_1": "Ich suche eine Position, in der ich Teil eines engagierten Teams sein, an spannenden Projekten mitwirken und meine Fähigkeiten als Entwickler weiter ausbauen kann. Mit meiner lösungsorientierten Denkweise und meinem Blick fürs Detail bin ich überzeugt, echten Mehrwert ins Team bringen zu können.",
+    "DESCRIPTION_2": " Ich freue mich darauf, von dir zu hören und gemeinsam etwas Großartiges umzusetzen!"
   },
   "CONTACT_FORM": {
     "LABEL_NAME": "Wie heißt du?",
     "PLACEHOLDER_NAME": "Dein Name kommt hierhin",
     "ERROR_NAME": "Ups! Dein Name fehlt",
-    "LABEL_EMAIL": "Wie lautet deine E-Mail-Adresse?",
+    "LABEL_EMAIL": "Wie ist deine E-Mail-Adresse?",
     "PLACEHOLDER_EMAIL": "deinemail@email.de",
     "ERROR_EMAIL": "Hoppla! Deine E-Mail ist erforderlich",
     "LABEL_MESSAGE": "Wie kann ich dir helfen?",
-    "PLACEHOLDER_MESSAGE": "Hallo Alessandro, ich interessiere mich für...",
+    "PLACEHOLDER_MESSAGE": "Hallo, ich interessiere mich für...",
     "ERROR_MESSAGE": "Was möchtest du entwickeln?",
     "ERROR_ALL_FIELDS": "Bitte fülle alle Felder aus.",
     "PRIVACY_TEXT_PART1": "Ich habe die ",
