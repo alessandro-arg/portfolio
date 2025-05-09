@@ -37,12 +37,11 @@ export class ContactFormComponent {
   };
 
   placeholders = {
-    name: 'Your name goes here',
-    email: 'youremail@email.com',
-    message: 'Hello Alessandro, I am interested in...',
+    name: '',
+    email: '',
+    message: '',
   };
 
-  mailTest = true;
   formSubmitted = false;
   successMessage = false;
   showLegalNotice = false;
@@ -96,7 +95,7 @@ export class ContactFormComponent {
 
   onSubmit(ngForm: NgForm) {
     this.formSubmitted = true;
-    if (ngForm.submitted && ngForm.form.valid && !this.mailTest) {
+    if (ngForm.submitted && ngForm.form.valid) {
       this.http
         .post(
           this.post.endPoint,
@@ -111,13 +110,8 @@ export class ContactFormComponent {
           error: (error) => {
             console.error(error);
           },
-          complete: () => console.info('send post complete'),
+          complete: () => console.info('Email send.'),
         });
-    } else if (ngForm.submitted && ngForm.form.valid && this.mailTest) {
-      console.log(this.contactData);
-      ngForm.resetForm();
-      this.resetDefaultForm();
-      console.info('it worked?');
     }
   }
 
