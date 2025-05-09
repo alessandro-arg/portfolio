@@ -1,38 +1,41 @@
 <div class="legal_notice_wrapper">
-  <div class="legal_notice_content">
-    <button class="close-button" (click)="close()">✕</button>
+  <div class="title">
+    <button (click)="close()">
+      <img src="./../../assets/img/projects_section/back_arrow.png" alt="" />
+      {{ "OVERLAY.BACK" | translate }}
+    </button>
     <h1>{{ "LEGALNOTICE.TITLE" | translate }}</h1>
-
-    <h2>{{ "LEGALNOTICE.INFOTITLE" | translate }}</h2>
-    <p>
-      Alessandro Argenziano<br />
-      Kirchstraße 2<br />
-      79801 Hohentengen<br />
-      Germany
-    </p>
-
-    <h2>{{ "LEGALNOTICE.CONTACTTITLE" | translate }}</h2>
-    <p>
-      Telephone: +49 (0)160 92965227<br />
-      Email: contact&#64;alessandro-argenziano.com
-    </p>
-
-    <h2>{{ "LEGALNOTICE.RESPONSIBLETITLE" | translate }}</h2>
-    <p>
-      Alessandro Argenziano<br />
-      Kirchstraße 2<br />
-      79801 Hohentengen
-    </p>
-
-    <h2>{{ "LEGALNOTICE.DISCLAIMERTITLE" | translate }}</h2>
-
-    <h3>{{ "LEGALNOTICE.liabilityContentTitle" | translate }}</h3>
-    <p>{{ "LEGALNOTICE.LIABILITYCONTENT" | translate }}</p>
-
-    <h3>{{ "LEGALNOTICE.LIABILITYLINKSTITLE" | translate }}</h3>
-    <p>{{ "LEGALNOTICE.LIABILITYLINKS" | translate }}</p>
-
-    <h3>{{ "LEGALNOTICE.COPYRIGHTTITLE" | translate }}</h3>
-    <p>{{ "LEGALNOTICE.COPYRIGHT" | translate }}</p>
   </div>
+  <h2>{{ "LEGALNOTICE.INFOTITLE" | translate }}</h2>
+
+  <address>
+    Alessandro Argenziano<br />
+    Kirchstraße 2<br />
+    79801 Hohentengen<br />
+    Germany
+  </address>
+
+  <h2>{{ "LEGALNOTICE.CONTACTTITLE" | translate }}</h2>
+  <p>
+    Phone: +49 (0)160 92965227<br />
+    Email: contact&#64;alessandro-argenziano.com
+  </p>
+
+  <h2>{{ "LEGALNOTICE.RESPONSIBLETITLE" | translate }}</h2>
+  <address>
+    Alessandro Argenziano<br />
+    Kirchstraße 2<br />
+    79801 Hohentengen
+  </address>
+
+  <h2>{{ "LEGALNOTICE.DISCLAIMERTITLE" | translate }}</h2>
+
+  <h3>{{ "LEGALNOTICE.LIABILITYCONTENTTITLE" | translate }}</h3>
+  <p>{{ "LEGALNOTICE.LIABILITYCONTENT" | translate }}</p>
+
+  <h3>{{ "LEGALNOTICE.LIABILITYLINKSTITLE" | translate }}</h3>
+  <p>{{ "LEGALNOTICE.LIABILITYLINKS" | translate }}</p>
+
+  <h3>{{ "LEGALNOTICE.COPYRIGHTTITLE" | translate }}</h3>
+  <p>{{ "LEGALNOTICE.COPYRIGHT" | translate }}</p>
 </div>
