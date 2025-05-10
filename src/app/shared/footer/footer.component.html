@@ -7,7 +7,7 @@
           <p>© Alessandro Argenziano 2025</p>
         </div>
         <div class="line_wrapper">
-          <a class="legal_notice" (click)="toggleLegalNotice()">{{
+          <a class="legal_notice" href="legal-notice">{{
             "FOOTER.LEGAL_NOTICE" | translate
           }}</a>
           <div class="legal_notice_line"></div>
@@ -55,9 +55,5 @@
         </div>
       </div>
     </div>
-    <app-legal-notice
-      *ngIf="showLegalNotice"
-      (clickOutside)="hideLegalNotice()"
-    ></app-legal-notice>
   </div>
 </footer>

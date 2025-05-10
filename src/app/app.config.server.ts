@@ -1,6 +1,5 @@
 import { ApplicationConfig, importProvidersFrom } from '@angular/core';
 import { provideHttpClient, withFetch } from '@angular/common/http';
-import { provideClientHydration } from '@angular/platform-browser';
 import { provideRouter } from '@angular/router';
 import { routes } from './app.routes';
 
@@ -15,7 +14,6 @@ export function HttpLoaderFactory(http: HttpClient) {
 export const config: ApplicationConfig = {
   providers: [
     provideRouter(routes),
-    provideClientHydration(),
     provideHttpClient(withFetch()),
     importProvidersFrom(
       HttpClientModule,

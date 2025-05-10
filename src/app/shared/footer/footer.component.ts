@@ -1,12 +1,11 @@
 import { Component } from '@angular/core';
-import { LegalNoticeComponent } from '../../legal-notice/legal-notice.component';
-import { CommonModule, NgIf } from '@angular/common';
+import { CommonModule } from '@angular/common';
 import { TranslateModule } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-footer',
   standalone: true,
-  imports: [LegalNoticeComponent, NgIf, CommonModule, TranslateModule],
+  imports: [CommonModule, TranslateModule],
   templateUrl: './footer.component.html',
   styleUrl: './footer.component.scss',
 })
