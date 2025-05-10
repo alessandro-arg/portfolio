@@ -9,7 +9,7 @@ import { TestimonialsSectionComponent } from './testimonials-section/testimonial
 import { ContactSectionComponent } from './contact-section/contact-section.component';
 import { HeaderWrapperComponent } from './shared/header-wrapper/header-wrapper.component';
 import { TranslateModule } from '@ngx-translate/core';
-import { CursorComponent } from './shared/cursor/cursor.component';
+import { CursorComponent } from './shared/cursor/cursor.component'; // Future cursor implementation
 
 @Component({
   selector: 'app-root',
@@ -25,7 +25,6 @@ import { CursorComponent } from './shared/cursor/cursor.component';
     ContactSectionComponent,
     HeaderWrapperComponent,
     TranslateModule,
-    CursorComponent,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss',
