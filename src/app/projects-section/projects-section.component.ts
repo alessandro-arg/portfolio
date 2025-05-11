@@ -39,7 +39,7 @@ export class ProjectsSectionComponent implements OnInit {
       sticker: './../../assets/img/projects_section/featured_sticker.png',
       image: 'assets/img/projects_section/join_mockup.jpg',
       button1Link: 'https://github.com/alessandro-arg/join.git',
-      button2Link: 'https://www.alessandro-argenziano.com/join',
+      button2Link: 'https://www.join.alessandro-argenziano.com',
     },
     'mafia-vs-orcs': {
       title: 'Mafia vs Orcs',
@@ -54,7 +54,7 @@ export class ProjectsSectionComponent implements OnInit {
       sticker: './../../assets/img/contacts/circle_logo.png',
       image: 'assets/img/projects_section/mafia_mockup.jpg',
       button1Link: 'https://github.com/alessandro-arg/mafia_vs_orcs.git',
-      button2Link: 'https://www.alessandro-argenziano.com/mafia_vs_orcs',
+      button2Link: 'https://www.mafia-vs-orcs.alessandro-argenziano.com',
     },
     // dabubble: {
     //   title: 'DABubble',
