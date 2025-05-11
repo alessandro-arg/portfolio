@@ -122,16 +122,12 @@
       </div>
       <label class="checkbox_label" for="checkbox">
         {{ "CONTACT_FORM.PRIVACY_TEXT_PART1" | translate }}
-        <a (click)="toggleLegalNotice()" href="javascript:void(0)">
+        <a href="privacy-policy">
           {{ "CONTACT_FORM.PRIVACY_LINK" | translate }}
         </a>
         {{ "CONTACT_FORM.PRIVACY_TEXT_PART2" | translate }}
       </label>
     </div>
-    <app-legal-notice
-      *ngIf="showLegalNotice"
-      (clickOutside)="hideLegalNotice()"
-    ></app-legal-notice>
     <span
       class="checkbox_error"
       [class.visible]="!checkbox.valid && (checkbox.touched || checkbox.dirty)"

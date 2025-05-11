@@ -2,20 +2,13 @@ import { HttpClient } from '@angular/common/http';
 import { Component, inject } from '@angular/core';
 import { FormsModule, NgForm } from '@angular/forms';
 import { ViewChild, ElementRef } from '@angular/core';
-import { LegalNoticeComponent } from '../../legal-notice/legal-notice.component';
-import { CommonModule, NgIf } from '@angular/common';
+import { CommonModule } from '@angular/common';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-contact-form',
   standalone: true,
-  imports: [
-    FormsModule,
-    LegalNoticeComponent,
-    NgIf,
-    CommonModule,
-    TranslateModule,
-  ],
+  imports: [FormsModule, CommonModule, TranslateModule],
   templateUrl: './contact-form.component.html',
   styleUrl: './contact-form.component.scss',
 })
