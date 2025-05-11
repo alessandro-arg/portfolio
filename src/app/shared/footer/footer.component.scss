@@ -1,5 +1,6 @@
 @use "./../../../styles/variables" as *;
-@use "./../header/header.component.scss" as *;
+@use "./responsive-footer.component.scss";
+@use "./social.component.scss";
 
 footer {
   width: 100%;
@@ -67,244 +68,41 @@ footer {
   }
 
   .line_wrapper {
-    @include dFlex();
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: fit-content;
 
     .legal_notice_line {
-      @include wrappers();
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      z-index: 1;
+      pointer-events: none;
+      overflow: hidden;
 
       &::before {
-        @include before(
-          "./../../../assets/img/hand-drawn_lines/contacts_line.svg",
-          inset(0 100% 0 0)
-        );
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: url(./../../../assets/img/hand-drawn_lines/contacts_line.svg);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+
+        clip-path: inset(0 100% 0 0);
+        transition: clip-path 250ms ease-in-out;
       }
     }
 
     &:hover .legal_notice_line::before {
       clip-path: inset(0 0 0 0);
     }
-  }
-
-  .social {
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-  }
-
-  .git_wrapper {
-    position: relative;
-    display: inline-block;
-    cursor: pointer;
-    overflow: visible;
-
-    .git_icon {
-      position: absolute;
-      top: -33px;
-      left: 60px;
-      width: 32px;
-      height: 32px;
-      opacity: 0;
-      transform: translateX(-50%) rotate(-180deg);
-      transition: transform 0.4s ease, opacity 0.4s ease;
-      pointer-events: none;
-    }
-
-    .github {
-      position: relative;
-      display: inline-block;
-      padding: 9px 24px;
-      border-radius: 100px;
-      text-decoration: none;
-      background-color: transparent;
-      overflow: hidden;
-
-      &::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        opacity: 0;
-        height: 100%;
-        background-color: $secondary-color;
-        transition: opacity 300ms ease;
-        z-index: -1;
-      }
-    }
-
-    &:hover .github::before {
-      opacity: 1;
-    }
-
-    &:hover .git_icon {
-      opacity: 1;
-      transform: translateX(20px) rotate(0deg);
-    }
-  }
-
-  .linkedin_wrapper {
-    position: relative;
-    display: inline-block;
-    cursor: pointer;
-    overflow: visible;
-
-    .linkedin_icon {
-      position: absolute;
-      top: -33px;
-      left: 70px;
-      width: 32px;
-      height: 32px;
-      opacity: 0;
-      transform: translateX(-50%) rotate(-180deg);
-      transition: transform 0.4s ease, opacity 0.4s ease;
-      pointer-events: none;
-    }
-
-    .linkedin {
-      position: relative;
-      display: inline-block;
-      padding: 9px 24px;
-      border-radius: 100px;
-      text-decoration: none;
-      background-color: transparent;
-      overflow: hidden;
-
-      &::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        opacity: 0;
-        height: 100%;
-        background-color: $secondary-color;
-        transition: opacity 300ms ease;
-        z-index: -1;
-      }
-    }
-
-    &:hover .linkedin::before {
-      opacity: 1;
-    }
-
-    &:hover .linkedin_icon {
-      opacity: 1;
-      transform: translateX(17px) rotate(0deg);
-    }
-  }
-
-  .email_wrapper {
-    position: relative;
-    display: inline-block;
-    cursor: pointer;
-    overflow: visible;
-
-    .email_icon {
-      position: absolute;
-      top: -30px;
-      left: 40px;
-      width: 32px;
-      height: 32px;
-      opacity: 0;
-      transform: translateX(-50%) rotate(-180deg);
-      transition: transform 0.4s ease, opacity 0.4s ease;
-      pointer-events: none;
-    }
-
-    .email {
-      position: relative;
-      display: inline-block;
-      padding: 9px 24px;
-      border-radius: 100px;
-      text-decoration: none;
-      background-color: transparent;
-      overflow: hidden;
-
-      &::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        opacity: 0;
-        height: 100%;
-        background-color: $secondary-color;
-        transition: opacity 300ms ease;
-        z-index: -1;
-      }
-    }
-
-    &:hover .email::before {
-      opacity: 1;
-    }
-
-    &:hover .email_icon {
-      opacity: 1;
-      transform: translateX(25px) rotate(0deg);
-    }
-  }
-}
-
-@media (max-width: 960px) {
-  .footer_wrapper {
-    padding: 20px 50px 50px 30px !important;
-  }
-}
-
-@media (max-width: 650px) {
-  .footer_wrapper {
-    padding: 20px 16px 50px 16px !important;
-  }
-
-  .container {
-    flex-direction: column !important;
-    gap: 50px !important;
-  }
-
-  .legal_notice_wrapper {
-    width: 100% !important;
-  }
-
-  .logo_wrapper {
-    flex-direction: row !important;
-    justify-content: space-between !important;
-
-    p {
-      text-align: end;
-      width: 100% !important;
-      align-content: center;
-      font-size: 16px !important;
-    }
-
-    a {
-      font-size: 16px !important;
-    }
-  }
-
-  .logo {
-    width: 55px !important;
-    background-repeat: no-repeat !important;
-  }
-
-  .line_wrapper {
-    align-self: flex-end !important;
-    top: -10px !important;
-  }
-
-  .social {
-    justify-content: space-between !important;
-
-    a {
-      font-size: 16px !important;
-      padding: 9px 20px !important;
-    }
-  }
-}
-
-@media (max-width: 450px) {
-  .email_icon {
-    left: 20px !important;
   }
 }
