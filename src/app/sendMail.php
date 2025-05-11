@@ -18,7 +18,7 @@ switch ($_SERVER['REQUEST_METHOD']) {
             $name = $params->name;
             $message = $params->message;
     
-            $recipient = 'contact@alessandro-argenziano.com';  
+            $recipient = 'contact@alessandro-argenziano.com';
             $subject = "Contact From <$email>";
             $message = "From:" . $name . "<br>" . $message ;
     
@@ -29,12 +29,9 @@ switch ($_SERVER['REQUEST_METHOD']) {
             // Additional headers
             $headers[] = "From: contact@alessandro-argenziano.com";
 
-            $sent = mail($recipient, $subject, $message, implode("\r\n", $headers));
-if ($sent) {
-    http_response_code(200);
-    echo 'Mail sent';
-} else {
-    http_response_code(500);
-    echo 'Mail failed to send';
-}
+            mail($recipient, $subject, $message, implode("\r\n", $headers));
+            break;
+        default: //Reject any non POST or OPTIONS requests.
+            header("Allow: POST", true, 405);
+            exit;
     } 

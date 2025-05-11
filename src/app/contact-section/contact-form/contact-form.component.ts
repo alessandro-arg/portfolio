@@ -76,34 +76,29 @@ export class ContactFormComponent {
   }
 
   post = {
-    endPoint: 'https://www.alessandro-argenziano.com/sendMail.php',
+    endPoint: 'https://alessandro-argenziano.com/sendMail.php',
     body: (payload: any) => JSON.stringify(payload),
     options: {
       headers: {
         'Content-Type': 'text/plain',
+        responseType: 'text',
       },
-      responseType: 'text' as const,
     },
   };
 
   onSubmit(ngForm: NgForm) {
-    this.formSubmitted = true;
     if (ngForm.submitted && ngForm.form.valid) {
       this.http
-        .post(
-          this.post.endPoint,
-          this.post.body(this.contactData),
-          this.post.options
-        )
+        .post(this.post.endPoint, this.post.body(this.contactData))
         .subscribe({
           next: (response) => {
-            ngForm.resetForm();
             this.resetDefaultForm();
+            ngForm.resetForm();
           },
           error: (error) => {
             console.error(error);
           },
-          complete: () => console.info('Email send.'),
+          complete: () => console.info('Mail sent'),
         });
     }
   }
@@ -135,15 +130,5 @@ export class ContactFormComponent {
     setTimeout(() => {
       this.successMessage = false;
     }, 2000);
-  }
-
-  toggleLegalNotice() {
-    this.showLegalNotice = !this.showLegalNotice;
-    document.body.style.overflow = this.showLegalNotice ? 'hidden' : 'auto';
-  }
-
-  hideLegalNotice() {
-    this.showLegalNotice = false;
-    document.body.style.overflow = 'auto';
   }
 }
