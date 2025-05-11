@@ -27,11 +27,14 @@ switch ($_SERVER['REQUEST_METHOD']) {
             $headers[] = 'Content-type: text/html; charset=utf-8';
 
             // Additional headers
-            $headers[] = "From: noreply@alessandro-argenziano.com";
+            $headers[] = "From: contact@alessandro-argenziano.com";
 
-            mail($recipient, $subject, $message, implode("\r\n", $headers));
-            break;
-        default: //Reject any non POST or OPTIONS requests.
-            header("Allow: POST", true, 405);
-            exit;
+            $sent = mail($recipient, $subject, $message, implode("\r\n", $headers));
+if ($sent) {
+    http_response_code(200);
+    echo 'Mail sent';
+} else {
+    http_response_code(500);
+    echo 'Mail failed to send';
+}
     } 
