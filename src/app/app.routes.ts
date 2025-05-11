@@ -5,5 +5,4 @@ import { LegalNoticeComponent } from './legal-notice/legal-notice.component';
 export const routes: Routes = [
   { path: '', component: MainPageComponent },
   { path: 'legal-notice', component: LegalNoticeComponent },
-  { path: '**', redirectTo: '' },
 ];
