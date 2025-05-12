@@ -329,6 +329,7 @@ p {
   .overlay {
     background-image: url("./../../assets/img/background/notebook_paper_mobile.png");
     background-position: top;
+    background-attachment: scroll !important;
   }
 
   .overlay-content {
@@ -342,6 +343,7 @@ p {
   .container {
     padding: 19px 32px;
     height: auto;
+    margin-bottom: 50px;
   }
 
   .left {
