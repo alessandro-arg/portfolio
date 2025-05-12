@@ -119,7 +119,7 @@
       </div>
       <label class="checkbox_label" for="checkbox">
         {{ "CONTACT_FORM.PRIVACY_TEXT_PART1" | translate }}
-        <a href="privacy-policy">
+        <a [routerLink]="'/privacy-policy'">
           {{ "CONTACT_FORM.PRIVACY_LINK" | translate }}
         </a>
         {{ "CONTACT_FORM.PRIVACY_TEXT_PART2" | translate }}

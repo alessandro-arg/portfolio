@@ -4,11 +4,12 @@ import { FormsModule, NgForm } from '@angular/forms';
 import { ViewChild, ElementRef } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { TranslateModule, TranslateService } from '@ngx-translate/core';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-contact-form',
   standalone: true,
-  imports: [FormsModule, CommonModule, TranslateModule],
+  imports: [FormsModule, CommonModule, TranslateModule, RouterLink],
   templateUrl: './contact-form.component.html',
   styleUrl: './contact-form.component.scss',
 })
