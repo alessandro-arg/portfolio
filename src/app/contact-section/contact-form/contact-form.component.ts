@@ -43,6 +43,26 @@ export class ContactFormComponent {
   @ViewChild('messageInput') messageInputRef!: ElementRef<HTMLInputElement>;
   @ViewChild('nameInput') nameInputRef!: ElementRef<HTMLInputElement>;
 
+  ngOnInit() {
+    this.loadPlaceholders();
+  }
+
+  loadPlaceholders() {
+    this.translate
+      .get([
+        'CONTACT_FORM.PLACEHOLDER_NAME',
+        'CONTACT_FORM.PLACEHOLDER_EMAIL',
+        'CONTACT_FORM.PLACEHOLDER_MESSAGE',
+      ])
+      .subscribe((translations) => {
+        this.placeholders = {
+          name: translations['CONTACT_FORM.PLACEHOLDER_NAME'],
+          email: translations['CONTACT_FORM.PLACEHOLDER_EMAIL'],
+          message: translations['CONTACT_FORM.PLACEHOLDER_MESSAGE'],
+        };
+      });
+  }
+
   clearPlaceholder(field: 'name' | 'email' | 'message') {
     this.placeholders[field] = '';
   }

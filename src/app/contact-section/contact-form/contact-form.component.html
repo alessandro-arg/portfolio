@@ -23,7 +23,6 @@
         type="text"
         id="name"
         name="name"
-        [placeholder]="'CONTACT_FORM.PLACEHOLDER_NAME' | translate"
         autocomplete="off"
         required
         (blur)="onInputBlur(name, 'name')"
@@ -54,7 +53,6 @@
         type="email"
         id="email"
         name="email"
-        [placeholder]="'CONTACT_FORM.PLACEHOLDER_EMAIL' | translate"
         pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}"
         autocomplete="off"
         required
@@ -87,7 +85,6 @@
         type="text"
         id="message"
         name="message"
-        [placeholder]="'CONTACT_FORM.PLACEHOLDER_MESSAGE' | translate"
         autocomplete="off"
         required
         (blur)="onInputBlur(message, 'message')"
