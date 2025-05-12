@@ -14,6 +14,7 @@ export class HeroComponent implements OnInit {
   subtitleText = 'DEVELOPER';
   isPhotoHovered = false;
   isMobile: boolean | undefined = undefined;
+  backgroundLoaded = false;
 
   constructor() {
     if (typeof window !== 'undefined') {
@@ -42,6 +43,11 @@ export class HeroComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    const img = new Image();
+    img.src = 'assets/img/background/hero.png';
+    img.onload = () => {
+      this.backgroundLoaded = true;
+    };
     if (typeof window !== 'undefined') {
       this.isMobile = window.innerWidth <= 800;
       window.addEventListener('resize', this.checkScreenSize.bind(this));
