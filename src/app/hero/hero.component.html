@@ -17,14 +17,12 @@
             </button>
           </div>
           <h1 class="title">
-            @for (letterObj of titleLetters; track letterObj; let index =
-            $index) {
+            @for (letter of titleText; track letter; let index = $index) {
             <span
               class="letter"
-              (mouseenter)="onHover(letterObj)"
-              (mouseleave)="onLeave(letterObj)"
-              >{{ letterObj.display }}</span
-            >
+              attr.data-case="{{ letter }}"
+              attr.data-flip="{{ flipCase(letter) }}"
+            ></span>
             }
           </h1>
         </div>
@@ -48,14 +46,12 @@
       <div class="subtitle_wrapper">
         <div class="subtitle_group">
           <h1 class="subtitle">
-            @for (letterObj of subtitleLetters; track letterObj; let index =
-            $index) {
+            @for (letter of subtitleText; track letter; let index = $index) {
             <span
               class="letter"
-              (mouseenter)="onHover(letterObj)"
-              (mouseleave)="onLeave(letterObj)"
-              >{{ letterObj.display }}</span
-            >
+              attr.data-case="{{ letter }}"
+              attr.data-flip="{{ flipCase(letter) }}"
+            ></span>
             }
           </h1>
           <button class="get_in_touch" (click)="scrollToContacts()">

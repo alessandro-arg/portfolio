@@ -15,16 +15,6 @@ export class HeroComponent implements OnInit {
   isPhotoHovered = false;
   isMobile: boolean | undefined = undefined;
 
-  titleLetters = this.titleText.split('').map((letter) => ({
-    original: letter,
-    display: letter,
-  }));
-
-  subtitleLetters = this.subtitleText.split('').map((letter) => ({
-    original: letter,
-    display: letter,
-  }));
-
   constructor() {
     if (typeof window !== 'undefined') {
       this.isMobile = window.innerWidth <= 800;
@@ -35,14 +25,6 @@ export class HeroComponent implements OnInit {
     return char === char.toUpperCase()
       ? char.toLowerCase()
       : char.toUpperCase();
-  }
-
-  onHover(letterObj: { original: string; display: string }) {
-    letterObj.display = this.flipCase(letterObj.original);
-  }
-
-  onLeave(letterObj: { original: string; display: string }) {
-    letterObj.display = letterObj.original;
   }
 
   onPhotoHover(state: boolean): void {
