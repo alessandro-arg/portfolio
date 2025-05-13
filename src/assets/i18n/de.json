@@ -16,14 +16,14 @@
     "REMOTE": "Offen für Remote-Arbeit",
     "WHO": "WER IST ALESSANDRO?",
     "TITLE": "Über mich",
-    "DESCRIPTION_1": "Hey, ich bin Alessandro. Ein Webdeveloper mit einem Faible für saubere Layouts und elegantes Design. Ich liebe es, Ideen in pixelgenaue und funktionale Webanwendungen zu verwandeln. Perfekt gestaltete Interfaces inspirieren mich.",
-    "DESCRIPTION_2": "Lass uns gemeinsam etwas Großartiges schaffen!",
+    "DESCRIPTION_1": "Hey, ich bin Alessandro. Ein Webentwickler, der sich für saubere Layouts und elegantes Design interessiert. Ich liebe es, Ideen in pixelgenaue und funktionale Webanwendungen zu verwandeln. Perfekte Interfaces inspirieren mich.",
+    "DESCRIPTION_2": "Gemeinsam können wir etwas Großartiges schaffen!",
     "BUTTON": "Lass uns sprechen"
   },
   "SKILLS": {
     "MY_STACK": "MEIN TECH-STACK",
     "SKILL_SET": "Fähigkeiten",
-    "DESCRIPTION": "Ich arbeite gerne mit Technologien wie JavaScript und Angular. Mein Ziel ist es Fullstack Developer zu werden. Für neue Technologien oder Frameworks bin ich immer offen.",
+    "DESCRIPTION": "Ich arbeite gerne mit Technologien wie JavaScript und Angular. Mein Ziel ist es, ein Fullstack Developer zu werden. Für neue Technologien oder Frameworks bin ich immer offen.",
     "STICKER_INTRO": "Ich lerne noch dazu",
     "STICKER_LINE_2": "weitere Skills:"
   },
@@ -33,7 +33,7 @@
     "DESCRIPTION": "Schau dir gerne meine Projekte an! Ich lege großen Wert auf responsive, benutzerfreundliche Anwendungen und sauberen, effizienten Code. Jedes Projekt ist für mich eine Chance, mich weiterzuentwickeln.",
     "BUTTON": "Projektdetails",
     "JOIN_DESC": "Task-Manager inspiriert vom Kanban-System. Erstelle und organisiere Aufgaben per Drag & Drop, weise Benutzer und Kategorien zu.",
-    "MAFIA_DESC": "Spring-, Renn- und Schießspiel basierend auf objektorientierter Programmierung. Hilf Frank, Münzen und Munition zu finden, um die Orks zu töten, und schieß den großen Ork in den Kopf.",
+    "MAFIA_DESC": "Jump-, Run- und Shootspiel basierend auf objektorientierter Programmierung. Hilf Frank, Münzen und Munition zu finden, um die Orcs zu töten, und schieß den großen Orc in den Kopf.",
     "DABUBBLE_DESC": "Diese App ist ein Slack-Klon. Sie revolutioniert die Teamkommunikation mit einer intuitiven Oberfläche, Echtzeitnachrichten und klarer Kanalstruktur.",
     "PLACEHOLDER_TEXT1": "Mehr projekte folgen,",
     "PLACEHOLDER_TEXT2": "stay tuned!"
@@ -61,7 +61,7 @@
   "CONTACT": {
     "TITLE": "KONTAKTIERE MICH",
     "HEADING": "Bereit zusammen zu arbeiten?",
-    "DESCRIPTION_1": "Ich suche eine Position, in der ich Teil eines engagierten Teams sein, an spannenden Projekten mitwirken und meine Fähigkeiten als Entwickler weiter ausbauen kann. Mit meiner lösungsorientierten Denkweise und meinem Blick fürs Detail bin ich überzeugt, echten Mehrwert ins Team bringen zu können.",
+    "DESCRIPTION_1": "Ich bin auf der Suche nach einer Position, in der ich Teil eines engagierten Teams bin, an spannenden Projekten mitarbeite und meine Fähigkeiten als Entwickler weiter ausbauen kann. Dank meiner lösungsorientierten Denkweise und Liebe zum Detail bin ich überzeugt, einen echten Mehrwert für das Team zu liefern.",
     "DESCRIPTION_2": " Ich freue mich darauf, von dir zu hören und gemeinsam etwas Großartiges umzusetzen!"
   },
   "CONTACT_FORM": {
@@ -94,7 +94,7 @@
       "BUTTON2TEXT": "Live-Demo"
     },
     "MAFIA-VS-ORCS": {
-      "DESCRIPTION": "Spring-, Renn- und Schießspiel basierend auf objektorientierter Programmierung. Hilf Frank, Münzen und Munition zu finden, um die Orks zu töten, und schieß den großen Ork in den Kopf.",
+      "DESCRIPTION": "Jump-, Run- und Shootspiel basierend auf objektorientierter Programmierung. Hilf Frank, Münzen und Munition zu finden, um die Orks zu töten, und schieß den großen Ork in den Kopf.",
       "DETAILS": "Ich habe einen objektorientierten Ansatz verwendet, um die Spiellogik und Mechaniken strukturiert aufzubauen. Dieses Solo-Projekt zeigt meine Fähigkeit, strukturiert und eigenverantwortlich zu arbeiten. Zukünftig möchte ich weitere Level und steigende Schwierigkeitsgrade integrieren.",
       "DURATION": "8 Wochen",
       "BUTTON1TEXT": "GitHub",
