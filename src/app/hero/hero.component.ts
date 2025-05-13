@@ -14,7 +14,6 @@ export class HeroComponent implements OnInit {
   subtitleText = 'DEVELOPER';
   isPhotoHovered = false;
   isMobile: boolean | undefined = undefined;
-  backgroundLoaded = false;
 
   constructor() {
     if (typeof window !== 'undefined') {
@@ -42,16 +41,24 @@ export class HeroComponent implements OnInit {
     }
   }
 
+  photoAnimationMobile() {
+    this.checkScreenSize();
+    if (this.isMobile) {
+      setTimeout(() => {
+        const photo = document.querySelector('.photo');
+        const text = document.querySelector('.name_text');
+        photo?.classList.add('show-photo');
+        text!.innerHTML = 'Alessandro :D';
+      }, 2000);
+    }
+  }
+
   ngOnInit(): void {
-    const img = new Image();
-    img.src = 'assets/img/background/hero.png';
-    img.onload = () => {
-      this.backgroundLoaded = true;
-    };
     if (typeof window !== 'undefined') {
       this.isMobile = window.innerWidth <= 800;
       window.addEventListener('resize', this.checkScreenSize.bind(this));
       this.buttonAnimationMobile();
+      this.photoAnimationMobile();
     }
   }
 

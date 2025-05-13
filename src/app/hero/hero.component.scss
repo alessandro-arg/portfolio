@@ -335,11 +335,25 @@
       margin-top: 32px;
       align-self: flex-start;
 
-      .photo {
-        filter: grayscale(0%);
+      .photo,
+      .name_text {
+        will-change: filter, opacity;
+      }
 
-        &:hover {
-          filter: brightness(110%);
+      .photo {
+        filter: grayscale(100%);
+        transition: filter 200ms ease-in-out, brightness 200ms ease-in-out;
+
+        &.show-photo {
+          filter: grayscale(0%) brightness(105%);
+        }
+      }
+
+      .name_text {
+        opacity: 1;
+        transition: opacity 1s ease-in-out;
+        &.show-text {
+          opacity: 0;
         }
       }
     }
