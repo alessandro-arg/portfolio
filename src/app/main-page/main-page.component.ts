@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HeroComponent } from '../hero/hero.component';
 import { AboutMeComponent } from '../about-me/about-me.component';
@@ -9,6 +9,7 @@ import { ContactSectionComponent } from '../contact-section/contact-section.comp
 import { HeaderWrapperComponent } from '../shared/header-wrapper/header-wrapper.component';
 import { TranslateModule } from '@ngx-translate/core';
 import { CursorComponent } from '../shared/cursor/cursor.component'; // Future cursor implementation
+import { NavigationService } from '../navigation.service';
 
 @Component({
   selector: 'app-main-page',
@@ -27,4 +28,10 @@ import { CursorComponent } from '../shared/cursor/cursor.component'; // Future c
   templateUrl: './main-page.component.html',
   styleUrl: './main-page.component.scss',
 })
-export class MainPageComponent {}
+export class MainPageComponent implements OnInit {
+  constructor(private navService: NavigationService) {}
+
+  ngOnInit() {
+    this.navService.performPendingScrollIfAny();
+  }
+}

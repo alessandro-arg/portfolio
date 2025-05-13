@@ -2,6 +2,7 @@ import { Component, ElementRef, HostListener, ViewChild } from '@angular/core';
 import { NavigationService } from '../../navigation.service';
 import { CommonModule } from '@angular/common';
 import { TranslateService, TranslateModule } from '@ngx-translate/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-mobile-header',
@@ -13,6 +14,7 @@ import { TranslateService, TranslateModule } from '@ngx-translate/core';
 export class MobileHeaderComponent {
   constructor(
     private navService: NavigationService,
+    private router: Router,
     public translate: TranslateService
   ) {
     const savedLang = localStorage.getItem('selectedLang') as
@@ -42,11 +44,15 @@ export class MobileHeaderComponent {
     this.isNavbarOpen = !this.isNavbarOpen;
   }
 
-  goToSection(section: string) {
-    const el = document.getElementById(section);
-    if (el) {
-      el.scrollIntoView({ behavior: 'smooth' });
-      this.isNavbarOpen = false;
+  goToSection(sectionId: string) {
+    this.isNavbarOpen = false;
+
+    if (this.router.url === '/') {
+      this.navService.requestScrollToSection(sectionId);
+      this.navService.performPendingScrollIfAny();
+    } else {
+      this.navService.requestScrollToSection(sectionId);
+      this.router.navigate(['/']);
     }
   }
 

@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { NavigationService } from '../../navigation.service';
 import { CommonModule } from '@angular/common';
 import { TranslateService, TranslateModule } from '@ngx-translate/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-header',
@@ -13,6 +14,7 @@ import { TranslateService, TranslateModule } from '@ngx-translate/core';
 export class HeaderComponent {
   constructor(
     private navService: NavigationService,
+    private router: Router,
     public translate: TranslateService
   ) {}
 
@@ -26,6 +28,12 @@ export class HeaderComponent {
   }
 
   goToSection(sectionId: string) {
-    this.navService.requestScrollToSection(sectionId);
+    if (this.router.url === '/') {
+      this.navService.requestScrollToSection(sectionId);
+      this.navService.performPendingScrollIfAny();
+    } else {
+      this.navService.requestScrollToSection(sectionId);
+      this.router.navigate(['/']);
+    }
   }
 }
