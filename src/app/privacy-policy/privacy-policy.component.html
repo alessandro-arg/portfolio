@@ -1,10 +1,13 @@
 <div class="privacy_policy_wrapper">
-  <div class="title">
-    <button class="close-button" (click)="goBack()">
-      <img src="./../../assets/img/projects_section/back_arrow.png" alt="" />
-      {{ "OVERLAY.BACK" | translate }}
-    </button>
-    <h1>Privacy Policy</h1>
+  <div class="container">
+    <app-header-wrapper id="header"></app-header-wrapper>
+    <div class="title">
+      <button class="close-button" (click)="goBack()">
+        <img src="./../../assets/img/projects_section/back_arrow.png" alt="" />
+        {{ "OVERLAY.BACK" | translate }}
+      </button>
+      <h1>Privacy Policy</h1>
+    </div>
     <p>
       Last updated: May 11, 2025 <br />
 
@@ -494,5 +497,6 @@
         <p>By phone number: +49 (0)160 92965227</p>
       </li>
     </ul>
+    <app-footer class="legal-notice_footer"></app-footer>
   </div>
 </div>
