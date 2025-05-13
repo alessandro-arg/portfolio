@@ -1,41 +1,45 @@
 <div class="legal_notice_wrapper">
-  <div class="title">
-    <button class="close-button" (click)="goBack()">
-      <img src="./../../assets/img/projects_section/back_arrow.png" alt="" />
-      {{ "OVERLAY.BACK" | translate }}
-    </button>
-    <h1>{{ "LEGALNOTICE.TITLE" | translate }}</h1>
+  <div class="container">
+    <app-header-wrapper id="header"></app-header-wrapper>
+    <div class="title">
+      <button class="close-button" (click)="goBack()">
+        <img src="./../../assets/img/projects_section/back_arrow.png" alt="" />
+        {{ "OVERLAY.BACK" | translate }}
+      </button>
+      <h1>{{ "LEGALNOTICE.TITLE" | translate }}</h1>
+    </div>
+    <h2>{{ "LEGALNOTICE.INFOTITLE" | translate }}</h2>
+
+    <address>
+      Alessandro Argenziano<br />
+      Kirchstraße 2<br />
+      79801 Hohentengen<br />
+      Germany
+    </address>
+
+    <h2>{{ "LEGALNOTICE.CONTACTTITLE" | translate }}</h2>
+    <p>
+      Phone: +49 (0)160 92965227<br />
+      Email: contact&#64;alessandro-argenziano.com
+    </p>
+
+    <h2>{{ "LEGALNOTICE.RESPONSIBLETITLE" | translate }}</h2>
+    <address>
+      Alessandro Argenziano<br />
+      Kirchstraße 2<br />
+      79801 Hohentengen
+    </address>
+
+    <h2>{{ "LEGALNOTICE.DISCLAIMERTITLE" | translate }}</h2>
+
+    <h3>{{ "LEGALNOTICE.LIABILITYCONTENTTITLE" | translate }}</h3>
+    <p>{{ "LEGALNOTICE.LIABILITYCONTENT" | translate }}</p>
+
+    <h3>{{ "LEGALNOTICE.LIABILITYLINKSTITLE" | translate }}</h3>
+    <p>{{ "LEGALNOTICE.LIABILITYLINKS" | translate }}</p>
+
+    <h3>{{ "LEGALNOTICE.COPYRIGHTTITLE" | translate }}</h3>
+    <p>{{ "LEGALNOTICE.COPYRIGHT" | translate }}</p>
+    <app-footer class="legal-notice_footer"></app-footer>
   </div>
-  <h2>{{ "LEGALNOTICE.INFOTITLE" | translate }}</h2>
-
-  <address>
-    Alessandro Argenziano<br />
-    Kirchstraße 2<br />
-    79801 Hohentengen<br />
-    Germany
-  </address>
-
-  <h2>{{ "LEGALNOTICE.CONTACTTITLE" | translate }}</h2>
-  <p>
-    Phone: +49 (0)160 92965227<br />
-    Email: contact&#64;alessandro-argenziano.com
-  </p>
-
-  <h2>{{ "LEGALNOTICE.RESPONSIBLETITLE" | translate }}</h2>
-  <address>
-    Alessandro Argenziano<br />
-    Kirchstraße 2<br />
-    79801 Hohentengen
-  </address>
-
-  <h2>{{ "LEGALNOTICE.DISCLAIMERTITLE" | translate }}</h2>
-
-  <h3>{{ "LEGALNOTICE.LIABILITYCONTENTTITLE" | translate }}</h3>
-  <p>{{ "LEGALNOTICE.LIABILITYCONTENT" | translate }}</p>
-
-  <h3>{{ "LEGALNOTICE.LIABILITYLINKSTITLE" | translate }}</h3>
-  <p>{{ "LEGALNOTICE.LIABILITYLINKS" | translate }}</p>
-
-  <h3>{{ "LEGALNOTICE.COPYRIGHTTITLE" | translate }}</h3>
-  <p>{{ "LEGALNOTICE.COPYRIGHT" | translate }}</p>
 </div>

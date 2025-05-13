@@ -28,7 +28,7 @@ export class SkillsSectionComponent implements OnInit {
     { src: './../../assets/img/skill_set/icons/git.png', name: 'Git' },
     {
       src: './../../assets/img/skill_set/icons/rest_api.png',
-      name: 'Rest-Api',
+      name: 'REST API',
     },
     { src: './../../assets/img/skill_set/icons/scrum.png', name: 'Scrum' },
     {

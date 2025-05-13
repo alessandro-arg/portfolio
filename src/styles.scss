@@ -42,10 +42,25 @@ html {
   }
 }
 
+.legal-notice_footer {
+  margin-top: 100px !important;
+
+  .line_wrapper,
+  .logo {
+    display: none !important;
+  }
+}
+
 @media (max-width: 460px) {
   html,
   body {
     overscroll-behavior: none;
     touch-action: pan-x pan-y;
+  }
+
+  .legal-notice_footer {
+    .social {
+      width: 110% !important;
+    }
   }
 }
