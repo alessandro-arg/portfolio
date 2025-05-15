@@ -44,10 +44,27 @@ html {
 
 .legal-notice_footer {
   margin-top: 100px !important;
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  background-image: url(./assets/img/background/hero.png);
+  background-size: 150%;
+  background-repeat: no-repeat;
+  background-position: center;
 
-  .line_wrapper,
-  .logo {
+  .line_wrapper {
     display: none !important;
+  }
+}
+
+@media (max-width: 650px) {
+  .legal-notice_footer {
+    padding: 0;
   }
 }
 
@@ -60,7 +77,7 @@ html {
 
   .legal-notice_footer {
     .social {
-      width: 110% !important;
+      width: 100% !important;
     }
   }
 }
