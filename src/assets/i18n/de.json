@@ -120,5 +120,157 @@
     "LIABILITYLINKS": "Unser Angebot enthält Links zu externen Websites Dritter, auf deren Inhalte wir keinen Einfluss haben. Deshalb können wir für diese fremden Inhalte auch keine Gewähr übernehmen.",
     "COPYRIGHTTITLE": "Urheberrecht",
     "COPYRIGHT": "Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht. Die Vervielfältigung, Bearbeitung, Verbreitung und jede Art der Verwertung bedürfen der schriftlichen Zustimmung des jeweiligen Autors bzw. Erstellers."
+  },
+  "PRIVACYPOLICY": {
+    "TITLE": "Datenschutzerklärung",
+    "LASTUPDATED": "Letzte Aktualisierung: 11. Mai 2025",
+    "INTRO": "Diese Datenschutzerklärung beschreibt unsere Richtlinien und Verfahren zur Erhebung, Nutzung und Offenlegung Ihrer Informationen bei der Nutzung des Dienstes und informiert Sie über Ihre Datenschutzrechte und wie das Gesetz Sie schützt.",
+    "INTRO2": "Wir verwenden Ihre personenbezogenen Daten, um den Dienst bereitzustellen und zu verbessern. Durch die Nutzung des Dienstes stimmen Sie der Erhebung und Verwendung von Informationen gemäß dieser Datenschutzerklärung zu. Diese Datenschutzerklärung wurde mit Hilfe des Datenschutzgenerator erstellt.",
+    "INTERPRETATIONANDDEFINITIONS": "Auslegung und Begriffsbestimmungen",
+    "INTERPRETATIONTITLE": "Auslegung",
+    "INTERPRETATION": "Begriffe, deren Anfangsbuchstaben großgeschrieben sind, haben unter den folgenden Bedingungen definierte Bedeutungen. Die folgenden Definitionen gelten unabhängig davon, ob sie im Singular oder im Plural erscheinen.",
+    "DEFINITIONSTITLE": "Begriffsbestimmungen",
+    "DEFINITIONSPRE": "Für die Zwecke dieser Datenschutzerklärung gelten folgende Definitionen:",
+    "DEFINITIONS": {
+      "ACCOUNT": "Konto bezeichnet ein eindeutiges Konto, das für Sie erstellt wurde, um auf unseren Dienst oder Teile unseres Dienstes zuzugreifen.",
+      "AFFILIATE": "Partnerunternehmen bezeichnet ein Unternehmen, das eine Partei kontrolliert, von ihr kontrolliert wird oder unter gemeinsamer Kontrolle mit ihr steht, wobei \"Kontrolle\" den Besitz von 50 % oder mehr der Aktien, Beteiligungen oder anderer stimmberechtigter Wertpapiere zur Wahl von Direktoren oder anderer leitender Stellen bedeutet.",
+      "COMPANY": "Unternehmen (in dieser Vereinbarung entweder als „das Unternehmen“, „Wir“ oder „Unser“ bezeichnet) bezieht sich auf Alessandro Argenziano.",
+      "COOKIES": "Cookies sind kleine Dateien, die von einer Website auf Ihrem Computer, Mobilgerät oder einem anderen Gerät gespeichert werden und Informationen über Ihren Browserverlauf auf dieser Website enthalten, unter anderem zur Verwendung.",
+      "COUNTRY": "Land bezieht sich auf: Baden-Württemberg, Deutschland",
+      "DEVICE": "Gerät bezeichnet jedes Gerät, das auf den Dienst zugreifen kann, wie ein Computer, ein Mobiltelefon oder ein Tablet.",
+      "PERSONALDATA": "Personenbezogene Daten sind alle Informationen, die sich auf eine identifizierte oder identifizierbare Person beziehen.",
+      "SERVICE": "Dienst bezieht sich auf die Website.",
+      "SERVICEPROVIDER": "Dienstanbieter bezeichnet jede natürliche oder juristische Person, die Daten im Auftrag des Unternehmens verarbeitet. Es handelt sich um Drittunternehmen oder Einzelpersonen, die vom Unternehmen beauftragt wurden, den Dienst zu erleichtern, im Auftrag des Unternehmens bereitzustellen, dienstbezogene Leistungen zu erbringen oder das Unternehmen bei der Analyse der Nutzung des Dienstes zu unterstützen.",
+      "USAGEDATA": "Nutzungsdaten sind Daten, die automatisch erfasst werden, entweder durch die Nutzung des Dienstes oder durch die Dienstinfrastruktur selbst (z. B. die Dauer eines Seitenbesuchs).",
+      "WEBSITE": "Website bezieht sich auf Alessandro Argenziano, erreichbar unter",
+      "YOU": "Sie bezeichnet die Person, die auf den Dienst zugreift oder ihn nutzt, oder das Unternehmen oder die juristische Person, in deren Namen eine solche Person auf den Dienst zugreift oder ihn nutzt, soweit zutreffend."
+    },
+    "COLLECTINGDATA": "Erhebung und Nutzung Ihrer personenbezogenen Daten",
+    "TYPESOFDATA": "Arten der erhobenen Daten",
+    "PERSONALDATATITLE": "Personenbezogene Daten",
+    "PERSONALDATA": "Bei der Nutzung unseres Dienstes können wir Sie bitten, uns bestimmte persönlich identifizierbare Informationen zur Verfügung zu stellen, die verwendet werden können, um Sie zu kontaktieren oder zu identifizieren. Zu den persönlich identifizierbaren Informationen können unter anderem gehören:",
+    "USAGEDATATITLE": "Nutzungsdaten",
+    "USAGEDATA1": "Nutzungsdaten werden automatisch bei der Nutzung des Dienstes erfasst.",
+    "USAGEDATA2": "Zu den Nutzungsdaten können Informationen wie die Internetprotokoll-Adresse (z. B. IP-Adresse) Ihres Geräts, Browsertyp, Browserversion, die Seiten unseres Dienstes, die Sie besuchen, Zeitpunkt und Datum Ihres Besuchs, auf diesen Seiten verbrachte Zeit, eindeutige Gerätekennungen und andere Diagnosedaten gehören.",
+    "USAGEDATA3": "Wenn Sie über ein mobiles Gerät auf den Dienst zugreifen, können wir automatisch bestimmte Informationen erfassen, darunter, aber nicht beschränkt auf, den Typ des von Ihnen verwendeten mobilen Geräts, Ihre eindeutige Geräte-ID, die IP-Adresse Ihres mobilen Geräts, Ihr mobiles Betriebssystem, den Typ des von Ihnen verwendeten mobilen Internetbrowsers, eindeutige Gerätekennungen und andere Diagnosedaten.",
+    "USAGEDATA4": "Wir können auch Informationen erfassen, die Ihr Browser sendet, wenn Sie unseren Dienst besuchen oder wenn Sie über ein mobiles Gerät auf den Dienst zugreifen.",
+    "TRACKINGTITLE": "Tracking-Technologien und Cookies",
+    "TRACKINGINFO": "Wir verwenden Cookies und ähnliche Tracking-Technologien, um die Aktivität auf unserem Dienst zu verfolgen und bestimmte Informationen zu speichern. Zu den verwendeten Tracking-Technologien gehören Beacons, Tags und Skripte zur Sammlung und Verfolgung von Informationen sowie zur Verbesserung und Analyse unseres Dienstes. Die von uns verwendeten Technologien können umfassen:",
+    "TRACKINGTECHNOLOGIES": {
+      "COOKIES": "Cookies oder Browser-Cookies. Ein Cookie ist eine kleine Datei, die auf Ihrem Gerät abgelegt wird. Sie können Ihren Browser so einstellen, dass er alle Cookies ablehnt oder anzeigt, wenn ein Cookie gesendet wird. Wenn Sie jedoch keine Cookies akzeptieren, können Sie möglicherweise einige Teile unseres Dienstes nicht nutzen. Sofern Sie Ihre Browsereinstellungen nicht so angepasst haben, dass Cookies abgelehnt werden, kann unser Dienst Cookies verwenden.",
+      "WEBBEACONS": "Web-Beacons. Bestimmte Abschnitte unseres Dienstes und unsere E-Mails können kleine elektronische Dateien enthalten, die als Web-Beacons (auch bekannt als Clear-GIFs, Pixel-Tags und Ein-Pixel-GIFs) bezeichnet werden. Diese ermöglichen dem Unternehmen beispielsweise, Benutzer zu zählen, die diese Seiten besucht oder eine E-Mail geöffnet haben, sowie andere verwandte Website-Statistiken zu erfassen (z. B. die Beliebtheit eines bestimmten Abschnitts zu dokumentieren und die System- und Serverintegrität zu überprüfen)."
+    },
+    "COOKIETYPESINFO": "Cookies können \"persistente\" oder \"Sitzungs\"-Cookies sein. Persistente Cookies verbleiben auf Ihrem Computer oder Mobilgerät, wenn Sie offline gehen, während Sitzungs-Cookies gelöscht werden, sobald Sie Ihren Webbrowser schließen. Weitere Informationen über Cookies finden Sie im Artikel auf der Website von TermsFeed.",
+    "COOKIEUSES": "Wir verwenden sowohl Sitzungs- als auch persistente Cookies für die unten aufgeführten Zwecke:",
+    "COOKIECATEGORIES": {
+      "NECESSARY": {
+        "TITLE": "Notwendige / essentielle Cookies",
+        "TYPE": "Sitzungs-Cookies",
+        "ADMIN": "Verwaltet von: uns",
+        "PURPOSE": "Diese Cookies sind unerlässlich, um Ihnen über die Website verfügbare Dienste bereitzustellen und Ihnen die Nutzung bestimmter Funktionen zu ermöglichen. Sie helfen, Benutzer zu authentifizieren und betrügerische Nutzung von Benutzerkonten zu verhindern. Ohne diese Cookies können die von Ihnen angeforderten Dienste nicht bereitgestellt werden und wir verwenden diese Cookies nur, um Ihnen diese Dienste bereitzustellen."
+      },
+      "NOTICE": {
+        "TITLE": "Cookies-Richtlinie / Hinweis zur Zustimmung",
+        "TYPE": "Persistente Cookies",
+        "ADMIN": "Verwaltet von: uns",
+        "PURPOSE": "Diese Cookies erkennen, ob Benutzer der Verwendung von Cookies auf der Website zugestimmt haben."
+      },
+      "FUNCTIONALITY": {
+        "TITLE": "Funktionalitäts-Cookies",
+        "TYPE": "Persistente Cookies",
+        "ADMIN": "Verwaltet von: uns",
+        "PURPOSE": "Diese Cookies ermöglichen es uns, die von Ihnen bei der Nutzung der Website getroffenen Entscheidungen zu speichern, wie z. B. Ihre Anmeldedaten oder Spracheinstellungen. Der Zweck dieser Cookies ist es, Ihnen ein persönlicheres Erlebnis zu bieten und zu vermeiden, dass Sie Ihre Einstellungen bei jedem Besuch der Website erneut eingeben müssen."
+      }
+    },
+    "MORE_INFO": "Für weitere Informationen über die von uns verwendeten Cookies und Ihre Wahlmöglichkeiten in Bezug auf Cookies besuchen Sie bitte unsere Cookie-Richtlinie oder den Abschnitt Cookies in unserer Datenschutzerklärung.",
+    "USE_OF_DATA": {
+      "TITLE": "Verwendung Ihrer personenbezogenen Daten",
+      "INTRO": "Das Unternehmen kann personenbezogene Daten für die folgenden Zwecke verwenden:",
+      "PURPOSES": {
+        "SERVICE": "Zur Bereitstellung und Pflege unseres Dienstes, einschließlich der Überwachung der Nutzung unseres Dienstes.",
+        "ACCOUNT": "Zur Verwaltung Ihres Kontos: zur Verwaltung Ihrer Registrierung als Nutzer des Dienstes. Die von Ihnen bereitgestellten personenbezogenen Daten können Ihnen Zugang zu verschiedenen Funktionalitäten des Dienstes geben, die Ihnen als registrierter Nutzer zur Verfügung stehen.",
+        "CONTRACT": "Zur Erfüllung eines Vertrags: die Entwicklung, Einhaltung und Durchführung des Kaufvertrags für die Produkte, Artikel oder Dienstleistungen, die Sie gekauft haben, oder eines anderen Vertrags mit uns über den Dienst.",
+        "CONTACT": "Um Sie zu kontaktieren: Um Sie per E-Mail, Telefonanrufen, SMS oder anderen gleichwertigen Formen der elektronischen Kommunikation zu kontaktieren, wie z. B. Push-Benachrichtigungen von mobilen Anwendungen bezüglich Updates oder informativer Kommunikation im Zusammenhang mit den Funktionalitäten, Produkten oder vertraglich vereinbarten Dienstleistungen, einschließlich Sicherheitsupdates, wenn dies für deren Implementierung notwendig oder sinnvoll ist.",
+        "INFO": "Um Ihnen Neuigkeiten, Sonderangebote und allgemeine Informationen über andere Waren, Dienstleistungen und Veranstaltungen bereitzustellen, die wir anbieten und die denen ähneln, die Sie bereits gekauft oder angefragt haben, es sei denn, Sie haben sich entschieden, solche Informationen nicht zu erhalten.",
+        "REQUESTS": "Zur Verwaltung Ihrer Anfragen: Um Ihre Anfragen an uns zu bearbeiten und zu verwalten.",
+        "TRANSFERS": "Für Geschäftsübertragungen: Wir können Ihre Informationen verwenden, um eine Fusion, Veräußerung, Umstrukturierung, Reorganisation, Auflösung oder einen anderen Verkauf oder Transfer einiger oder aller unserer Vermögenswerte zu bewerten oder durchzuführen, sei es als fortgeführtes Unternehmen oder im Rahmen eines Insolvenz-, Liquidations- oder ähnlichen Verfahrens, bei dem personenbezogene Daten, die wir über unsere Dienstnutzer halten, zu den übertragenen Vermögenswerten gehören.",
+        "OTHER": "Für andere Zwecke: Wir können Ihre Informationen für andere Zwecke verwenden, wie z.B. Datenanalyse, Identifizierung von Nutzungstrends, Bestimmung der Wirksamkeit unserer Werbekampagnen und zur Bewertung und Verbesserung unseres Dienstes, unserer Produkte, Dienstleistungen, unseres Marketings und Ihrer Erfahrung."
+      },
+      "SHARE_INFO": "Wir können Ihre personenbezogenen Daten in den folgenden Situationen weitergeben:",
+      "SHARE_WITH": {
+        "SERVICE_PROVIDERS": "Mit Dienstanbietern: Wir können Ihre personenbezogenen Daten mit Dienstanbietern teilen, um die Nutzung unseres Dienstes zu überwachen und zu analysieren oder um Sie zu kontaktieren.",
+        "BUSINESS_TRANSFERS": "Für Geschäftsübertragungen: Wir können Ihre personenbezogenen Daten im Zusammenhang mit oder während der Verhandlungen über eine Fusion, einen Verkauf von Unternehmensvermögen, eine Finanzierung oder den Erwerb unseres gesamten oder eines Teils unseres Unternehmens an ein anderes Unternehmen weitergeben oder übertragen.",
+        "AFFILIATES": "Mit verbundenen Unternehmen: Wir können Ihre Informationen mit unseren verbundenen Unternehmen teilen, in diesem Fall verlangen wir von diesen Unternehmen, dass sie diese Datenschutzerklärung einhalten. Zu den verbundenen Unternehmen gehören unsere Muttergesellschaft und alle anderen Tochtergesellschaften, Joint-Venture-Partner oder andere Unternehmen, die wir kontrollieren oder die unter gemeinsamer Kontrolle mit uns stehen.",
+        "PARTNERS": "Mit Geschäftspartnern: Wir können Ihre Informationen mit unseren Geschäftspartnern teilen, um Ihnen bestimmte Produkte, Dienstleistungen oder Werbeaktionen anzubieten.",
+        "OTHER_USERS": "Mit anderen Nutzern: Wenn Sie personenbezogene Daten teilen oder auf andere Weise in öffentlichen Bereichen mit anderen Nutzern interagieren, können diese Informationen von allen Nutzern eingesehen und öffentlich verbreitet werden.",
+        "CONSENT": "Mit Ihrer Zustimmung: Wir können Ihre personenbezogenen Daten für jeden anderen Zweck mit Ihrer Zustimmung weitergeben."
+      }
+    },
+    "RETENTION": {
+      "TITLE": "Aufbewahrung Ihrer personenbezogenen Daten",
+      "DATA_DURATION": "Das Unternehmen wird Ihre personenbezogenen Daten nur so lange aufbewahren, wie es für die in dieser Datenschutzerklärung dargelegten Zwecke erforderlich ist. Wir werden Ihre personenbezogenen Daten in dem Umfang aufbewahren und verwenden, wie es erforderlich ist, um unseren gesetzlichen Verpflichtungen nachzukommen (zum Beispiel, wenn wir Ihre Daten zur Einhaltung geltender Gesetze aufbewahren müssen), Rechtsstreitigkeiten beizulegen und unsere rechtlichen Vereinbarungen und Richtlinien durchzusetzen.",
+      "USAGE_DATA": "Das Unternehmen wird auch Nutzungsdaten für interne Analysezwecke aufbewahren. Nutzungsdaten werden in der Regel für einen kürzeren Zeitraum aufbewahrt, es sei denn, diese Daten werden verwendet, um die Sicherheit zu stärken oder die Funktionalität unseres Dienstes zu verbessern, oder wir sind gesetzlich verpflichtet, diese Daten für längere Zeiträume aufzubewahren."
+    },
+    "TRANSFER": {
+      "TITLE": "Übermittlung Ihrer personenbezogenen Daten",
+      "INFO": "Ihre Informationen, einschließlich personenbezogener Daten, werden in den Betriebsbüros des Unternehmens und an allen anderen Orten, an denen sich die an der Verarbeitung beteiligten Parteien befinden, verarbeitet. Das bedeutet, dass diese Informationen auf Computer außerhalb Ihres Staates, Ihrer Provinz, Ihres Landes oder einer anderen staatlichen Gerichtsbarkeit übertragen und dort gespeichert werden können, wo die Datenschutzgesetze von denen Ihrer Gerichtsbarkeit abweichen können.",
+      "CONSENT": "Ihre Zustimmung zu dieser Datenschutzerklärung, gefolgt von Ihrer Übermittlung solcher Informationen, stellt Ihre Zustimmung zu dieser Übertragung dar.",
+      "SECURITY": "Das Unternehmen wird alle angemessenen Schritte unternehmen, um sicherzustellen, dass Ihre Daten sicher und in Übereinstimmung mit dieser Datenschutzerklärung behandelt werden, und es findet keine Übermittlung Ihrer personenbezogenen Daten an eine Organisation oder ein Land statt, es sei denn, es bestehen angemessene Kontrollen, einschließlich der Sicherheit Ihrer Daten und anderer personenbezogener Informationen."
+    },
+    "DELETE": {
+      "TITLE": "Löschen Ihrer personenbezogenen Daten",
+      "RIGHT": "Sie haben das Recht, die von uns über Sie erfassten personenbezogenen Daten zu löschen oder uns um Hilfe bei der Löschung dieser Daten zu bitten.",
+      "ABILITY": "Unser Dienst kann Ihnen die Möglichkeit geben, bestimmte Informationen über Sie innerhalb des Dienstes zu löschen.",
+      "UPDATE": "Sie können Ihre Informationen jederzeit aktualisieren, ändern oder löschen, indem Sie sich in Ihr Konto einloggen, falls Sie eines haben, und den Abschnitt mit den Kontoeinstellungen besuchen, in dem Sie Ihre persönlichen Informationen verwalten können. Sie können uns auch kontaktieren, um Zugang zu den personenbezogenen Daten zu erhalten, die Sie uns zur Verfügung gestellt haben, oder um deren Berichtigung oder Löschung zu verlangen.",
+      "LIMITATION": "Bitte beachten Sie jedoch, dass wir bestimmte Informationen aufbewahren müssen, wenn wir gesetzlich dazu verpflichtet sind oder eine rechtmäßige Grundlage dafür haben."
+    },
+    "DISCLOSURE": {
+      "TITLE": "Offenlegung Ihrer personenbezogenen Daten",
+      "BUSINESS": {
+        "TITLE": "Geschäftstransaktionen",
+        "TEXT": "Wenn das Unternehmen an einer Fusion, einer Übernahme oder einem Verkauf von Vermögenswerten beteiligt ist, können Ihre personenbezogenen Daten übertragen werden. Wir werden Sie benachrichtigen, bevor Ihre personenbezogenen Daten übertragen werden und einer anderen Datenschutzerklärung unterliegen."
+      },
+      "LAW_ENFORCEMENT": {
+        "TITLE": "Strafverfolgung",
+        "TEXT": "Unter bestimmten Umständen kann das Unternehmen verpflichtet sein, Ihre personenbezogenen Daten offenzulegen, wenn dies gesetzlich vorgeschrieben ist oder als Antwort auf berechtigte Anfragen von Behörden (z. B. ein Gericht oder eine Regierungsbehörde)."
+      },
+      "OTHER_REQUIREMENTS": {
+        "TITLE": "Sonstige rechtliche Anforderungen",
+        "INTRO": "Das Unternehmen kann Ihre personenbezogenen Daten in gutem Glauben offenlegen, wenn es der Ansicht ist, dass eine solche Maßnahme notwendig ist, um:",
+        "REASONS": {
+          "LEGAL_OBLIGATION": "einer gesetzlichen Verpflichtung nachzukommen",
+          "PROTECT_RIGHTS": "die Rechte oder das Eigentum des Unternehmens zu schützen und zu verteidigen",
+          "INVESTIGATE": "mögliches Fehlverhalten im Zusammenhang mit dem Dienst zu verhindern oder zu untersuchen",
+          "USER_SAFETY": "die persönliche Sicherheit der Nutzer des Dienstes oder der Öffentlichkeit zu schützen",
+          "LEGAL_LIABILITY": "sich vor rechtlicher Haftung zu schützen"
+        }
+      }
+    },
+    "SECURITY": {
+      "TITLE": "Sicherheit Ihrer personenbezogenen Daten",
+      "TEXT": "Die Sicherheit Ihrer personenbezogenen Daten ist uns wichtig, aber denken Sie daran, dass keine Methode der Übertragung über das Internet oder Methode der elektronischen Speicherung 100% sicher ist. Während wir bestrebt sind, kommerziell akzeptable Mittel zum Schutz Ihrer personenbezogenen Daten zu verwenden, können wir deren absolute Sicherheit nicht garantieren."
+    },
+    "CHILDREN": {
+      "TITLE": "Datenschutz von Kindern",
+      "NOT_FOR_CHILDREN": "Unser Dienst richtet sich nicht an Personen unter 13 Jahren. Wir erfassen nicht wissentlich personenbezogene Daten von Personen unter 13 Jahren. Wenn Sie ein Elternteil oder Erziehungsberechtigter sind und wissen, dass Ihr Kind uns personenbezogene Daten zur Verfügung gestellt hat, kontaktieren Sie uns bitte. Wenn wir erfahren, dass wir personenbezogene Daten von Personen unter 13 Jahren ohne Überprüfung der elterlichen Zustimmung erfasst haben, ergreifen wir Maßnahmen, um diese Informationen von unseren Servern zu entfernen.",
+      "PARENTAL_CONSENT": "Wenn wir uns auf die Zustimmung als rechtliche Grundlage für die Verarbeitung Ihrer Informationen verlassen müssen und Ihr Land die Zustimmung eines Elternteils erfordert, können wir die Zustimmung Ihres Elternteils verlangen, bevor wir diese Informationen erfassen und verwenden."
+    },
+    "LINKS": {
+      "TITLE": "Links zu anderen Websites",
+      "INFO": "Unser Dienst kann Links zu anderen Websites enthalten, die nicht von uns betrieben werden. Wenn Sie auf einen Link eines Drittanbieters klicken, werden Sie zur Website dieses Drittanbieters weitergeleitet. Wir empfehlen Ihnen dringend, die Datenschutzerklärung jeder Website, die Sie besuchen, zu lesen.",
+      "NO_CONTROL": "Wir haben keine Kontrolle über und übernehmen keine Verantwortung für die Inhalte, Datenschutzrichtlinien oder Praktiken von Websites oder Diensten Dritter."
+    },
+    "CHANGES": {
+      "TITLE": "Änderungen an dieser Datenschutzerklärung",
+      "UPDATE_NOTICE": "Wir können unsere Datenschutzerklärung von Zeit zu Zeit aktualisieren. Wir werden Sie über etwaige Änderungen informieren, indem wir die neue Datenschutzerklärung auf dieser Seite veröffentlichen.",
+      "NOTIFICATION": "Wir werden Sie per E-Mail und/oder durch einen gut sichtbaren Hinweis auf unserem Dienst informieren, bevor die Änderung in Kraft tritt, und das Datum „Zuletzt aktualisiert“ oben in dieser Datenschutzerklärung aktualisieren.",
+      "ADVISE": "Es wird empfohlen, diese Datenschutzerklärung regelmäßig auf Änderungen zu überprüfen. Änderungen an dieser Datenschutzerklärung treten in Kraft, sobald sie auf dieser Seite veröffentlicht werden."
+    },
+    "CONTACT": {
+      "TITLE": "Kontakt",
+      "INFO": "Wenn sie fragen über diese Datenschutzerklärung haben, erreichen sie uns:",
+      "EMAIL": "Per E-Mail: contact@alessandro-argenziano.com",
+      "PHONE": "Telefonisch: +49 (0)160 92965227"
+    }
   }
 }
