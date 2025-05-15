@@ -35,6 +35,15 @@ export class MobileHeaderComponent {
     this.translate.use(lang);
   }
 
+  onLogoClick() {
+    const currentUrl = this.router.url;
+    if (currentUrl === '/legal-notice' || currentUrl === '/privacy-policy') {
+      this.router.navigateByUrl('/');
+    } else {
+      this.goToSection('header');
+    }
+  }
+
   isNavbarOpen = false;
   hoverLogo = false;
 

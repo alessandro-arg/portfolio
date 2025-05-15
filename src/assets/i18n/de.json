@@ -148,7 +148,12 @@
     "COLLECTINGDATA": "Erhebung und Nutzung Ihrer personenbezogenen Daten",
     "TYPESOFDATA": "Arten der erhobenen Daten",
     "PERSONALDATATITLE": "Personenbezogene Daten",
-    "PERSONALDATA": "Bei der Nutzung unseres Dienstes können wir Sie bitten, uns bestimmte persönlich identifizierbare Informationen zur Verfügung zu stellen, die verwendet werden können, um Sie zu kontaktieren oder zu identifizieren. Zu den persönlich identifizierbaren Informationen können unter anderem gehören:",
+    "PERSONALDATA": {
+      "INFO": "Bei der Nutzung unseres Dienstes können wir Sie bitten, uns bestimmte persönlich identifizierbare Informationen zur Verfügung zu stellen, die verwendet werden können, um Sie zu kontaktieren oder zu identifizieren. Zu den persönlich identifizierbaren Informationen können unter anderem gehören:",
+      "EMAIL": "E-Mail-Adresse",
+      "NAME": "Vor- und Nachname",
+      "USAGEDATA": "Nutzungsdaten"
+    },
     "USAGEDATATITLE": "Nutzungsdaten",
     "USAGEDATA1": "Nutzungsdaten werden automatisch bei der Nutzung des Dienstes erfasst.",
     "USAGEDATA2": "Zu den Nutzungsdaten können Informationen wie die Internetprotokoll-Adresse (z. B. IP-Adresse) Ihres Geräts, Browsertyp, Browserversion, die Seiten unseres Dienstes, die Sie besuchen, Zeitpunkt und Datum Ihres Besuchs, auf diesen Seiten verbrachte Zeit, eindeutige Gerätekennungen und andere Diagnosedaten gehören.",

@@ -148,7 +148,12 @@
     "COLLECTINGDATA": "Collecting and Using Your Personal Data",
     "TYPESOFDATA": "Types of Data Collected",
     "PERSONALDATATITLE": "Personal Data",
-    "PERSONALDATA": "While using Our Service, We may ask You to provide Us with certain personally identifiable information that can be used to contact or identify You. Personally identifiable information may include, but is not limited to:",
+    "PERSONALDATA": {
+      "INFO": "While using Our Service, We may ask You to provide Us with certain personally identifiable information that can be used to contact or identify You. Personally identifiable information may include, but is not limited to:",
+      "EMAIL": "Email address",
+      "NAME": "First name and last name",
+      "USAGEDATA": "Usage Data"
+    },
     "USAGEDATATITLE": "Usage Data",
     "USAGEDATA1": "Usage Data is collected automatically when using the Service.",
     "USAGEDATA2": "Usage Data may include information such as Your Device's Internet Protocol address (e.g. IP address), browser type, browser version, the pages of our Service that You visit, the time and date of Your visit, the time spent on those pages, unique device identifiers and other diagnostic data.",

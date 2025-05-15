@@ -27,6 +27,15 @@ export class HeaderComponent {
     this.translate.use(lang);
   }
 
+  onLogoClick() {
+    const currentUrl = this.router.url;
+    if (currentUrl === '/legal-notice' || currentUrl === '/privacy-policy') {
+      this.router.navigateByUrl('/'); // go back to the main page
+    } else {
+      this.goToSection('header'); // optional: scroll to top or another section
+    }
+  }
+
   goToSection(sectionId: string) {
     if (this.router.url === '/') {
       this.navService.requestScrollToSection(sectionId);
