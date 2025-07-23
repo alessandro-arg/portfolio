@@ -221,8 +221,9 @@
   }
 
   .project.placeholder {
-    width: 560px;
-    min-height: 350px;
+    width: 500px;
+    margin: 0 auto;
+    min-height: 200px;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -242,7 +243,6 @@
     }
 
     .placeholder_content {
-      padding: 40px 20px;
       animation: pulsePop 4s ease-in-out infinite;
 
       p {

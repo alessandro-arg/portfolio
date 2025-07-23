@@ -56,21 +56,28 @@ export class ProjectsSectionComponent implements OnInit {
       button1Link: 'https://github.com/alessandro-arg/mafia_vs_orcs.git',
       button2Link: 'https://www.mafia-vs-orcs.alessandro-argenziano.com',
     },
-    // dabubble: {
-    //   title: 'DABubble',
-    //   skills: [
-    //     {
-    //       icon: './../../assets/img/skill_set/icons/js.png',
-    //       name: 'JavaScript',
-    //     },
-    //     { icon: './../../assets/img/skill_set/icons/html.png', name: 'HTML' },
-    //     { icon: './../../assets/img/skill_set/icons/css.png', name: 'CSS' },
-    //   ],
-    //   sticker: './../../assets/img/contacts/circle_logo.png',
-    //   image: 'assets/img/projects_section/dabubble_mockup.jpg',
-    //   button1Link: 'https://dabubble.com',
-    //   button2Link: 'https://github.com/dabubble-app',
-    // },
+    dabubble: {
+      title: 'DABubble',
+      skills: [
+        {
+          icon: './../../assets/img/skill_set/icons/angular.png',
+          name: 'Angular',
+        },
+        {
+          icon: './../../assets/img/skill_set/icons/ts.png',
+          name: 'TypeScriptt',
+        },
+        { icon: './../../assets/img/skill_set/icons/html.png', name: 'HTML' },
+        {
+          icon: './../../assets/img/skill_set/icons/tailwindcss.png',
+          name: 'Tailwind CSS',
+        },
+      ],
+      sticker: './../../assets/img/contacts/circle_logo.png',
+      image: 'assets/img/projects_section/dabubble_mockup.jpg',
+      button1Link: 'https://github.com/alessandro-arg/da-bubble',
+      button2Link: 'https://www.dabubble.alessandro-argenziano.com',
+    },
   };
 
   ngOnInit(): void {

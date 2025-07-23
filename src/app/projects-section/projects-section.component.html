@@ -72,17 +72,8 @@
         </button>
         }
       </div>
-      <div class="project placeholder">
-        <div class="thumbnail_container">
-          <div class="placeholder_content">
-            <p class="typewriter-text">
-              {{ "PROJECTS.PLACEHOLDER_TEXT1" | translate }} <br />
-              {{ "PROJECTS.PLACEHOLDER_TEXT2" | translate }}
-            </p>
-          </div>
-        </div>
-      </div>
-      <!-- <div class="project third">
+
+      <div class="project third">
         <div class="thumbnail_container" (click)="openOverlay('dabubble')">
           <img
             class="project_image"
@@ -107,7 +98,17 @@
           {{ "PROJECTS.BUTTON" | translate }}
         </button>
         }
-      </div> -->
+      </div>
+    </div>
+    <div class="project placeholder">
+      <div class="thumbnail_container">
+        <div class="placeholder_content">
+          <p class="typewriter-text">
+            {{ "PROJECTS.PLACEHOLDER_TEXT1" | translate }} <br />
+            {{ "PROJECTS.PLACEHOLDER_TEXT2" | translate }}
+          </p>
+        </div>
+      </div>
     </div>
     <app-project-overlay
       *ngIf="showOverlay"
