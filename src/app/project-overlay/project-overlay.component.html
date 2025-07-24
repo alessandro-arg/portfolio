@@ -77,7 +77,7 @@
           }}</a>
 
           <ng-container *ngIf="projectId === 'dabubble'; else externalBtn2">
-            <a [routerLink]="['/page-not-found']">
+            <a (click)="closeOverlay()" [routerLink]="['/page-not-found']">
               {{
                 "PROJECTS_OVERLAY." + projectId.toUpperCase() + ".BUTTON2TEXT"
                   | translate
