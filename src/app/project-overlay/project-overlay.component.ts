@@ -3,12 +3,11 @@ import { Project } from '../project-overlay/project.model';
 import { HeaderComponent } from '../shared/header/header.component';
 import { TranslateModule } from '@ngx-translate/core';
 import { CommonModule } from '@angular/common';
-import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-project-overlay',
   standalone: true,
-  imports: [CommonModule, HeaderComponent, TranslateModule, RouterLink],
+  imports: [CommonModule, HeaderComponent, TranslateModule],
   templateUrl: './project-overlay.component.html',
   styleUrls: ['./project-overlay.component.scss'],
 })
