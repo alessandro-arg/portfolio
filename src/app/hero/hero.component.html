@@ -30,7 +30,7 @@
         <div class="photo_wrapper" style="position: relative">
           <img
             class="photo"
-            src="./../../assets/img/hero/photo_frame.png"
+            src="./../../assets/img/hero/photo_frame.webp"
             alt="Picture"
             (mouseenter)="onPhotoHover(true)"
             (mouseleave)="onPhotoHover(false)"
@@ -45,7 +45,7 @@
       </div>
       <div class="subtitle_wrapper">
         <div class="subtitle_group">
-          <h1 class="subtitle">
+          <h2 class="subtitle">
             @for (letter of subtitleText; track letter; let index = $index) {
             <span
               class="letter"
@@ -53,7 +53,7 @@
               attr.data-flip="{{ flipCase(letter) }}"
             ></span>
             }
-          </h1>
+          </h2>
           <button class="get_in_touch" (click)="scrollToContacts()">
             {{ "HERO.CONTACT" | translate }}
           </button>
@@ -64,7 +64,7 @@
         <div class="photo_wrapper" style="position: relative">
           <img
             class="photo"
-            src="./../../assets/img/hero/photo_frame.png"
+            src="./../../assets/img/hero/photo_frame.webp"
             alt="Picture"
             (mouseenter)="onPhotoHover(true)"
             (mouseleave)="onPhotoHover(false)"

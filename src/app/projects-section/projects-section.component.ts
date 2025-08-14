@@ -65,7 +65,11 @@ export class ProjectsSectionComponent implements OnInit {
         },
         {
           icon: './../../assets/img/skill_set/icons/ts.png',
-          name: 'TypeScriptt',
+          name: 'TypeScript',
+        },
+        {
+          icon: './../../assets/img/skill_set/icons/firebase.png',
+          name: 'Firebase',
         },
         { icon: './../../assets/img/skill_set/icons/html.png', name: 'HTML' },
         {

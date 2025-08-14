@@ -75,23 +75,12 @@
             "PROJECTS_OVERLAY." + projectId.toUpperCase() + ".BUTTON1TEXT"
               | translate
           }}</a>
-
-          <ng-container *ngIf="projectId === 'dabubble'; else externalBtn2">
-            <a [routerLink]="['/page-not-found']">
-              {{
-                "PROJECTS_OVERLAY." + projectId.toUpperCase() + ".BUTTON2TEXT"
-                  | translate
-              }}
-            </a>
-          </ng-container>
-          <ng-template #externalBtn2>
-            <a [href]="project.button2Link" target="_blank">
-              {{
-                "PROJECTS_OVERLAY." + projectId.toUpperCase() + ".BUTTON2TEXT"
-                  | translate
-              }}
-            </a>
-          </ng-template>
+          <a [href]="project.button2Link" target="_blank">
+            {{
+              "PROJECTS_OVERLAY." + projectId.toUpperCase() + ".BUTTON2TEXT"
+                | translate
+            }}
+          </a>
         </div>
         <div class="navigation_buttons">
           <button class="back-button-mobile" (click)="closeOverlay()">
