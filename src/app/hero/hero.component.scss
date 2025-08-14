@@ -164,11 +164,10 @@
     transform: rotate(8deg);
     position: relative;
     filter: grayscale(100%);
-    transition: filter 0.3s ease;
 
     &:hover {
       filter: grayscale(0%);
-      filter: brightness(110%);
+      filter: brightness(105%);
       filter: contrast(120%);
     }
   }

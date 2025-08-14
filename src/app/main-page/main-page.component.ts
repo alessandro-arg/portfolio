@@ -10,7 +10,6 @@ import { HeaderWrapperComponent } from '../shared/header-wrapper/header-wrapper.
 import { TranslateModule } from '@ngx-translate/core';
 import { CursorComponent } from '../shared/cursor/cursor.component'; // Future cursor implementation
 import { NavigationService } from '../navigation.service';
-import { RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-main-page',

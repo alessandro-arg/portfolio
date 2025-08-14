@@ -11,7 +11,7 @@
       <div class="card one">
         <img
           class="card_img"
-          src="./../../assets/img/testimonials/card_1.png"
+          src="./../../assets/img/testimonials/card_1.webp"
           alt=""
         />
         <div class="card_content">
@@ -23,23 +23,13 @@
               <h3>{{ "TESTIMONIALS.NAME_1" | translate }}</h3>
               <h4>{{ "TESTIMONIALS.ROLE_1" | translate }}</h4>
             </div>
-            <a href="" class="invisible"
-              ><img
-                [src]="
-                  isHovered1
-                    ? './../../assets/img/testimonials/profile_hover.png'
-                    : './../../assets/img/testimonials/profile_default.png'
-                "
-                (mouseenter)="isHovered1 = true"
-                (mouseleave)="isHovered1 = false"
-            /></a>
           </div>
         </div>
       </div>
       <div class="card two">
         <img
           class="card_img"
-          src="./../../assets/img/testimonials/card_2.png"
+          src="./../../assets/img/testimonials/card_2.webp"
           alt=""
         />
         <div class="card_content">
@@ -52,8 +42,9 @@
             <a
               href="https://www.linkedin.com/in/marco-marrocu-89912735a/"
               target="_blank"
+              rel="noopener noreferrer"
+              aria-label="LinkedIn: Marco Marrocu (opens in a new tab)"
               ><img
-                class="invisible"
                 [src]="
                   isHovered2
                     ? './../../assets/img/testimonials/profile_hover.png'
@@ -61,6 +52,7 @@
                 "
                 (mouseenter)="isHovered2 = true"
                 (mouseleave)="isHovered2 = false"
+                alt="Linkedin profile 2"
             /></a>
           </div>
         </div>
@@ -68,7 +60,7 @@
       <div class="card three">
         <img
           class="card_img"
-          src="./../../assets/img/testimonials/card_1.png"
+          src="./../../assets/img/testimonials/card_1.webp"
           alt=""
         />
         <div class="card_content">
@@ -81,6 +73,8 @@
             <a
               href="https://www.linkedin.com/in/eid-aden-369b50147?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
               target="_blank"
+              rel="noopener noreferrer"
+              aria-label="LinkedIn: Eid Aden (opens in a new tab)"
               ><img
                 [src]="
                   isHovered3
@@ -89,6 +83,7 @@
                 "
                 (mouseenter)="isHovered3 = true"
                 (mouseleave)="isHovered3 = false"
+                alt="Linkedin profile 3"
             /></a>
           </div>
         </div>

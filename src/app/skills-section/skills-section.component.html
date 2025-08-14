@@ -11,7 +11,7 @@
       @if (!isMobile) {
       <div class="paper_text">
         <img
-          src="./../../assets/img/skill_set/skills_description_paper.png"
+          src="./../../assets/img/skill_set/skills_description_paper.webp"
           alt=""
         />
         <p>
@@ -20,7 +20,10 @@
       </div>
       } @else if (isMobile) {
       <div class="paper_text_mobile">
-        <img src="./../../assets/img/skill_set/mobile_description.png" alt="" />
+        <img
+          src="./../../assets/img/skill_set/mobile_description.webp"
+          alt=""
+        />
         <p>
           {{ "SKILLS.DESCRIPTION" | translate }}
         </p>
@@ -46,6 +49,7 @@
             src="./../../assets/img/skill_set/sticker_reveal.png"
             [class.active]="currentState === 'reveal'"
             (click)="resetSticker($event)"
+            alt="Revealed sticker"
           />
           <div
             class="sticker_content"
@@ -64,11 +68,13 @@
             src="./../../assets/img/skill_set/sticker_hover.png"
             class="sticker second_layer"
             [class.active]="currentState === 'hover'"
+            alt="Sticker second layer"
           />
           <img
             src="./../../assets/img/skill_set/sticker.png"
             class="sticker first_layer"
             [class.inactive]="currentState !== 'initial'"
+            alt="Sticker first layer"
           />
         </div>
         }
@@ -80,6 +86,7 @@
           src="./../../assets/img/skill_set/sticker_reveal.png"
           [class.active]="currentState === 'reveal'"
           (click)="resetSticker($event)"
+          alt="Revealed sticker mobile"
         />
         <div
           class="sticker_content"
@@ -98,11 +105,13 @@
           src="./../../assets/img/skill_set/sticker_hover.png"
           class="sticker second_layer"
           [class.active]="currentState === 'hover'"
+          alt="Sticker second layer mobile"
         />
         <img
           src="./../../assets/img/skill_set/sticker.png"
           class="sticker first_layer"
           [class.inactive]="currentState !== 'initial'"
+          alt="Sticker first layer mobile"
         />
       </div>
       }

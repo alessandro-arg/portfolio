@@ -83,18 +83,19 @@
     "BUTTON_SUBMIT": "Senden"
   },
   "FOOTER": {
-    "LEGAL_NOTICE": "Impressum"
+    "LEGAL_NOTICE": "Impressum",
+    "BACK_TO_TOP": "Zurück nach oben"
   },
   "PROJECTS_OVERLAY": {
     "JOIN": {
-      "DESCRIPTION": "Aufgabenmanager inspiriert vom Kanban-System. Erstelle und organisiere Aufgaben per Drag-and-Drop, weise Benutzer und Kategorien zu und laden sie Dateien hoch.",
+      "DESCRIPTION": "Aufgabenmanager inspiriert vom Kanban-System. Erstelle und organisiere Aufgaben per Drag-and-Drop, weise Benutzer und Kategorien zu und lade Dateien hoch.",
       "DETAILS": "In diesem Projekt war ich für die Entwicklung der Anmelde- und Registrierungsseiten sowie für die Einrichtung der Firebase-Datenbankstruktur verantwortlich. Ich habe das Team bei der Integration der Datenbank in alle Seiten unterstützt und die Kernlogik für die Karten in der Datenbank implementiert.",
       "DURATION": "6 Wochen",
       "BUTTON1TEXT": "GitHub",
       "BUTTON2TEXT": "Live-Demo"
     },
     "MAFIA-VS-ORCS": {
-      "DESCRIPTION": "Jump-, Run- und Shootspiel basierend auf objektorientierter Programmierung. Hilf Frank, Münzen und Munition zu finden, um die Orks zu töten, und schieß den großen Ork ab.",
+      "DESCRIPTION": "Jump-, Run- und Shootspiel basierend auf OOP. Hilf Frank, Münzen und Munition zu finden, um die Orks zu töten, und schieß den großen Ork ab.",
       "DETAILS": "Ich habe einen objektorientierten Ansatz verwendet, um die Spiellogik und Mechaniken strukturiert aufzubauen. Dieses Solo-Projekt zeigt meine Fähigkeit, strukturiert und eigenverantwortlich zu arbeiten. Zukünftig möchte ich weitere Level und steigende Schwierigkeitsgrade integrieren.",
       "DURATION": "8 Wochen",
       "BUTTON1TEXT": "GitHub",

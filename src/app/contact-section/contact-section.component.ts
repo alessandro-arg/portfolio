@@ -3,6 +3,7 @@ import { ContactFormComponent } from './contact-form/contact-form.component';
 import { FooterComponent } from '../shared/footer/footer.component';
 import { CommonModule } from '@angular/common';
 import { TranslateModule } from '@ngx-translate/core';
+import { trigger, transition, style, animate } from '@angular/animations';
 
 @Component({
   selector: 'app-contact-section',
@@ -15,6 +16,18 @@ import { TranslateModule } from '@ngx-translate/core';
   ],
   templateUrl: './contact-section.component.html',
   styleUrl: './contact-section.component.scss',
+  animations: [
+    trigger('fadeInUp', [
+      transition(':enter', [
+        style({ opacity: 0 }),
+        animate(
+          '1000ms cubic-bezier(.2,.8,.2,1)',
+          style({ opacity: 1, transform: 'none' })
+        ),
+      ]),
+    ]),
+  ],
+  host: { '[@fadeInUp]': '' },
 })
 export class ContactSectionComponent implements OnInit {
   isMobile = false;

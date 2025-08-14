@@ -83,7 +83,8 @@
     "BUTTON_SUBMIT": "Send"
   },
   "FOOTER": {
-    "LEGAL_NOTICE": "Legal Notice"
+    "LEGAL_NOTICE": "Legal Notice",
+    "BACK_TO_TOP": "Back to top"
   },
   "PROJECTS_OVERLAY": {
     "JOIN": {
@@ -101,7 +102,7 @@
       "BUTTON2TEXT": "Live Test"
     },
     "DABUBBLE": {
-      "DESCRIPTION": "This App is a Slack Clone App. It revolutionizes team communication and collaboration with its intuitive interface, real-time messaging, and robust channel organization.",
+      "DESCRIPTION": "This App is a Slack Clone App. It revolutionizes team communication and collaboration with its intuitive interface, real-time messaging, and channel organization.",
       "DETAILS": "As the lead developer, I took the project from initial wireframes through to a production-ready deployment. Working in an Agile process, I defined user stories, then architected and built the real-time messaging backend (using Firebase), as well as a modular, responsive frontend.",
       "DURATION": "8 weeks",
       "BUTTON1TEXT": "GitHub",
