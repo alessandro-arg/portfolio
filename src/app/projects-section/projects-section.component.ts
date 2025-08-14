@@ -4,6 +4,7 @@ import { ProjectOverlayComponent } from '../project-overlay/project-overlay.comp
 import { Project } from '../project-overlay/project.model';
 import { NavigationService } from '../navigation.service';
 import { TranslateModule } from '@ngx-translate/core';
+import { trigger, transition, style, animate } from '@angular/animations';
 
 @Component({
   selector: 'app-projects-section',
@@ -11,6 +12,18 @@ import { TranslateModule } from '@ngx-translate/core';
   imports: [CommonModule, ProjectOverlayComponent, TranslateModule],
   templateUrl: './projects-section.component.html',
   styleUrl: './projects-section.component.scss',
+  animations: [
+    trigger('fadeInUp', [
+      transition(':enter', [
+        style({ opacity: 0 }),
+        animate(
+          '1000ms cubic-bezier(.2,.8,.2,1)',
+          style({ opacity: 1, transform: 'none' })
+        ),
+      ]),
+    ]),
+  ],
+  host: { '[@fadeInUp]': '' },
 })
 export class ProjectsSectionComponent implements OnInit {
   constructor(private navService: NavigationService) {}

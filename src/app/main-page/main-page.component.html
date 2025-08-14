@@ -4,8 +4,22 @@
   <app-header-wrapper id="header"></app-header-wrapper>
   <app-hero></app-hero>
   <app-about-me id="about-me"></app-about-me>
+
+  @defer (on idle; prefetch on idle) {
   <app-skills-section id="skills"></app-skills-section>
+  } @placeholder {
+  <section style="height: 500px" aria-hidden="true"></section>
+  } @defer (on timer(400ms); prefetch on idle) {
   <app-projects-section id="projects"></app-projects-section>
+  } @placeholder {
+  <section style="height: 800px" aria-hidden="true"></section>
+  } @defer (on timer(800ms); prefetch on idle) {
   <app-testimonials-section id="testimonials"></app-testimonials-section>
+  } @placeholder {
+  <section style="height: 300px" aria-hidden="true"></section>
+  } @defer (on timer(1000ms); prefetch on idle) {
   <app-contact-section id="contacts"></app-contact-section>
+  } @placeholder {
+  <section style="height: 500px" aria-hidden="true"></section>
+  }
 </div>

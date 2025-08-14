@@ -13,6 +13,7 @@ import {
   tooltipVariation,
   popperVariation,
 } from '@ngneat/helipopper/config';
+import { provideAnimations } from '@angular/platform-browser/animations';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http, '/assets/i18n/', '.json');
@@ -22,6 +23,7 @@ bootstrapApplication(AppComponent, {
   ...appConfig,
   providers: [
     ...appConfig.providers!,
+    provideAnimations(),
     provideRouter(routes),
     importProvidersFrom(
       HttpClientModule,

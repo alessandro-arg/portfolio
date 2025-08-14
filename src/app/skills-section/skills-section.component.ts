@@ -1,6 +1,7 @@
 import { CommonModule } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
 import { TranslateModule } from '@ngx-translate/core';
+import { trigger, transition, style, animate } from '@angular/animations';
 
 @Component({
   selector: 'app-skills-section',
@@ -8,6 +9,18 @@ import { TranslateModule } from '@ngx-translate/core';
   imports: [CommonModule, TranslateModule],
   templateUrl: './skills-section.component.html',
   styleUrl: './skills-section.component.scss',
+  animations: [
+    trigger('fadeInUp', [
+      transition(':enter', [
+        style({ opacity: 0 }),
+        animate(
+          '1000ms cubic-bezier(.2,.8,.2,1)',
+          style({ opacity: 1, transform: 'none' })
+        ),
+      ]),
+    ]),
+  ],
+  host: { '[@fadeInUp]': '' },
 })
 export class SkillsSectionComponent implements OnInit {
   currentState: 'initial' | 'hover' | 'reveal' = 'initial';
