@@ -83,7 +83,8 @@
     "BUTTON_SUBMIT": "Send"
   },
   "FOOTER": {
-    "LEGAL_NOTICE": "Legal Notice"
+    "LEGAL_NOTICE": "Legal Notice",
+    "BACK_TO_TOP": "Back to top"
   },
   "PROJECTS_OVERLAY": {
     "JOIN": {

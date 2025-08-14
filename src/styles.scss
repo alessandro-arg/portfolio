@@ -1,4 +1,7 @@
 @use "styles/variables" as *;
+@import "tippy.js/dist/tippy.css";
+@import "tippy.js/themes/light.css";
+@import "tippy.js/animations/scale.css";
 
 @font-face {
   font-family: "bricolage grotesque";

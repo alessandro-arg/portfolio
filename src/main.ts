@@ -7,6 +7,12 @@ import { routes } from './app/app.routes';
 import { HttpClientModule, HttpClient } from '@angular/common/http';
 import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 import { TranslateHttpLoader } from '@ngx-translate/http-loader';
+import {
+  provideTippyLoader,
+  provideTippyConfig,
+  tooltipVariation,
+  popperVariation,
+} from '@ngneat/helipopper/config';
 
 export function HttpLoaderFactory(http: HttpClient) {
   return new TranslateHttpLoader(http, '/assets/i18n/', '.json');
@@ -27,5 +33,13 @@ bootstrapApplication(AppComponent, {
         },
       })
     ),
+    provideTippyLoader(() => import('tippy.js')),
+    provideTippyConfig({
+      defaultVariation: 'tooltip',
+      variations: {
+        tooltip: tooltipVariation,
+        popper: popperVariation,
+      },
+    }),
   ],
 });

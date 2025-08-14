@@ -83,7 +83,8 @@
     "BUTTON_SUBMIT": "Senden"
   },
   "FOOTER": {
-    "LEGAL_NOTICE": "Impressum"
+    "LEGAL_NOTICE": "Impressum",
+    "BACK_TO_TOP": "Zurück nach oben"
   },
   "PROJECTS_OVERLAY": {
     "JOIN": {

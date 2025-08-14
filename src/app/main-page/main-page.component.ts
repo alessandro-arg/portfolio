@@ -10,7 +10,6 @@ import { HeaderWrapperComponent } from '../shared/header-wrapper/header-wrapper.
 import { TranslateModule } from '@ngx-translate/core';
 import { CursorComponent } from '../shared/cursor/cursor.component'; // Future cursor implementation
 import { NavigationService } from '../navigation.service';
-import { RouterOutlet } from '@angular/router';
 
 @Component({
   selector: 'app-main-page',
@@ -25,7 +24,6 @@ import { RouterOutlet } from '@angular/router';
     ContactSectionComponent,
     HeaderWrapperComponent,
     TranslateModule,
-    RouterOutlet,
   ],
   templateUrl: './main-page.component.html',
   styleUrl: './main-page.component.scss',
