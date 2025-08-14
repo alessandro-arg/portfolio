@@ -71,7 +71,6 @@ export class ProjectsSectionComponent implements OnInit {
           icon: './../../assets/img/skill_set/icons/firebase.png',
           name: 'Firebase',
         },
-        { icon: './../../assets/img/skill_set/icons/html.png', name: 'HTML' },
         {
           icon: './../../assets/img/skill_set/icons/tailwindcss.png',
           name: 'Tailwind CSS',

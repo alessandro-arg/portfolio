@@ -25,9 +25,13 @@
         name="name"
         autocomplete="off"
         required
+        (focus)="focusedField = 'name'"
         (blur)="onInputBlur(name, 'name')"
-        (focus)="clearPlaceholder('name')"
-        [placeholder]="placeholders.name"
+        [attr.placeholder]="
+          focusedField === 'name'
+            ? ''
+            : ('CONTACT_FORM.PLACEHOLDER_NAME' | translate)
+        "
         [hidden]="!showInput.name && isFieldInvalid(name)"
       />
       @if (!showInput.name && isFieldInvalid(name)) {
@@ -56,9 +60,13 @@
         pattern="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,}"
         autocomplete="off"
         required
+        (focus)="focusedField = 'email'"
         (blur)="onInputBlur(email, 'email')"
-        (focus)="clearPlaceholder('email')"
-        [placeholder]="placeholders.email"
+        [attr.placeholder]="
+          focusedField === 'email'
+            ? ''
+            : ('CONTACT_FORM.PLACEHOLDER_EMAIL' | translate)
+        "
         [hidden]="!showInput.email && isFieldInvalid(email)"
       />
       @if (!showInput.email && isFieldInvalid(email)) {
@@ -87,9 +95,13 @@
         name="message"
         autocomplete="off"
         required
+        (focus)="focusedField = 'message'"
         (blur)="onInputBlur(message, 'message')"
-        (focus)="clearPlaceholder('message')"
-        [placeholder]="placeholders.message"
+        [attr.placeholder]="
+          focusedField === 'message'
+            ? ''
+            : ('CONTACT_FORM.PLACEHOLDER_MESSAGE' | translate)
+        "
         [hidden]="!showInput.message && isFieldInvalid(message)"
       />
       @if (!showInput.message && isFieldInvalid(message)) {
@@ -141,8 +153,8 @@
       <input
         type="submit"
         [value]="'CONTACT_FORM.BUTTON_SUBMIT' | translate"
-        [class.disabled]="!checkbox.valid"
-        [disabled]="!checkbox.valid"
+        [class.disabled]="!contactFrom.valid"
+        [disabled]="!contactFrom.valid"
       />
     </div>
   </form>

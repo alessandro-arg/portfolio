@@ -30,12 +30,7 @@ export class ContactFormComponent {
     message: true,
   };
 
-  placeholders = {
-    name: '',
-    email: '',
-    message: '',
-  };
-
+  focusedField: '' | 'name' | 'email' | 'message' = '';
   formSubmitted = false;
   successMessage = false;
   showLegalNotice = false;
@@ -43,30 +38,6 @@ export class ContactFormComponent {
   @ViewChild('emailInput') emailInputRef!: ElementRef<HTMLInputElement>;
   @ViewChild('messageInput') messageInputRef!: ElementRef<HTMLInputElement>;
   @ViewChild('nameInput') nameInputRef!: ElementRef<HTMLInputElement>;
-
-  ngOnInit() {
-    this.loadPlaceholders();
-  }
-
-  loadPlaceholders() {
-    this.translate
-      .get([
-        'CONTACT_FORM.PLACEHOLDER_NAME',
-        'CONTACT_FORM.PLACEHOLDER_EMAIL',
-        'CONTACT_FORM.PLACEHOLDER_MESSAGE',
-      ])
-      .subscribe((translations) => {
-        this.placeholders = {
-          name: translations['CONTACT_FORM.PLACEHOLDER_NAME'],
-          email: translations['CONTACT_FORM.PLACEHOLDER_EMAIL'],
-          message: translations['CONTACT_FORM.PLACEHOLDER_MESSAGE'],
-        };
-      });
-  }
-
-  clearPlaceholder(field: 'name' | 'email' | 'message') {
-    this.placeholders[field] = '';
-  }
 
   isFieldInvalid(control: any): boolean {
     return !control.valid && (control.touched || this.formSubmitted);
@@ -113,7 +84,6 @@ export class ContactFormComponent {
         .post(this.post.endPoint, this.post.body(this.contactData))
         .subscribe({
           next: (response) => {
-            this.resetDefaultForm();
             ngForm.resetForm();
           },
           error: (error) => {
@@ -122,34 +92,5 @@ export class ContactFormComponent {
           complete: () => console.info('Mail sent'),
         });
     }
-  }
-
-  resetDefaultForm() {
-    this.translate
-      .get([
-        'CONTACT_FORM.PLACEHOLDER_NAME',
-        'CONTACT_FORM.PLACEHOLDER_EMAIL',
-        'CONTACT_FORM.PLACEHOLDER_MESSAGE',
-      ])
-      .subscribe((translations) => {
-        this.placeholders = {
-          name: translations['CONTACT_FORM.PLACEHOLDER_NAME'],
-          email: translations['CONTACT_FORM.PLACEHOLDER_EMAIL'],
-          message: translations['CONTACT_FORM.PLACEHOLDER_MESSAGE'],
-        };
-      });
-
-    this.showInput = {
-      name: true,
-      email: true,
-      message: true,
-    };
-
-    this.formSubmitted = false;
-    this.successMessage = true;
-
-    setTimeout(() => {
-      this.successMessage = false;
-    }, 2000);
   }
 }

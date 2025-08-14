@@ -30,9 +30,9 @@ export class HeaderComponent {
   onLogoClick() {
     const currentUrl = this.router.url;
     if (currentUrl === '/legal-notice' || currentUrl === '/privacy-policy') {
-      this.router.navigateByUrl('/'); // go back to the main page
+      this.router.navigateByUrl('/');
     } else {
-      this.goToSection('header'); // optional: scroll to top or another section
+      this.goToSection('header');
     }
   }
 
