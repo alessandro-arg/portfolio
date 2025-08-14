@@ -25,7 +25,6 @@ import { RouterOutlet } from '@angular/router';
     ContactSectionComponent,
     HeaderWrapperComponent,
     TranslateModule,
-    RouterOutlet,
   ],
   templateUrl: './main-page.component.html',
   styleUrl: './main-page.component.scss',

@@ -3,7 +3,11 @@
 .hero_wrapper {
   height: 900px;
   width: 100%;
-  background-image: url(../../assets/img/background/hero.webp);
+  background-image: url("/assets/img/background/hero-1920.webp");
+  background-image: image-set(
+    url("/assets/img/background/hero-1920.webp") type("image/webp") 1x,
+    url("/assets/img/background/hero.webp") type("image/webp") 2x
+  );
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -274,6 +278,16 @@
         }
       }
     }
+  }
+}
+
+@media (max-width: 1200px) {
+  .hero_wrapper {
+    background-image: url("/assets/img/background/hero-1200.webp");
+    background-image: image-set(
+      url("/assets/img/background/hero-1200.webp") type("image/webp") 1x,
+      url("/assets/img/background/hero-1920.webp") type("image/webp") 2x
+    );
   }
 }
 

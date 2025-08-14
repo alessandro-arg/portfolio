@@ -3,7 +3,11 @@
 .contact_wrapper {
   height: 950px;
   width: 100%;
-  background-image: url(./../../assets/img/background/contact.webp);
+  background-image: url("/assets/img/background/contact-1920.webp");
+  background-image: image-set(
+    url("/assets/img/background/contact-1920.webp") type("image/webp") 1x,
+    url("/assets/img/background/contact.webp") type("image/webp") 2x
+  );
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -122,6 +126,14 @@
 }
 
 @media (max-width: 1150px) {
+  .contact_wrapper {
+    background-image: url("/assets/img/background/contact-1200.webp");
+    background-image: image-set(
+      url("/assets/img/background/contact-1200.webp") type("image/webp") 1x,
+      url("/assets/img/background/contact-1920.webp") type("image/webp") 2x
+    );
+  }
+
   .left_section {
     width: 450px !important;
   }

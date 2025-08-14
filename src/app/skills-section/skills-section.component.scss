@@ -3,7 +3,11 @@
 .skills_section_wrapper {
   height: 800px;
   width: 100%;
-  background-image: url(./../../assets/img/background/skills.webp);
+  background-image: url("/assets/img/background/skills-1920.webp");
+  background-image: image-set(
+    url("/assets/img/background/skills-1920.webp") type("image/webp") 1x,
+    url("/assets/img/background/skills.webp") type("image/webp") 2x
+  );
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -235,6 +239,14 @@
 }
 
 @media (max-width: 1100px) {
+  .skills_section_wrapper {
+    background-image: url("/assets/img/background/skills-1200.webp");
+    background-image: image-set(
+      url("/assets/img/background/skills-1200.webp") type("image/webp") 1x,
+      url("/assets/img/background/skills-1920.webp") type("image/webp") 2x
+    );
+  }
+
   .container {
     padding: 80px 16px 0 16px !important;
   }
