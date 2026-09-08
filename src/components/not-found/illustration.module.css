@@ -1,0 +1,177 @@
+.root {
+  --illust-ink: #263238;
+  --illust-ink-2: #263238;
+  --illust-ink-3: #263238;
+  --illust-accent: #ff725e;
+  --illust-surface: #e0e0e0;
+  --illust-surface-soft: #f5f5f5;
+  --illust-shade: #455a64;
+}
+
+:global(.dark) .root {
+  --illust-ink: #cbd5e1;
+  --illust-ink-2: #202024;
+  --illust-ink-3: #35383a;
+  --illust-accent: #ff8a75;
+  --illust-surface: #3f3f46;
+  --illust-surface-soft: #27272a;
+  --illust-shade: #444a54;
+}
+
+.ink {
+  fill: var(--illust-ink);
+}
+.ink2 {
+  fill: var(--illust-ink-2);
+}
+.ink3 {
+  fill: var(--illust-ink-3);
+}
+.accent {
+  fill: var(--illust-accent);
+}
+.surface {
+  fill: var(--illust-surface);
+}
+.surfaceSoft {
+  fill: var(--illust-surface-soft);
+}
+.shade {
+  fill: var(--illust-shade);
+}
+
+.cutout {
+  fill: var(--background, #fff);
+}
+
+.diode1 {
+  animation: blink1 1.4s steps(1, end) infinite;
+}
+.diode2 {
+  animation: blink2 1.6s steps(1, end) infinite;
+}
+.diode3 {
+  animation: blink3 2s steps(1, end) infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .diode1,
+  .diode2,
+  .diode3 {
+    animation: none;
+    opacity: 1 !important;
+  }
+}
+
+@keyframes blink1 {
+  0%,
+  8% {
+    opacity: 1;
+  }
+  9%,
+  18% {
+    opacity: 0.15;
+  }
+  19%,
+  22% {
+    opacity: 1;
+  }
+  23%,
+  30% {
+    opacity: 0.15;
+  }
+  31%,
+  38% {
+    opacity: 1;
+  }
+  39%,
+  60% {
+    opacity: 0.15;
+  }
+  61%,
+  65% {
+    opacity: 1;
+  }
+  66%,
+  100% {
+    opacity: 0.15;
+  }
+}
+
+@keyframes blink2 {
+  0%,
+  4% {
+    opacity: 1;
+  }
+  5%,
+  11% {
+    opacity: 0.15;
+  }
+  12%,
+  16% {
+    opacity: 1;
+  }
+  17%,
+  20% {
+    opacity: 0.15;
+  }
+  21%,
+  27% {
+    opacity: 1;
+  }
+  28%,
+  32% {
+    opacity: 0.15;
+  }
+  33%,
+  36% {
+    opacity: 1;
+  }
+  37%,
+  44% {
+    opacity: 0.15;
+  }
+  45%,
+  52% {
+    opacity: 1;
+  }
+  53%,
+  58% {
+    opacity: 0.15;
+  }
+  59%,
+  63% {
+    opacity: 1;
+  }
+  64%,
+  72% {
+    opacity: 0.15;
+  }
+  73%,
+  78% {
+    opacity: 1;
+  }
+  79%,
+  100% {
+    opacity: 0.15;
+  }
+}
+
+@keyframes blink3 {
+  0%,
+  5% {
+    opacity: 1;
+  }
+  6%,
+  12% {
+    opacity: 0.15;
+  }
+  13%,
+  18% {
+    opacity: 1;
+  }
+  19%,
+  100% {
+    opacity: 0.15;
+  }
+}
