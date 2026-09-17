@@ -10,6 +10,8 @@ import { SiteShell } from "@/components/layout/site-shell";
 
 import { profile } from "@/content/profile";
 
+import { Analytics } from "@vercel/analytics/next";
+
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -90,6 +92,8 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
             </MotionProvider>
           </TooltipProvider>
         </ThemeProvider>
+
+        <Analytics />
       </body>
     </html>
   );
