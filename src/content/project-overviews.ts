@@ -119,6 +119,10 @@ export const projectOverviews = [
         label: "README",
         href: "https://github.com/alessandro-arg/coordina#readme",
       },
+      {
+        label: "Roadmap",
+        href: "https://github.com/alessandro-arg/coordina/blob/main/docs/roadmap.md",
+      },
     ],
   },
 ] satisfies readonly ProjectOverview[];
